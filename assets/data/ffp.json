@@ -1,0 +1,154 @@
+{
+  "ffps": {
+    "AS": {
+      "name": "AS ATMOS Rewards",
+      "carriers": ["AS"],
+      "family_pooling": true,
+      "expiration": "never"
+    },
+    "AA": {
+      "name": "AAdvantage",
+      "carriers": ["AA"],
+      "family_pooling": false,
+      "expiration": "activity"
+    },
+    "BA": {
+      "name": "BA Avios Club",
+      "carriers": ["BA"],
+      "family_pooling": true,
+      "expiration": "activity"
+    },
+    "IB": {
+      "name": "IB Avios Club",
+      "carriers": ["IB"],
+      "family_pooling": false,
+      "expiration": "activity"
+    },
+    "AY": {
+      "name": "AY Avios Finnair Plus",
+      "carriers": ["AY"],
+      "family_pooling": false,
+      "expiration": "activity"
+    },
+    "QR": {
+      "name": "QR Avios Privilege Club",
+      "carriers": ["QR"],
+      "family_pooling": true,
+      "expiration": "activity"
+    },
+    "CX": {
+      "name": "CX Asia Miles",
+      "carriers": ["CX"],
+      "family_pooling": false,
+      "expiration": "activity"
+    },
+    "QF": {
+      "name": "Qantas Frequent Flyer",
+      "carriers": ["QF"],
+      "family_pooling": true,
+      "expiration": "activity"
+    },
+    "JL": {
+      "name": "JL Mileage Bank",
+      "carriers": ["JL"],
+      "family_pooling": true,
+      "expiration": "rolling"
+    },
+    "AC": {
+      "name": "AC Aeroplan",
+      "carriers": ["AC"],
+      "family_pooling": true,
+      "expiration": "activity"
+    },
+    "AV": {
+      "name": "AV lifemiles",
+      "carriers": ["AV"],
+      "family_pooling": false,
+      "expiration": "activity"
+    },
+    "BR": {
+      "name": "EVA Infinity MileageLands",
+      "carriers": ["BR"],
+      "family_pooling": false,
+      "expiration": "rolling"
+    },
+    "SQ": {
+      "name": "SQ KrisFlyer",
+      "carriers": ["SQ"],
+      "family_pooling": false,
+      "expiration": "rolling"
+    },
+    "TP": {
+      "name": "TP Miles&Go",
+      "carriers": ["TP"],
+      "family_pooling": false,
+      "expiration": "rolling"
+    },
+    "TK": {
+      "name": "TK Miles&Smiles",
+      "carriers": ["TK"],
+      "family_pooling": false,
+      "expiration": "rolling"
+    },
+    "UA": {
+      "name": "UA MileagePlus",
+      "carriers": ["UA"],
+      "family_pooling": true,
+      "expiration": "never"
+    },
+    "AM": {
+      "name": "AM Rewards",
+      "carriers": ["AM"],
+      "family_pooling": false,
+      "expiration": "never"
+    },
+    "FB": {
+      "name": "Flying Blue",
+      "carriers": ["AF","KL"],
+      "family_pooling": true,
+      "expiration": "activity"
+    },
+    "DL": {
+      "name": "DL Skymiles",
+      "carriers": ["DL"],
+      "family_pooling": false,
+      "expiration": "never"
+    },
+    "VS": {
+      "name": "VS Flyingclub",
+      "carriers": ["DL"],
+      "family_pooling": true,
+      "expiration": "never"
+    },
+    "EI": {
+      "name": "EI AerClub",
+      "carriers": ["EI"],
+      "family_pooling": false,
+      "expiration": "activity"
+    },
+    "EK": {
+      "name": "Emirates Skyward",
+      "carriers": ["EK"],
+      "family_pooling": true,
+      "expiration": "rolling"
+    },
+    "EY": {
+      "name": "Etihad Guest",
+      "carriers": ["EK"],
+      "family_pooling": true,
+      "expiration": "activity"
+    },
+    "B6": {
+      "name": "JetBlue TrueBlue",
+      "carriers": ["B6"],
+      "family_pooling": true,
+      "expiration": "never"
+    },
+    "WN": {
+      "name": "Southwest Rapid Rewards",
+      "carriers": ["WN"],
+      "family_pooling": false,
+      "expiration": "never"
+    }
+  }
+}
