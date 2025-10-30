@@ -1981,10 +1981,10 @@
           }
     },
     "EY_part": {
-      "ffp_code": "EK",
+      "ffp_code": "EY",
       "applies_to": "all_partners",
       "type": "dynamic",
-      "route_categories": ["EU"],
+      "route_categories": ["EU","US","US-EU","US-CN","CN"],
       "cabins": {
         "economy": [{}],
         "premium_economy": [{}],
