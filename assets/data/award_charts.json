@@ -243,6 +243,7 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 32500 }
         ],
         "premium_economy": [
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 20000 },
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 26000 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 32500 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 39000 },
@@ -250,22 +251,23 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 65000 }
         ],
         "business": [
-          { "min_miles": 0, "max_miles": 650, "award_miles": 9750 },
-          { "min_miles": 651, "max_miles": 1151, "award_miles": 15750 },
-          { "min_miles": 1152, "max_miles": 2000, "award_miles": 18350 },
-          { "min_miles": 2001, "max_miles": 3000, "award_miles": 37500 },
-          { "min_miles": 3001, "max_miles": 4000, "award_miles": 60000 },          
-          { "min_miles": 4001, "max_miles": 5500, "award_miles": 75000 },
-          { "min_miles": 5501, "max_miles": 6500, "award_miles": 90000 },
-          { "min_miles": 6501, "max_miles": 7000, "award_miles": 105000 },
-          { "min_miles": 7001, "max_miles": 99999, "award_miles": 150000 }
+          { "min_miles": 0, "max_miles": 650, "award_miles": 8500 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 13500 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 17750 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 31250 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 50000 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 62500 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 75000 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 87500 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 125000 }
         ],                
         "first": [
-          { "min_miles": 3001, "max_miles": 4000, "award_miles": 80000},          
-          { "min_miles": 4001, "max_miles": 5500, "award_miles": 100000 },
-          { "min_miles": 5501, "max_miles": 6500, "award_miles": 120000 },
-          { "min_miles": 6501, "max_miles": 7000, "award_miles": 140000 },
-          { "min_miles": 7001, "max_miles": 99999, "award_miles": 200000 }
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 42500 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 68000},          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 85000 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 102000 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 119000 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 170000 }
         ]
       }
     },     
@@ -289,6 +291,7 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 32500 }
         ],
         "premium_economy": [
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 20000 },
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 26000 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 32500 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 39000 },
@@ -296,22 +299,77 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 65000 }
         ],
         "business": [
-          { "min_miles": 0, "max_miles": 650, "award_miles": 9750 },
-          { "min_miles": 651, "max_miles": 1151, "award_miles": 15750 },
-          { "min_miles": 1152, "max_miles": 2000, "award_miles": 18350 },
-          { "min_miles": 2001, "max_miles": 3000, "award_miles": 37500 },
-          { "min_miles": 3001, "max_miles": 4000, "award_miles": 60000 },          
-          { "min_miles": 4001, "max_miles": 5500, "award_miles": 75000 },
-          { "min_miles": 5501, "max_miles": 6500, "award_miles": 90000 },
-          { "min_miles": 6501, "max_miles": 7000, "award_miles": 105000 },
-          { "min_miles": 7001, "max_miles": 99999, "award_miles": 150000 }
+          { "min_miles": 0, "max_miles": 650, "award_miles": 8500 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 13500 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 17750 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 31250 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 50000 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 62500 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 75000 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 87500 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 125000 }
         ],                
         "first": [
-          { "min_miles": 3001, "max_miles": 4000, "award_miles": 80000},          
-          { "min_miles": 4001, "max_miles": 5500, "award_miles": 100000 },
-          { "min_miles": 5501, "max_miles": 6500, "award_miles": 120000 },
-          { "min_miles": 6501, "max_miles": 7000, "award_miles": 140000 },
-          { "min_miles": 7001, "max_miles": 99999, "award_miles": 200000 }
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 42500 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 68000},          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 85000 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 102000 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 119000 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 170000 }
+        ]
+      }
+    },
+    "BA_CX": {
+      "ffp_code": "BA",
+      "applies_to": "specific",
+      "specific_partners": ["CX"],
+      "type": "distance_based",
+      "distance_logic": "actual_distance",
+      "route_categories": ["CN","US-CN"],
+      "cabins": {
+        "economy": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 9750 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 12000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 14300 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 15600 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 20750 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 25750 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 31000 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 36250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 51500 }
+        ],
+        "premium_economy": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 14300 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 21600 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 23400 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 30900 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 41250 },         
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 51500 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 62000 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 72250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 103000 }
+        ],
+        "business": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 20800 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 30000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 32500 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 46500 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 77250 },         
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 77250 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 92750 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 108250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 154500 }
+        ],                
+        "first": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 24000 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 33000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 44000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 51500 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 82500 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 103000 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 123750 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 144250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 206000 }
         ]
       }
     },
@@ -335,13 +393,18 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 51500 }
         ],
         "premium_economy": [
-          { "min_miles": 3001, "max_miles": 4000, "award_miles": 40000 },          
-          { "min_miles": 4001, "max_miles": 5500, "award_miles": 50000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 40000 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 41250 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 51500 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 62000 },
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 72250 },
-          { "min_miles": 7001, "max_miles": 99999, "award_miles": 100000 }
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 103000 }
         ],
         "business": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 24000 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 32000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 40000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 50000 },
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 62000 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 77250 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 92750 },
@@ -349,13 +412,10 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 154500 }
         ],                
         "first": [
-          { "min_miles": 0, "max_miles": 650, "award_miles": 24000 },
-          { "min_miles": 651, "max_miles": 1151, "award_miles": 32000 },
-          { "min_miles": 1152, "max_miles": 2000, "award_miles": 40000 },
-          { "min_miles": 2001, "max_miles": 3000, "award_miles": 50000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 80000 },
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 82500 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 103000 },
-          { "min_miles": 5501, "max_miles": 6500, "award_miles": 123750},
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 123750 },
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 144250 },
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 206000 }
         ]
@@ -366,13 +426,13 @@
       "applies_to": "all_partners",
       "type": "distance_based",
       "distance_logic": "actual_distance",
-      "route_categories": ["EU","US-EU","US-CN","CN"],
+      "route_categories": ["EU","US","US-EU","US-CN","CN"],
       "cabins": {
         "economy": [
-          { "min_miles": 0, "max_miles": 650, "award_miles": 6000 },
-          { "min_miles": 651, "max_miles": 1151, "award_miles": 9000 },
-          { "min_miles": 1152, "max_miles": 2000, "award_miles": 11000 },
-          { "min_miles": 2001, "max_miles": 3000, "award_miles": 13000 },
+          { "min_miles": 0, "max_miles": 650, "award_miles": 8250 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 11000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 13000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 16000 },
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 20750 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 25750 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 31000 },
@@ -380,21 +440,21 @@
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 51500 }
         ],
         "premium_economy": [
-          { "min_miles": 0, "max_miles": 650, "award_miles": 6750 },
-          { "min_miles": 651, "max_miles": 1151, "award_miles": 11250 },
-          { "min_miles": 1152, "max_miles": 2000, "award_miles": 15000 },
-          { "min_miles": 2001, "max_miles": 3000, "award_miles": 25000 },
-          { "min_miles": 3001, "max_miles": 4000, "award_miles": 40000 },          
-          { "min_miles": 4001, "max_miles": 5500, "award_miles": 50000 },
+          { "min_miles": 0, "max_miles": 650, "award_miles": 9000 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 12500 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 16500 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 25250 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 41250 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 51500 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 62000 },
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 72250 },
-          { "min_miles": 7001, "max_miles": 99999, "award_miles": 100000 }
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 103000 }
         ],
         "business": [
-          { "min_miles": 0, "max_miles": 650, "award_miles": 12500 },
-          { "min_miles": 651, "max_miles": 1151, "award_miles": 16500 },
-          { "min_miles": 1152, "max_miles": 2000, "award_miles": 22000 },
-          { "min_miles": 2001, "max_miles": 3000, "award_miles": 38750 },
+          { "min_miles": 0, "max_miles": 650, "award_miles": 16500 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 20500 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 29000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 42000 },
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 62000 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 77250 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 92750 },
@@ -411,6 +471,51 @@
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 123750 },
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 144250 },
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 206000 }
+        ]
+      }
+    },
+    "BA_mulpart": {
+      "ffp_code": "BA",
+      "applies_to": "multiple_tbd",
+      "type": "distance_based",
+      "distance_logic": "actual_distance",
+      "route_categories": ["US","EU","US-EU","US-CN","CN"],
+      "cabins": {
+        "economy": [
+          { "min_miles": 0, "max_miles": 1500, "award_miles": 30000 },
+          { "min_miles": 1501, "max_miles": 4000, "award_miles": 35000 },
+          { "min_miles": 4001, "max_miles": 9000, "award_miles": 60000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 70000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 90000 },          
+          { "min_miles": 14001, "max_miles": 20000, "award_miles": 100000 },
+          { "min_miles": 20001, "max_miles": 99999, "award_miles": 120000 }
+        ],
+        "premium_economy": [
+          { "min_miles": 0, "max_miles": 1500, "award_miles": 45000 },
+          { "min_miles": 1501, "max_miles": 4000, "award_miles": 52500 },
+          { "min_miles": 4001, "max_miles": 9000, "award_miles": 90000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 105000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 135000 },          
+          { "min_miles": 14001, "max_miles": 20000, "award_miles": 150000 },
+          { "min_miles": 20001, "max_miles": 99999, "award_miles": 180000 }
+        ],
+        "business": [
+          { "min_miles": 0, "max_miles": 1500, "award_miles": 60000 },
+          { "min_miles": 1501, "max_miles": 4000, "award_miles": 70000 },
+          { "min_miles": 4001, "max_miles": 9000, "award_miles": 120000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 140000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 180000 },          
+          { "min_miles": 14001, "max_miles": 20000, "award_miles": 200000 },
+          { "min_miles": 20001, "max_miles": 99999, "award_miles": 240000 }
+        ],                
+        "first": [
+          { "min_miles": 0, "max_miles": 1500, "award_miles": 90000 },
+          { "min_miles": 1501, "max_miles": 4000, "award_miles": 105000 },
+          { "min_miles": 4001, "max_miles": 9000, "award_miles": 180000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 210000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 270000 },          
+          { "min_miles": 14001, "max_miles": 20000, "award_miles": 300000 },
+          { "min_miles": 20001, "max_miles": 99999, "award_miles": 360000 }
         ]
       }
     },
@@ -477,13 +582,13 @@
       "route_categories": ["US-EU"],
       "cabins": {
         "economy": [
-          { "min_miles": 0, "max_miles": 5500, "award_miles": 31250 },
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 31250 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 37250 },
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 42750 },
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 60000 }
         ],
         "premium_economy": [
-          { "min_miles": 0, "max_miles": 5500, "award_miles": 36750 },
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 36750 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 44000 },
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 51000 },
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 71000 }
@@ -626,6 +731,59 @@
           { "min_miles": 3001, "max_miles": 4000, "award_miles": 62000 },          
           { "min_miles": 4001, "max_miles": 5500, "award_miles": 77250 },
           { "min_miles": 5501, "max_miles": 6500, "award_miles": 92750 },
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 108250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 154500 }
+        ],                
+        "first": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 24000 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 33000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 44000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 51500 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 82500 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 103000 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 123750},
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 144250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 206000 }
+        ]
+      }
+    },
+    "IB_mulpart": {
+      "ffp_code": "IB",
+      "applies_to": "multiple_tbd",
+      "type": "distance_based",
+      "distance_logic": "actual_distance",
+      "route_categories": ["US","EU","US-EU","US-CN","CN"],
+      "cabins": {
+        "economy": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 6000 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 9000 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 11000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 13000 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 20750 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 25750 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 31000},
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 36250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 51500 }
+        ],
+        "premium_economy": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 9000 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 12500 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 16500 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 25750 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 41250 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 51500 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 62000},
+          { "min_miles": 6501, "max_miles": 7000, "award_miles": 72250 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 103000 }
+        ],
+        "business": [
+          { "min_miles": 0, "max_miles": 650, "award_miles": 12500 },
+          { "min_miles": 651, "max_miles": 1151, "award_miles": 16500 },
+          { "min_miles": 1152, "max_miles": 2000, "award_miles": 22000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 38750 },
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 62000 },          
+          { "min_miles": 4001, "max_miles": 5500, "award_miles": 77250 },
+          { "min_miles": 5501, "max_miles": 6500, "award_miles": 92750},
           { "min_miles": 6501, "max_miles": 7000, "award_miles": 108250 },
           { "min_miles": 7001, "max_miles": 99999, "award_miles": 154500 }
         ],                
@@ -836,7 +994,7 @@
           { "min_miles": 7501, "max_miles": 999999, "award_miles": 115000 }
         ],
         "first": [
-          { "min_miles": 0, "max_miles": 1400, "award_miles": 43000 },
+          { "min_miles": 751, "max_miles": 1400, "award_miles": 43000 },
           { "min_miles": 1401, "max_miles": 2100, "award_miles": 90000 },
           { "min_miles": 2101, "max_miles": 3500, "award_miles": 125000 },
           { "min_miles": 3501, "max_miles": 999999, "award_miles": 160000 }
@@ -877,6 +1035,60 @@
           { "min_miles": 2751, "max_miles": 5000, "award_miles": 100000 },
           { "min_miles": 5001, "max_miles": 7500, "award_miles": 135000 },
           { "min_miles": 7501, "max_miles": 999999, "award_miles": 170000 }
+        ]
+      }
+    },
+    "CX_mulpart": {
+      "ffp_code": "CX",
+      "applies_to": "multiple_tbd",
+      "type": "distance_based",
+      "distance_logic": "actual_distance",
+      "route_categories": ["US","EU","US-EU","US-CN","CN"],
+      "cabins": {
+        "economy": [
+          { "min_miles": 0, "max_miles": 1000, "award_miles": 30000 },
+          { "min_miles": 1001, "max_miles": 1500, "award_miles": 35000 },
+          { "min_miles": 1501, "max_miles": 2000, "award_miles": 40000 },
+          { "min_miles": 2001, "max_miles": 4000, "award_miles": 45000 },
+          { "min_miles": 4001, "max_miles": 7500, "award_miles": 63000 },          
+          { "min_miles": 7501, "max_miles": 9000, "award_miles": 68000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 77000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 95000 },
+          { "min_miles": 14001, "max_miles": 18000, "award_miles": 105000 },
+          { "min_miles": 18001, "max_miles": 20000, "award_miles": 115000 },
+          { "min_miles": 20001, "max_miles": 25000, "award_miles": 126000 },
+          { "min_miles": 25001, "max_miles": 35000, "award_miles": 140000 },
+          { "min_miles": 35001, "max_miles": 99999, "award_miles": 160000 }
+        ],
+        "business": [
+        { "min_miles": 0, "max_miles": 1000, "award_miles": 60000 },
+          { "min_miles": 1001, "max_miles": 1500, "award_miles": 65000 },
+          { "min_miles": 1501, "max_miles": 2000, "award_miles": 70000 },
+          { "min_miles": 2001, "max_miles": 4000, "award_miles": 80000 },
+          { "min_miles": 4001, "max_miles": 7500, "award_miles": 100000 },          
+          { "min_miles": 7501, "max_miles": 9000, "award_miles": 120000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 135000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 170000 },
+          { "min_miles": 14001, "max_miles": 18000, "award_miles": 210000 },
+          { "min_miles": 18001, "max_miles": 20000, "award_miles": 230000 },
+          { "min_miles": 20001, "max_miles": 25000, "award_miles": 250000 },
+          { "min_miles": 25001, "max_miles": 35000, "award_miles": 265000 },
+          { "min_miles": 35001, "max_miles": 99999, "award_miles": 280000 }
+        ],                
+        "first": [
+          { "min_miles": 0, "max_miles": 1000, "award_miles": 75000 },
+          { "min_miles": 1001, "max_miles": 1500, "award_miles": 85000 },
+          { "min_miles": 1501, "max_miles": 2000, "award_miles": 95000 },
+          { "min_miles": 2001, "max_miles": 4000, "award_miles": 110000 },
+          { "min_miles": 4001, "max_miles": 7500, "award_miles": 150000 },          
+          { "min_miles": 7501, "max_miles": 9000, "award_miles": 165000 },
+          { "min_miles": 9001, "max_miles": 10000, "award_miles": 175000 },
+          { "min_miles": 10001, "max_miles": 14000, "award_miles": 250000 },
+          { "min_miles": 14001, "max_miles": 18000, "award_miles": 310000 },
+          { "min_miles": 18001, "max_miles": 20000, "award_miles": 330000 },
+          { "min_miles": 20001, "max_miles": 25000, "award_miles": 350000 },
+          { "min_miles": 25001, "max_miles": 35000, "award_miles": 365000 },
+          { "min_miles": 35001, "max_miles": 99999, "award_miles": 380000 }
         ]
       }
     },
@@ -995,6 +1207,63 @@
         ]
       }
     },
+    "QF_mulpart": {
+      "ffp_code": "QF",
+      "applies_to": "multiple_tbd",
+      "type": "distance_based",
+      "distance_logic": "actual_distance",
+      "route_categories": ["US","EU","US-EU","US-CN","CN"],
+      "cabins": {
+        "economy": [
+          { "min_miles": 0, "max_miles": 1200, "award_miles": 23000 },
+          { "min_miles": 1201, "max_miles": 2400, "award_miles": 32200 },
+          { "min_miles": 2401, "max_miles": 4800, "award_miles": 46000 },
+          { "min_miles": 4801, "max_miles": 7200, "award_miles": 56400 },
+          { "min_miles": 7201, "max_miles": 9600, "award_miles": 69400 },          
+          { "min_miles": 9601, "max_miles": 11600, "award_miles": 87000 },
+          { "min_miles": 11601, "max_miles": 14000, "award_miles": 103600 },
+          { "min_miles": 14001, "max_miles": 16800, "award_miles": 115600 },
+          { "min_miles": 16801, "max_miles": 19200, "award_miles": 141400 },
+          { "min_miles": 19201, "max_miles": 35000, "award_miles": 152200 }
+        ],
+        "premium_economy": [
+          { "min_miles": 0, "max_miles": 1200, "award_miles": 33200 },
+          { "min_miles": 1201, "max_miles": 2400, "award_miles": 49800 },
+          { "min_miles": 2401, "max_miles": 4800, "award_miles": 72400 },
+          { "min_miles": 4801, "max_miles": 7200, "award_miles": 116400 },
+          { "min_miles": 7201, "max_miles": 9600, "award_miles": 141600 },          
+          { "min_miles": 9601, "max_miles": 11600, "award_miles": 170000 },
+          { "min_miles": 11601, "max_miles": 14000, "award_miles": 196400 },
+          { "min_miles": 14001, "max_miles": 16800, "award_miles": 224400 },
+          { "min_miles": 16801, "max_miles": 19200, "award_miles": 261600 },
+          { "min_miles": 19201, "max_miles": 35000, "award_miles": 287000 }
+        ],
+        "business": [
+          { "min_miles": 0, "max_miles": 1200, "award_miles": 42000 },
+          { "min_miles": 1201, "max_miles": 2400, "award_miles": 63000 },
+          { "min_miles": 2401, "max_miles": 4800, "award_miles": 92000 },
+          { "min_miles": 4801, "max_miles": 7200, "award_miles": 146800 },
+          { "min_miles": 7201, "max_miles": 9600, "award_miles": 180000 },          
+          { "min_miles": 9601, "max_miles": 11600, "award_miles": 216000 },
+          { "min_miles": 11601, "max_miles": 14000, "award_miles": 250800 },
+          { "min_miles": 14001, "max_miles": 16800, "award_miles": 286000 },
+          { "min_miles": 16801, "max_miles": 19200, "award_miles": 334000 },
+          { "min_miles": 19201, "max_miles": 35000, "award_miles": 365800 }
+        ],                
+        "first": [
+          { "min_miles": 0, "max_miles": 1200, "award_miles": 61000 },
+          { "min_miles": 1201, "max_miles": 2400, "award_miles": 91400 },
+          { "min_miles": 2401, "max_miles": 4800, "award_miles": 135400 },
+          { "min_miles": 4801, "max_miles": 7200, "award_miles": 215600 },
+          { "min_miles": 7201, "max_miles": 9600, "award_miles": 258400 },          
+          { "min_miles": 9601, "max_miles": 11600, "award_miles": 310400 },
+          { "min_miles": 11601, "max_miles": 14000, "award_miles": 359600 },
+          { "min_miles": 14001, "max_miles": 16800, "award_miles": 410000 },
+          { "min_miles": 16801, "max_miles": 19200, "award_miles": 478400 },
+          { "min_miles": 19201, "max_miles": 35000, "award_miles": 523200 }
+        ]
+      }
+    },
     "JL_other": {
       "ffp_code": "JL",
       "applies_to": "specific",
@@ -1065,9 +1334,10 @@
         ]
       }
     },
+    
     "JL_OW": {
       "ffp_code": "JL",
-      "applies_to": "all_partners",
+      "applies_to": "all_partners", 
       "type": "distance_based",
       "distance_logic": "actual_distance",
       "route_categories": ["US","EU","CN","US-EU","US-CN"],
@@ -1110,6 +1380,7 @@
         ]
       }
     },
+
     "AC_UA": {
       "ffp_code": "AC",
       "applies_to": "specific",
