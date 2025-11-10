@@ -229,8 +229,8 @@ class Tab3Frame(ttk.Frame):
         row_data = self.program_rows.get(item)
         is_first_row = row_data['is_first_row'] if row_data else False
         
-        # Editable columns: 1 (Miles), 2 (YQ), 5 (Cash Price)
-        editable_cols = [1, 2, 5]
+        # Editable columns: 1 (Miles), 2 (YQ), 3(mile evaluation), 5 (Cash Price)
+        editable_cols = [1, 2, 3, 5]
         
         # Special rule: Only first row can edit Cash Price
         if col_index == 5 and not is_first_row:
