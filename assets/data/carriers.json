@@ -603,6 +603,10 @@
              "name": "Southwest Airlines",
              "country": "US",
              "operating_region":["US"]
+            },
+            {"code": "JV",
+             "name": "Bearskin Airlines",
+             "country": "Canada"
             }
             
                    
