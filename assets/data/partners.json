@@ -219,8 +219,14 @@
     {
       "ffp": "TK",
       "type": "individual",
-      "carriers": ["AD","6E","OA","G3","VF","WY"],
+      "carriers": ["AD","OA","G3"],
       "relationship": "both"
+    },
+    {
+      "ffp": "TK",
+      "type": "individual",
+      "carriers": ["VF","WY"],
+      "relationship": "earn_only"
     },
     {
       "ffp": "UA",

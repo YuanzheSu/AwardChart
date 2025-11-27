@@ -2205,7 +2205,7 @@
         ]
       }
     },
-    "EK_A3": {
+    "EK_all": {
       "ffp_code": "EK",
       "applies_to": "all_partners",
       "type": "distance_based",
@@ -2250,6 +2250,40 @@
         "business": [{}],
         "first": [{}]
           }
+    },
+    "EK_DE": {
+      "ffp_code": "EK",
+      "applies_to": "specific",
+      "specific_partners": ["DE"],
+      "type": "distance_based",
+      "distance_logic": "actual_distance",
+      "route_categories": ["EU","US-EU","US","US-CN"],
+      "cabins": {
+        "economy": [
+          { "min_miles": 0, "max_miles": 250, "award_miles": 6000 },
+          { "min_miles": 251, "max_miles": 500, "award_miles": 6000 },
+          { "min_miles": 501, "max_miles": 1000, "award_miles": 9000 },
+          { "min_miles": 1001, "max_miles": 2000, "award_miles": 13500 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 16500 },          
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 19500 },
+          { "min_miles": 4000, "max_miles": 5000, "award_miles": 24000 },
+          { "min_miles": 5001, "max_miles": 6000, "award_miles": 28500 },
+          { "min_miles": 6001, "max_miles": 7000, "award_miles": 33000 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 40500 }
+        ],
+        "business": [
+          { "min_miles": 0, "max_miles": 250, "award_miles": 17500 },
+          { "min_miles": 251, "max_miles": 500, "award_miles": 25000 },
+          { "min_miles": 501, "max_miles": 1000, "award_miles": 35000 },
+          { "min_miles": 1001, "max_miles": 2000, "award_miles": 50000 },
+          { "min_miles": 2001, "max_miles": 3000, "award_miles": 65000 },          
+          { "min_miles": 3001, "max_miles": 4000, "award_miles": 77500 },
+          { "min_miles": 4000, "max_miles": 5000, "award_miles": 92500 },
+          { "min_miles": 5001, "max_miles": 6000, "award_miles": 105000 },
+          { "min_miles": 6001, "max_miles": 7000, "award_miles": 125000 },
+          { "min_miles": 7001, "max_miles": 99999, "award_miles": 145000 }
+        ]
+      }
     },
     "EY_part": {
       "ffp_code": "EY",
