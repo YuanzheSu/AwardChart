@@ -1,0 +1,748 @@
+{
+  "destinations": {
+    "U.S.A": {
+      "name": "USA",
+      "type": "COUNTRY",
+      "locations": {
+        "AL": { "name": "Alabama" },
+        "AK": { "name": "Alaska" },
+        "AZ": { "name": "Arizona" },
+        "AR": { "name": "Arkansas" },
+        "CA": { "name": "California" },
+        "CO": { "name": "Colorado" },
+        "CT": { "name": "Connecticut" },
+        "DE": { "name": "Delaware" },
+        "DC": { "name": "Washington DC" },
+        "FL": { "name": "Florida" },
+        "GA": { "name": "Georgia" },
+        "HI": { "name": "Hawaii"},
+        "ID": { "name": "Idaho"},
+        "IL": { "name": "Illinois"},
+        "IN": { "name": "Indiana" },
+        "IA": { "name": "Iowa" },
+        "KS": { "name": "Kansas"},
+        "KY": { "name": "Kentucky"},
+        "LA": { "name": "Louisiana" },
+        "ME": { "name": "Maine" },
+        "MD": { "name": "Maryland" },
+        "MA": { "name": "Massachusetts"},
+        "MI": { "name": "Michigan"},
+        "MN": { "name": "Minnesota" },
+        "MS": { "name": "Mississippi" },
+        "MO": { "name": "Missouri" },
+        "MT": { "name": "Montana" },
+        "NE": { "name": "Nebraska" },
+        "NV": { "name": "Nevada" },
+        "NH": { "name": "New Hampshire" },
+        "NJ": { "name": "New Jersey" },
+        "NM": { "name": "New Mexico"},
+        "NY": { "name": "New York" },
+        "NC": { "name": "North Carolina" },
+        "ND": { "name": "North Dakota" },
+        "OH": { "name": "Ohio" },
+        "OK": { "name": "Oklahoma" },
+        "OR": { "name": "Oregon"},
+        "PA": { "name": "Pennsylvania" },
+        "RI": { "name": "Rhode Island" },
+        "SC": { "name": "South Carolina" },
+        "SD": { "name": "South Dakota" },
+        "TN": { "name": "Tennessee"},
+        "TX": { "name": "Texas" },
+        "UT": { "name": "Utah" },
+        "VT": { "name": "Vermont" },
+        "VA": { "name": "Virginia" },
+        "WA": { "name": "Washington"},
+        "WV": { "name": "West Virginia" },
+        "WI": { "name": "Wisconsin" },
+        "WY": { "name": "Wyoming"},
+        "VI": { "name": "U.S. Virgin Islands" }
+      }
+    },
+    "EU": {
+      "name": "Europe (majorly schengen)",
+      "type": "MULTI_COUNTRY",
+      "locations": {
+        "AUT": { "name": "Austria" },
+        "BEL": { "name": "Belgium" },
+        "BGR": { "name": "Bulgaria" },
+        "HRV": { "name": "Croatia"},
+        "CZE": { "name": "Czech Republic" },
+        "DNK": { "name": "Denmark" },
+        "EST": { "name": "Estonia" },
+        "FIN": { "name": "Finland" },
+        "FRA": { "name": "France" },
+        "DEU": { "name": "Germany" },
+        "GRC": { "name": "Greece" },
+        "HUN": { "name": "Hungary" },
+        "ISL": { "name": "Iceland" },
+        "ITA": { "name": "Italy"},
+        "LVA": { "name": "Latvia" },
+        "LIE": { "name": "Liechtenstein" },
+        "LTU": { "name": "Lithuania" },
+        "LUX": { "name": "Luxembourg" },
+        "MLT": { "name": "Malta" },
+        "NLD": { "name": "Netherlands" },
+        "NOR": { "name": "Norway" },
+        "POL": { "name": "Poland"},
+        "PRT": { "name": "Portugal" },
+        "ROU": { "name": "Romania" },
+        "SVK": { "name": "Slovakia"},
+        "SVN": { "name": "Slovenia" },
+        "ESP": { "name": "Spain"},
+        "SWE": { "name": "Sweden"},
+        "CHE": { "name": "Switzerland" },
+        "MAR": { "name": "Morocco"},        
+        "GBR": { "name": "United Kingdom" },
+        "IRL": {"name": "Ireland"},
+        "SRB": {"name": "Serbia"}
+        
+      }
+    },
+    "China": {
+      "name": "China",
+      "type": "COUNTRY",
+      "locations": {
+        "CHN": { "name": "Mainland" },
+        "HKG": { "name": "Hong Kong" },
+        "MAC": { "name": "Macau" },
+        "TWN": { "name": "Taiwan"}
+        
+      }
+    },
+    "Japan": {
+      "name": "Japan",
+      "type": "COUNTRY",
+      "locations": {
+        "JPN": { "name": "Japan" }
+      }
+    },
+    "Korea": {
+      "name": "South Korea",
+      "type": "COUNTRY",
+      "locations": {
+        "KOR": { "name": "Korea" }
+      }
+    },
+    "Mexico": {
+      "name": "Mexico",
+      "type": "COUNTRY",
+      "locations": {
+        "MEX": { "name": "Mexico" }
+      }
+    },
+    "Canada": {
+      "name": "Canada",
+      "type": "COUNTRY",
+      "locations": {
+        "CAN": { "name": "Canada" }
+      }
+    }
+  },
+  "zone_definitions": {
+    "AS_part": {
+      "description": "AS zoning for partners",
+      "zones": {
+        "Americas": {
+          "name": "Americas",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
+        },
+        "EMEA": {
+          "name": "Europe, Middle East, Africa",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },        
+        "APAC": {
+          "name": "Asia Pacific",
+          "locations": ["CHN","HKG","MAC","TWN","JPN","KOR"]
+        }
+        }
+        },
+    "AA": {
+      "description": "AA zoning",
+      "domestic_override":{
+          "exceptions":{
+              "FIN":{
+                  "economy" : 10000
+              },
+              "DEU":{
+                  "economy" : 10000
+              },
+              "ESP":{
+                  "economy" : 10000,
+                  "business": 15000,
+                  "first": 15000
+              },
+              "GBR":{
+                  "economy" : 10000,
+                  "business": 15000,
+                  "first": 15000
+              },
+              "MAR":{
+                  "economy" : 5000,
+                  "business": 10000,
+                  "first": 10000
+              },
+              "JPN":{
+                  "economy" : 7500,
+                  "business": 15000,
+                  "first": 20000
+              }
+          }
+      },
+      "zones": {
+        "US48": {
+          "name": "US 48 Contiguous+Canada",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","CAN"]
+        },
+        "US_AK": {
+          "name": "Alaska",
+          "locations": ["AK"]
+        },
+        "US_HI": {
+          "name": "Hawaii",
+          "locations": ["HI"]
+        },
+        "US_VI": {
+          "name": "Caribbean",
+          "locations": ["VI"]
+        },
+        "MEX": {
+          "name": "Mexico",
+          "locations": ["MEX"]
+        },
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },
+        "AS1": {
+          "name": "Asia Region 1: includes Japan, Korea",
+          "locations": ["JPN","KOR"]
+        },
+        "CN": {
+          "name": "Asia Region 2: includes Brunei, Cambodia, China, Hong Kong, Indonesia, Malaysia, Myanmar, Philippines, Singapore, Taiwan, Thailand, Vietnam",
+          "locations": ["CHN","HKG","MAC","TWN"]
+        }      
+      }
+    },  
+    "AY_self": {
+      "description": "AY zoning for self",
+      "zones": {
+        "EU_north": {
+          "name": "Finland and Northern Europe",
+          "locations": ["FIN","NOR","DNK","POL","SWE","LVA","EST","LTU","POL"]
+        },
+        "EU_central": {
+          "name": "Central Europe",
+          "locations": ["NLD","DEU","BEL","HUN","GBR","AUT","SVN","CZE","HRV","CHE"]
+        },        
+        "EU_westsouth": {
+          "name": "Western and Southern Europe",
+          "locations": ["ESP","ITA","GRC","PRT","FRA","ISL","IRL"]
+        },
+        "NA": {
+          "name": "Most of Asia and North America plus Japan, Singapore and Los Angeles",
+          "locations": ["IL","TX","CHN","HKG","FL","NY","WA","KOR","CAN","CA","JPN"]
+        }
+        }
+        },
+    "AY_AS": {
+      "description": "AY zoning for AS",
+      "zones": {
+        "US49": {
+          "name": "Continental US & Canada",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
+        }, 
+        "MEX": {
+          "name": "Mexico",
+          "locations": ["MEX"]
+        },
+        "US_HI": {
+          "name": "Hawaii",
+          "locations": ["HI"]
+        }
+        }
+        }, 
+    "AY_AA": {
+      "description": "AY zoning for AA",
+      "zones": {
+        "US49": {
+          "name": "Continental US & Canada",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
+        }, 
+        "US_VI": {
+          "name": "the Caribbean and Mexico",
+          "locations": ["VI","MEX"]
+        },
+        "US_HI": {
+          "name": "Hawaii and Central America",
+          "locations": ["HI"]
+        },
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },
+        "ASIA": {
+          "name": "the Far East",
+          "locations": ["JPN","KOR","CHN","HKG","MAC","TWN"]
+        }
+        }
+        }, 
+    "AY_CX": {
+      "description": "AY zoning for CX",
+      "zones": {
+        "HK": {
+          "name": "Hong Kong",
+          "locations": ["HKG"]
+        }, 
+        "CN": {
+          "name": "China ",
+          "locations": ["CHN","TWN"]
+        }, 
+        "ASIA": {
+          "name": "Asia ",
+          "locations": ["JPN","KOR"]
+        }, 
+        "NA": {
+          "name": "North America ",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
+        }, 
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        }
+        }
+        },
+    "AY_IB": {
+      "description": "AY zoning for IB",
+      "zones": {
+        "EU_ESP": {
+          "name": "Spain",
+          "locations": ["ESP"]
+        }, 
+        "EU": {
+          "name": "General Europe w/o ESP",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },
+        "NA": {
+          "name": "North America ",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","CAN","MEX"]
+        }, 
+        "US_VI": {
+          "name": "Central America and the Caribbean",
+          "locations": ["VI"]
+        }
+        }
+        },
+    "AY_JL": {
+      "description": "AY zoning for JL",
+      "zones": {
+        "JP": {
+          "name": "Japan",
+          "locations": ["JPN"]
+        }, 
+        "KR": {
+          "name": "Korea",
+          "locations": ["KOR"]
+        },
+        "CN": {
+          "name": "China & Guam",
+          "locations": ["CHN","HKG","MAC","TWN"]
+        },
+        "US_HI": {
+          "name": "Hawaii & India",
+          "locations": ["HI"]
+        },
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },
+        "US": {
+          "name": "the United States w/o Hawaii ",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK"]
+        }
+        }
+        },                
+    "JL_self": {
+      "description": "JL zoning for self",
+      "zones": {
+        "JP": {
+          "name": "Japan",
+          "locations": ["JPN"]
+        }, 
+        "HK": {
+          "name": "Hong Kong",
+          "locations": ["HKG"]
+        }, 
+        "TW": {
+          "name": "Taiwan",
+          "locations": ["TWN"]
+        }, 
+        "CN": {
+          "name": "China ",
+          "locations": ["CHN"]
+        }, 
+        "KR": {
+          "name": "Korea",
+          "locations": ["KOR"]
+        }, 
+        "US_HI": {
+          "name": "Hawaii",
+          "locations": ["HI"]
+        },
+        "EU1": {
+          "name": "London Paris",
+          "locations": ["GBR","FRA"]
+        },
+        "EU2": {
+          "name": "Frankfurt Helsinki",
+          "locations": ["DEU","FIN"]
+        },
+        "NA": {
+          "name": "North America ",
+          "locations": ["NY","MA","IL","TX","CA","WA","CAN"]
+        }
+        
+        }
+        },
+      "AC": {
+      "description": "AC zoning",
+      "zones": {
+        "NA": {
+          "name": "North America",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
+        },
+        "ATL": {
+          "name": "Atlantic",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },        
+        "APAC": {
+          "name": "pacific",
+          "locations": ["CHN","HKG","MAC","TWN","JPN","KOR"]
+        }
+        }
+        },
+    "AV_part": {
+      "description": "AV zoning for part",
+      "zones": {
+        "US_HI": {
+          "name": "Hawaii",
+          "locations": ["HI"]
+        },
+        "US_AK": {
+          "name": "Rest of North America",
+          "locations": ["AK","CAN"]
+        }, 
+        "US1": {
+          "name": "US Zone 1",
+          "locations": ["CT","NC","SC","DE","KY","ME","MD","MA","MI","NJ","NY","NH","OH","PA","RI","VT","VA","WA"]
+        },
+        "US2": {
+          "name": "US Zone 2",
+          "locations": ["AL","AR","ND","SD","FL","GA","IL","IA","KS","LA","MN","MS","MO","MT","NE","OK","TN","TX","WI"]
+        },
+        "US3": {
+          "name": "US Zone 3",
+          "locations": ["AZ","CA","CO","ID","NV","NM","OR","UT","WY"]
+        },
+        "MEX": {
+          "name": "Mexico",
+          "locations": ["MEX"]
+        },
+        "US_VI": {
+          "name": "Caribbean",
+          "locations": ["VI"]
+        },
+        "EU1": {
+          "name": "EU Zone 1",
+          "locations": ["DNK","EST","FIN","GBR","ISL","IRL","NOR","SWE"]
+        },
+        "EU2": {
+          "name": "EU Zone 2",
+          "locations": ["DEU","AUT","BEL","HRV","SVK","SVN","ESP","FRA","HUN","ITA","CZE","LVA","LTU","NLD","LUX","MLT","POL","PRT","CHE"]
+        },
+        "EU3": {
+          "name": "EU Zone 3",
+          "locations": ["BGR","GRC","ROU","SRB"]
+        },
+        "CN": {
+          "name": "North Asia",
+          "locations": ["CHN","HKG","MAC","TWN","KOR","JPN"]
+        } 
+        }
+        },
+    "BR_self": {
+      "description": "BR zoning for self",
+      "zones": {
+        "TW": {
+          "name": "Taiwan",
+          "locations": ["TWN"]
+        },
+        "HKMC": {
+          "name": "Hongkong and Macau",
+          "locations": ["HKG","MAC"]
+        },        
+        "CNm": {
+           "name": "Rest of Asia",
+           "locations": ["CHN","JPN","KOR"]
+         } ,
+        "NA1": {
+          "name": "Most of NA",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","VI","AK","MEX"]
+        },
+        "NA2": {
+          "name": "Special NA",
+          "locations": ["IL","NY","TX","CAN"]
+        },
+         "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        }
+        }
+        },
+    "BR_part": {
+      "description": "BR zoning for SA",
+      "zones": {
+        "TW": {
+          "name": "Taiwan",
+          "locations": ["TWN"]
+        },
+        "HKMC": {
+          "name": "Hongkong and Macau",
+          "locations": ["HKG","MAC"]
+        },        
+        "CNm": {
+           "name": "Mainland",
+           "locations": ["CHN"]
+         } ,
+        "Asia": {
+           "name": "Northa Asia",
+           "locations": ["JPN","KOR"]
+         } , 
+        "US49": {
+          "name": "NA continent",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
+        }, 
+        "USp1": {
+          "name": "Hawaii and Caribbean",
+          "locations": ["HI","VI","Mex"]
+        },
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        }
+        }
+        },
+    "SQ_part": {
+      "description": "SQ zoning for SA",
+      "zones": {       
+        "Asia1": {
+           "name": "North Asia 1",
+           "locations": ["HKG","MAC","TWN"]
+         } ,
+         "Asia2": {
+            "name": "North Asia 2",
+            "locations": ["CHN","JPN","KOR"]
+          } ,
+        "US49": {
+          "name": "NA continent",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
+        }, 
+        "USp1": {
+          "name": "Hawaii, central america",
+          "locations": ["HI","VI","MEX"]
+        },
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        }
+        }
+        },
+    "TP_part": {
+      "description": "TP zoning for SA",
+      "zones": {       
+        "Asia": {
+           "name": "Asia",
+           "locations": ["HKG","MAC","TWN","CHN","JPN","KOR"]
+         } ,
+        "US": {
+          "name": "All US",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","HI","VI","MEX","CAN"]
+        }, 
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        }
+        }
+        },
+    "TK_part": {
+      "description": "TK zoning for part",
+      "domestic_override": {
+        "default": {
+          "economy": 15000,
+          "business": 22500,
+          "first": 30000
+        },
+        "hawaii": {
+          "economy": 25000,
+          "business": 40000,
+          "first": 50000
+        }
+  },
+      "zones": {
+        "EU1": {
+          "name": "EU Zone 1",
+          "locations": ["BGR","HRV","GRC","HUN","ROU","SVN","SRB"]
+        },
+        "EU2": {
+          "name": "EU Zone 2",
+          "locations": ["AUT","BEL","CZE","DNK","EST","FIN,","FRA","DEU","ISL","IRL","ITA","LVA","LTU","LUX","MLT","NLD","NOR","POL","PRT","SVK","ESP","SWE","CHE","GBR"]
+        },
+        "US50": {
+          "name": "North America",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
+        },        
+        "CN": {
+          "name": "Far East",
+          "locations": ["CHN","HKG","MAC","TWN","JPN","KOR"]
+        } 
+        }
+        },
+    "AM_self": {
+      "description": "AM zoning for self",
+      "zones": {       
+        "MEX": {
+           "name": "Mexico",
+           "locations": ["MEX"]
+         } ,
+        "US1": {
+          "name": "North America 1:USA (except New York, Seattle and Chicago)",
+          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WI", "WV", "WY","AK"]
+        }, 
+        "US2": {
+          "name": "Canada + New York and Chicago",
+          "locations": ["NY","WA","IL","CAN"]
+        }, 
+        "US_VI": {
+          "name": "Central America and the Caribbean",
+          "locations": ["VI"]
+        },
+        "Asia": {
+           "name": "Northeast Asia",
+           "locations": ["HKG","MAC","TWN","CHN","JPN","KOR"]
+         } ,
+        "EU": {
+          "name": "General Europe",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        },
+        "US_HI": {
+          "name": "Hawaii",
+          "locations": ["HI"]
+        }
+        }
+        },
+    "VS_self": {
+      "description": "VS zoning for self",
+      "zones": {       
+        "UK": {
+           "name": "UK",
+           "locations": ["GBR"]
+         } ,
+        "US1": {
+          "name": "U.S. Northeast (Boston, Newark, New York–JFK, Washington D.C.)",
+          "locations": ["MA","NJ","NY","DC"]
+        }, 
+        "US_VI": {
+          "name": "Caribbean",
+          "locations": ["VI"]
+        },
+        "US2": {
+          "name": "U.S. Midwest and South (Atlanta, Miami, Orlando, Tampa)",
+          "locations": ["GA","FL"]
+        }, 
+        "US3": {
+          "name": "U.S. West (Austin, Las Vegas, Los Angeles, San Francisco, Seattle)",
+          "locations": ["TX","NV","CA","WA"]
+        }
+        }
+        },
+    "VS_AFKLM": {
+      "description": "VS zoning for AF KLM",
+      "zones": {
+        "EU1": {
+          "name": "1. West EU",
+          "locations": ["GBR","DEU","FRA","BEL","NLD","IRL","CHE","LUX","ESP","PRT","AUT","DNK","FIN","ITA","MLT","NOR","SWE"]
+        },
+        "EU2": {
+          "name": "2. East EU",
+          "locations": ["BGR","HRV","EST","GRC","HUN","ISL","LTU","LVA","MAR","POL","CZE","ROU","SVK","SVN","SRB"]
+        },
+        "US1": {
+          "name": "6. US EAST",
+          "locations": ["ME","NH","VT","NY","MA","RI","CT","NJ","PA","DE","MD","DC","WV","VA","MI","IN","WI","IL","OH","KY","TN","NC","SC","GA","AL","MS","FL","VI","CAN"]
+        },
+        "US2": {
+          "name": "7. US Central and West",
+          "locations": ["MN","IA","MO","AR","LA","ND","SD","NE","KS","OK","TX","MT","WY","CO","NM","ID","UT","AZ","NV","WA","OR","CA","HI","AK","MEX"]
+        },
+        "Asia": {
+           "name": "9. Far Eastern Asia and Eastern Russia",
+           "locations": ["HKG","MAC","TWN","CHN","JPN","KOR"]
+         }
+        }
+        },
+    "VS_DL": {
+      "description": "VS zoning for DL",
+      "zones": {
+        "US1": {
+          "name": "US East",
+          "locations": ["MA","NY","PA"]
+        },
+        "US2": {
+          "name": "US Central",
+          "locations": ["GA","MI","MN","FL"]
+        },
+        "US3": {
+          "name": "US West",
+          "locations": ["UT","WA","CA","NV","OR"]
+        },
+        "EU_GBR": {
+          "name": "GBR",
+          "locations": ["GBR"]
+        },
+        "EU": {
+          "name": "EU w/o GBR",
+          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","IRL","SRB"]
+        }
+        }
+        },
+    "VS_NH": {
+      "description": "VS zoning for NH",
+      "zones": {
+        "JP": {
+          "name": "Japan",
+          "locations": ["JPN"]
+        },
+        "KR": {
+          "name": "Korea",
+          "locations": ["KOR"]
+        },
+        "CN": {
+          "name": "China / Guam / Hong Kong / Philippines / Taiwan",
+          "locations": ["CHN","HKG","TWN"]
+        },
+        "US_HI": {
+          "name": " Hawaii / India / Indonesia",
+          "locations": ["US_HI"]
+        },
+        "US1": {
+          "name": "Australia / Canada / Western USA",
+          "locations": ["CAN","CA","WA"]
+        },
+        "EUUS": {
+          "name": "Europe / Central & Eastern USA / Mexico",
+          "locations": ["AUT","BEL","FRA","DEU","ITA","SWE","GBR","IL","TX","NY","DC","MEX"]
+        }
+        }
+        }                                                               
+        }                                                                              
+ 
+}

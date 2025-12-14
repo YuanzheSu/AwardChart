@@ -1,0 +1,370 @@
+{
+  "programs": [
+    {
+      "ffp": "AS",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "AS",
+      "type": "individual",
+      "carriers": ["EI","TN","DE","HU","FI","PR","PD","JX"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "AS",
+      "type": "individual",
+      "carriers": ["VC","UP","9K","LF","M5","9X"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "AA",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "AA",
+      "type": "individual",
+      "carriers": ["TN","9K","CZ","EY","G3","JA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "AA",
+      "type": "individual",
+      "carriers": ["EI","6E","LL","PD"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "BA",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "BA",
+      "type": "individual",
+      "carriers": ["EI","CZ","LA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "IB",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "IB",
+      "type": "individual",
+      "carriers": ["VY","LL","LA","NT","AV"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "AY",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "AY",
+      "type": "individual",
+      "carriers": ["LA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "AY",
+      "type": "individual",
+      "carriers": ["HO"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "QR",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "QR",
+      "type": "individual",
+      "carriers": ["4Z","PG","GA","B6","LA","ME","WB","S7","VA","MF"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "CX",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "CX",
+      "type": "individual",
+      "carriers": ["AC","CA","NZ","OS","PG","UO","LA","LH","ZH","LX"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "QF",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "QF",
+      "type": "individual",
+      "carriers": ["JQ","GK","AF","NZ","TN","SB","PG","CI","MU","LY","EK","6E","KL","LA","WS","QN"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "JL",
+      "type": "alliance",
+      "alliance": "OW",
+      "relationship": "both"
+    },
+    {
+      "ffp": "JL",
+      "type": "individual",
+      "carriers": ["AF","PG","MU","EK","GA","KE","LA","GK"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "JL",
+      "type": "individual",
+      "carriers": ["B6"],
+      "relationship": "redeem_only"
+    },
+    {
+      "ffp": "AC",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "AC",
+      "type": "individual",
+      "carriers": ["3H","MK","AD","QH","5T","WK","EK","EY","EW","G3","YB","JB","HO","OA","WY","PB","VA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "AC",
+      "type": "individual",
+      "carriers": ["EI","YN","EN","CX","9M","4Y","GF","ME","UL"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "AC",
+      "type": "individual",
+      "carriers": ["JU","JV","MO","FZ","XQ"],
+      "relationship": "redeem_only"
+    },
+    {
+      "ffp": "AV",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "AV",
+      "type": "individual",
+      "carriers": ["G3","IB","VE"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "BR",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "BR",
+      "type": "individual",
+      "carriers": ["B7"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "SQ",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "SQ",
+      "type": "individual",
+      "carriers": ["TR","GA","MH","HO"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "SQ",
+      "type": "individual",
+      "carriers": ["B6","OA","SK"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "TP",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "TP",
+      "type": "individual",
+      "carriers": ["AD","EK","G3","S4"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "TP",
+      "type": "individual",
+      "carriers": ["EY","SK"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "TK",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "TK",
+      "type": "individual",
+      "carriers": ["AD","OA","G3"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "TK",
+      "type": "individual",
+      "carriers": ["VF","WY"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "UA",
+      "type": "alliance",
+      "alliance": "SA",
+      "relationship": "both"
+    },
+    {
+      "ffp": "UA",
+      "type": "individual",
+      "carriers": ["EI","EN","4Z","AD","9K","4Y","WK","EK","EW","FZ","AZ","B6","XE","OA","VA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "AM",
+      "type": "alliance",
+      "alliance": "ST",
+      "relationship": "both"
+    },
+    {
+      "ffp": "AM",
+      "type": "individual",
+      "carriers": ["LA","G3","LY"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "FB",
+      "type": "alliance",
+      "alliance": "ST",
+      "relationship": "both"
+    },
+    {
+      "ffp": "FB",
+      "type": "individual",
+      "carriers": ["XK","MK","BT","SB","CE","CZ","CM","LY","EY","G3","JL","MH","WY","QF","HV","T7","WS","WM"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "FB",
+      "type": "individual",
+      "carriers": ["VT","PG"],
+      "relationship": "redeem_only"
+    },
+    {
+      "ffp": "DL",
+      "type": "alliance",
+      "alliance": "ST",
+      "relationship": "both"
+    },
+    {
+      "ffp": "DL",
+      "type": "individual",
+      "carriers": ["LA","9K","WS"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "DL",
+      "type": "individual",
+      "carriers": ["BT","LY"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "DL",
+      "type": "individual",
+      "carriers": ["AE","FM","TN"],
+      "relationship": "redeem_only"
+    },
+    {
+      "ffp": "VS",
+      "type": "alliance",
+      "alliance": "ST",
+      "relationship": "both"
+    },
+    {
+      "ffp": "VS",
+      "type": "individual",
+      "carriers": ["NZ","NH","LY","LA","SA","VA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "VS",
+      "type": "individual",
+      "carriers": ["6E"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "EI",
+      "type": "individual",
+      "carriers": ["AA","UA"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "EI",
+      "type": "individual",
+      "carriers": ["BA","IB","QR","AY"],
+      "relationship": "earn_only"
+    },
+    {
+      "ffp": "EK",
+      "type": "individual",
+      "carriers": ["U2"],
+      "relationship": "redeem_only"
+    },
+    {
+      "ffp": "EK",
+      "type": "individual",
+      "carriers": ["FZ","A3","AC","MK","AD","PG","DE","CM","GA","G3","JL","JQ","KE","MH","OA","QF","SA","TP","UA"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "EY",
+      "type": "individual",
+      "carriers": ["AC","UX","AF","NZ","JU","NH","AA","AD","SN","MU","LY","ET","GA","GF","HU","B6","KL","MH","WY","AT","SV","SK","UL","TP","VN"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "B6",
+      "type": "individual",
+      "carriers": ["9K","DE","EY","FI","QR"],
+      "relationship": "both"
+    },
+    {
+      "ffp": "B6",
+      "type": "individual",
+      "carriers": ["JL"],
+      "relationship": "redeem_only"
+    },
+    {
+      "ffp": "B6",
+      "type": "individual",
+      "carriers": ["XE","SQ","SA"],
+      "relationship": "earn_only"
+    }
+  ]
+}

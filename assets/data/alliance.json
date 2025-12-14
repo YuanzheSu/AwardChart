@@ -1,0 +1,20 @@
+{
+  "alliances": [
+    {
+      "code": "OW",
+      "name": "oneworld",
+      "members": ["AS","AA","BA","CX","FJ","AY","IB","JL","MH","WY","QF","QR","AT","RJ","UL"]
+    },
+    {
+      "code": "SA",
+      "name": "Star Alliance",
+      "members": ["A3","AC","CA","AI","NZ","NH","OS","AV","SN","CM","OU","MS","ET","BR","LO","LH","ZH","SQ","SA","LX","TP","TG","TK","UA"]
+    },
+    {
+      "code": "ST",
+      "name": "SkyTeam",
+      "members": ["AR","AM","UX","AF","CI","MU","DL","GA","KQ","KL","KE","ME","SV","SK","RO","VN","VS","MF"]
+    }
+    
+  ]
+}
