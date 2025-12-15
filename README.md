@@ -34,11 +34,11 @@ Purpose: Find the miles needed for a desired itinerary. Currently, it is not des
 
 
 
-![Direct flight](/assets/readme/example 1.png)
+![Direct flight](/assets/readme/example%201.png)
 
-![Transfer](/asset/readme/example 2.png)
+![Transfer](/assets/readme/example%202.png)
 
-![Breaking up the segments.](/asset/readme/example 1.png)
+![Breaking up the segments.](/assets/readme/example%203.png)
 
 
 
