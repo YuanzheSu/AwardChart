@@ -32,7 +32,7 @@ Carriers: Someone who is a redeem/earn partner of at least one of the FFP progra
 
 Destinations: US, Canada, Mexico, West Europe (Majorly Schengen), China (Mainland China, Hong Kong, Taiwan, Macao), Japan, South Korea.
 
-Data last update on: 12/13/2025
+Data last update on: 01/17/2025
 
 
 
