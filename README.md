@@ -26,11 +26,11 @@ Now in tab2, for each segment, simply define origin and destination airport, car
 
 ## Data coverage
 
-FFPs: Transfer partners of major banks in the US.
+FFPs: Transfer partners of major banks in the US. (26) 
 
-Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs
+Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs. (134)
 
-Destinations: US, Canada, Mexico, West Europe (Majorly Schengen), China (Mainland China, Hong Kong, Taiwan, Macao), Japan, South Korea.
+POIs: (Almost) All civil aviation airports. 
 
 Data last update on: 01/17/2026
 
