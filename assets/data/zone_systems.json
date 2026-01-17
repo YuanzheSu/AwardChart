@@ -1,748 +1,2022 @@
+
+
+
+
 {
-  "destinations": {
-    "U.S.A": {
-      "name": "USA",
-      "type": "COUNTRY",
-      "locations": {
-        "AL": { "name": "Alabama" },
-        "AK": { "name": "Alaska" },
-        "AZ": { "name": "Arizona" },
-        "AR": { "name": "Arkansas" },
-        "CA": { "name": "California" },
-        "CO": { "name": "Colorado" },
-        "CT": { "name": "Connecticut" },
-        "DE": { "name": "Delaware" },
-        "DC": { "name": "Washington DC" },
-        "FL": { "name": "Florida" },
-        "GA": { "name": "Georgia" },
-        "HI": { "name": "Hawaii"},
-        "ID": { "name": "Idaho"},
-        "IL": { "name": "Illinois"},
-        "IN": { "name": "Indiana" },
-        "IA": { "name": "Iowa" },
-        "KS": { "name": "Kansas"},
-        "KY": { "name": "Kentucky"},
-        "LA": { "name": "Louisiana" },
-        "ME": { "name": "Maine" },
-        "MD": { "name": "Maryland" },
-        "MA": { "name": "Massachusetts"},
-        "MI": { "name": "Michigan"},
-        "MN": { "name": "Minnesota" },
-        "MS": { "name": "Mississippi" },
-        "MO": { "name": "Missouri" },
-        "MT": { "name": "Montana" },
-        "NE": { "name": "Nebraska" },
-        "NV": { "name": "Nevada" },
-        "NH": { "name": "New Hampshire" },
-        "NJ": { "name": "New Jersey" },
-        "NM": { "name": "New Mexico"},
-        "NY": { "name": "New York" },
-        "NC": { "name": "North Carolina" },
-        "ND": { "name": "North Dakota" },
-        "OH": { "name": "Ohio" },
-        "OK": { "name": "Oklahoma" },
-        "OR": { "name": "Oregon"},
-        "PA": { "name": "Pennsylvania" },
-        "RI": { "name": "Rhode Island" },
-        "SC": { "name": "South Carolina" },
-        "SD": { "name": "South Dakota" },
-        "TN": { "name": "Tennessee"},
-        "TX": { "name": "Texas" },
-        "UT": { "name": "Utah" },
-        "VT": { "name": "Vermont" },
-        "VA": { "name": "Virginia" },
-        "WA": { "name": "Washington"},
-        "WV": { "name": "West Virginia" },
-        "WI": { "name": "Wisconsin" },
-        "WY": { "name": "Wyoming"},
-        "VI": { "name": "U.S. Virgin Islands" }
-      }
-    },
-    "EU": {
-      "name": "Europe (majorly schengen)",
-      "type": "MULTI_COUNTRY",
-      "locations": {
-        "AUT": { "name": "Austria" },
-        "BEL": { "name": "Belgium" },
-        "BGR": { "name": "Bulgaria" },
-        "HRV": { "name": "Croatia"},
-        "CZE": { "name": "Czech Republic" },
-        "DNK": { "name": "Denmark" },
-        "EST": { "name": "Estonia" },
-        "FIN": { "name": "Finland" },
-        "FRA": { "name": "France" },
-        "DEU": { "name": "Germany" },
-        "GRC": { "name": "Greece" },
-        "HUN": { "name": "Hungary" },
-        "ISL": { "name": "Iceland" },
-        "ITA": { "name": "Italy"},
-        "LVA": { "name": "Latvia" },
-        "LIE": { "name": "Liechtenstein" },
-        "LTU": { "name": "Lithuania" },
-        "LUX": { "name": "Luxembourg" },
-        "MLT": { "name": "Malta" },
-        "NLD": { "name": "Netherlands" },
-        "NOR": { "name": "Norway" },
-        "POL": { "name": "Poland"},
-        "PRT": { "name": "Portugal" },
-        "ROU": { "name": "Romania" },
-        "SVK": { "name": "Slovakia"},
-        "SVN": { "name": "Slovenia" },
-        "ESP": { "name": "Spain"},
-        "SWE": { "name": "Sweden"},
-        "CHE": { "name": "Switzerland" },
-        "MAR": { "name": "Morocco"},        
-        "GBR": { "name": "United Kingdom" },
-        "IRL": {"name": "Ireland"},
-        "SRB": {"name": "Serbia"}
-        
-      }
-    },
-    "China": {
-      "name": "China",
-      "type": "COUNTRY",
-      "locations": {
-        "CHN": { "name": "Mainland" },
-        "HKG": { "name": "Hong Kong" },
-        "MAC": { "name": "Macau" },
-        "TWN": { "name": "Taiwan"}
-        
-      }
-    },
-    "Japan": {
-      "name": "Japan",
-      "type": "COUNTRY",
-      "locations": {
-        "JPN": { "name": "Japan" }
-      }
-    },
-    "Korea": {
-      "name": "South Korea",
-      "type": "COUNTRY",
-      "locations": {
-        "KOR": { "name": "Korea" }
-      }
-    },
-    "Mexico": {
-      "name": "Mexico",
-      "type": "COUNTRY",
-      "locations": {
-        "MEX": { "name": "Mexico" }
-      }
-    },
-    "Canada": {
-      "name": "Canada",
-      "type": "COUNTRY",
-      "locations": {
-        "CAN": { "name": "Canada" }
-      }
-    }
+  "shared_groups":{
+    "MiddleEast_ASdef":["AM", "AZ", "BH", "GE", "IR", "IQ", "IL", "JO", "KW", "LB", "OM", "QA", "SA", "SY", "TR", "AE", "YE"],
+    "SouthAsia":["BD","BT","IN","MV","NP","PK","LK","AF"],
+    "CentralAsia":["KZ","KG","TJ","TM","UZ"],
+    "Caucasus":["GE","AM","AZ"],
+
+    "Caribbean_AAdef":["AI", "AG", "AW", "BS", "BB", "BM", "BQ", "VG","KY", "CW", "DM", "DO", "GD", "GP", "HT", "JM","MQ", "PR", "KN", "LC", "SX", "VC", "TT", "TC", "VI"],
+    "CentralAmerica_AAdef":["BZ","CR","SV","GT","HN","NI","PA"],
+
+    "NorthAfrica":["DZ","EG","LY","MA","TN","SD","EH"],
+    "CentralAfrica":["AO","CM","CF","TD","CD","GQ","GA","CG","ST"],
+    "WesternAfrica":["BJ","BF","CV","GM","GH","GN","GW","CI","LR","ML","MR","NE","NG","SL","TG","SH"],
+    "EasternAfrica":["BI","KM","DJ","ER","ET","KE","MW","MG","MU","MZ","RW","SC","SO","SS","TZ","UG","ZM","ZW","TF","YT","RE"],
+    "SouthernAfrica":["BW","SZ","LS","NA","ZA"],
+    
+    "WesternEurope":["AT","BE","FR","DE","LI","LU","MC","NL","CH"],
+
+    "US48":["US-AL", "US-AR", "US-AZ", "US-CA", "US-CO", "US-CT", "US-DE","US-DC", "US-FL", "US-GA", "US-IA", "US-ID", "US-IL", "US-IN", "US-KS", "US-KY", "US-LA", "US-MA", "US-MD", "US-ME", "US-MI", "US-MN", "US-MO", "US-MS", "US-MT", "US-NC", "US-ND", "US-NE", "US-NH", "US-NJ", "US-NM", "US-NV", "US-NY", "US-OH", "US-OK", "US-OR","US-PA", "US-RI", "US-SC", "US-SD", "US-TN", "US-TX", "US-UT", "US-VA", "US-VT", "US-WA", "US-WI", "US-WV", "US-WY"]
+
+
   },
   "zone_definitions": {
+
     "AS_part": {
-      "description": "AS zoning for partners",
-      "zones": {
-        "Americas": {
-          "name": "Americas",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
-        },
-        "EMEA": {
-          "name": "Europe, Middle East, Africa",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
-        },        
-        "APAC": {
-          "name": "Asia Pacific",
-          "locations": ["CHN","HKG","MAC","TWN","JPN","KOR"]
+    "description": "AS zoning for partners - continent-based with shared Middle East definition",
+    "zones": {
+      "Americas": {
+      "name": "Americas",
+      "type": "continent_ref",
+      "continents": ["NA", "SA"]
+      },
+      "EMEA": {
+        "name": "Europe, Middle East, Africa",
+        "type": "composite",
+        "continents": ["EU", "AF"],
+        "countries": ["$glb_shared.MiddleEast_ASdef"]
+      },
+      "APAC": {
+        "name": "Asia Pacific",
+        "type": "composite",
+        "continents": ["OC", "AS"],
+        "countries_exclude": ["$glb_shared.MiddleEast_ASdef"]
         }
         }
-        },
+    },
+
+    "AA_special":{
+        "description": "AA special partner zoning",
+        "zones":{
+            "Santiago": {
+            "name": "Santiago(Chile)",
+            "type": "airport_ref",
+            "airports": ["SCL"]
+            },
+            "EasterIsland": {
+            "name": "Easter Island (Chile)",
+            "type": "airport_ref",
+            "airports": ["IPC"]
+            },
+            "AU": {
+            "name": "Australia",
+            "type": "country_ref",
+            "countries": ["AU"]
+            },
+            "NZ": {
+            "name": "New Zealand",
+            "type": "country_ref",
+            "countries": ["NZ"]
+            },
+            "Papeete": {
+            "name": "Papeete (Tahiti)",
+            "type": "airport_ref",
+            "airports": ["PPT"]
+            }
+        }
+    },
+
     "AA": {
       "description": "AA zoning",
-      "domestic_override":{
-          "exceptions":{
-              "FIN":{
-                  "economy" : 10000
-              },
-              "DEU":{
-                  "economy" : 10000
-              },
-              "ESP":{
-                  "economy" : 10000,
-                  "business": 15000,
-                  "first": 15000
-              },
-              "GBR":{
-                  "economy" : 10000,
-                  "business": 15000,
-                  "first": 15000
-              },
-              "MAR":{
-                  "economy" : 5000,
-                  "business": 10000,
-                  "first": 10000
-              },
-              "JPN":{
-                  "economy" : 7500,
-                  "business": 15000,
-                  "first": 20000
-              }
-          }
-      },
       "zones": {
         "US48": {
-          "name": "US 48 Contiguous+Canada",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","CAN"]
+            "name": "US 48 Contiguous+Canada",
+            "type": "composite",
+            "regions": ["$glb_shared.US48"],
+            "countries": ["CA"]
         },
         "US_AK": {
-          "name": "Alaska",
-          "locations": ["AK"]
+            "name": "Alaska",
+            "type": "region_ref",
+            "regions": ["US-AK"]
+         
         },
         "US_HI": {
-          "name": "Hawaii",
-          "locations": ["HI"]
+            "name": "Hawaii",
+            "type": "region_ref",
+            "regions": ["US-HI"]
+         
         },
-        "US_VI": {
-          "name": "Caribbean",
-          "locations": ["VI"]
+        "Caribbean": {
+            "name": "Caribbean",
+            "type": "country_ref",
+            "countries": ["$glb_shared.Caribbean_AAdef"]
         },
+
         "MEX": {
-          "name": "Mexico",
-          "locations": ["MEX"]
+            "name": "Mexico",
+            "type": "country_ref",
+            "countries": ["MX"]
         },
+        "CA":{
+            "name": "Central America",
+            "type": "country_ref",
+            "countries": ["$glb_shared.CentralAmerica_AAdef"]
+        },
+        "SA1": {
+            "name": "South Asia 1",
+            "type": "composite",
+            "countries": ["BO",  "CO",  "EC",  "GY",  "PE",  "SR"],
+            "regions": ["BR-AM"]
+        },
+        "SA2": {
+            "name": "South Asia 2",
+            "type": "composite",
+            "countries": ["AR",  "BR","CL", "FK","PY","UY", "VE"],
+            "regions_exclude": ["BR-AM"]
+        },
+
         "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+            "name": "Europe",
+            "type": "composite",
+            "continents": ["EU"],
+            "countries": ["MA"]
+        },
+        "ME":{
+            "name": "Middle East",
+            "type": "country_ref",
+            "countries": ["BH","EG","IR","IQ","IL","JO","KW","LB","OM","QA","SA","AE"]
+        },
+        "Indian":{
+            "name": "Indian Subcontinent",
+            "type": "country_ref",
+            "countries": ["BD","IN","KZ","MV","NP","PK","LK","TM","UZ"]
+        },
+        "AF":{
+            "name": "Africa",
+            "type": "composite",
+            "continents": ["AF"],
+            "countries_exclude": ["EG","MA"]
         },
         "AS1": {
-          "name": "Asia Region 1: includes Japan, Korea",
-          "locations": ["JPN","KOR"]
+            "name": "Asia Region 1: includes Japan, Korea",
+            "type": "country_ref",
+            "countries": ["JP","KR","KP"]
         },
-        "CN": {
+        "AS2": {
           "name": "Asia Region 2: includes Brunei, Cambodia, China, Hong Kong, Indonesia, Malaysia, Myanmar, Philippines, Singapore, Taiwan, Thailand, Vietnam",
-          "locations": ["CHN","HKG","MAC","TWN"]
+          "type": "country_ref",
+          "countries": ["BN","KH","CN","HK","ID","MY","MM","PH","SG","TW","TH","VN"]
+        },
+        "SPAC":{
+            "name": "South Pacific",
+            "type": "continent_ref",
+            "continents": ["OC"]
         }      
       }
-    },  
+    },
+    "BA_QR":{
+        "description": "BA_QR_pricing. Distance based with route restrictions.",
+        "zones":{
+            "QA":{
+                "name": "Qatar",
+                "type": "country_ref",
+                "countries": ["QA"]
+            },
+            "ME":{
+                "name": "Middle East (assumed AS definition), exclude Qatar",
+                "type": "country_ref",
+                "countries":  ["$glb_shared.MiddleEast_ASdef"],
+                "countries_exclude": ["QA"]
+            },
+            "EU": {
+                "name": "Europe",
+                "type": "continent_ref",
+                "continents": ["EU"]
+            },
+            "AF": {
+                "name": "Africa",
+                "type": "continent_ref",
+                "continents": ["AF"]
+            },
+            "Asia": {
+                "name": "Asia",
+                "type": "composite",
+                "continents": ["AS"],
+                "countries_exclude":["$glb_shared.MiddleEast_ASdef","QA"]
+            },
+            "SA": {
+                "name": "South America",
+                "type": "continent_ref",
+                "continents": ["SA"]
+            },
+            "AUNZ":{
+                "name": "Australia, and New Zealand",
+                "type": "country_ref",
+                "countries": ["AU","NZ"]
+            },
+            "USCA":{
+                "name": "U.S. and Canada",
+                "type": "country_ref",
+                "countries": ["US","CA"]
+            }
+        }
+    },
+    "IB_QR":{
+        "description": "IB_QR_pricing. Zone based.",
+        "zones":{
+            "AF1":{
+                "name": "AFRICA 1 ",
+                "type": "composite",
+                "countries": ["TZ","UG","RW","SC","TN"],
+                "regions": ["KE-30","KE-28"]
+            },
+            "AF2":{
+                "name": "AFRICA 2",
+                "type": "composite",
+                "countries": ["CI","NG","GH","AO","DZ","MA","ZM","ZA","MZ","ZW","BW","NA"],
+                "regions": ["KE-17"]
+            },
+            "AM1": {
+                "name": "AMERICA 1 ",
+                "type": "region_ref",
+                "regions": ["US-MA","US-VA","US-NY","US-PA","CA-QC","CA-ON"]
+            },
+            "AM2": {
+                "name": "AMERICA 2",
+                "type": "composite",
+                "countries": ["AR","BR"],
+                "regions": ["US-GA","US-CA","US-TX","US-FL","US-IL","US-WA","US-TX","US-CA"]
+            },
+            "AS1": {
+                "name": "Asia 1",
+                "type": "composite",
+                "countries": ["TH","MY","VN","KH","MM","HK","SG"],
+                "regions": ["CN-44","CN-50","CN-11","CN-51"]
+            },
+            "AS2": {
+                "name": "Asia 2",
+                "type": "composite",
+                "countries": ["PH","JP","ID","KR"],
+                "regions": ["CN-33","CN-31"]
+            },
+            "AU": {
+                "name": "Australia",
+                "type": "country_ref",
+                "countries": ["AU","NZ"]
+            },
+            "EU1": {
+                "name": "Europe 1",
+                "type": "composite",
+                "countries": ["TR","KZ","AM","AZ","CY","RO","MK","BG","GE"],
+                "regions": ["GR-I","UA-30"],
+                "airports": ["JMK"]
+            },
+            "EU2": {
+                "name": "Europe 2",
+                "type": "composite",
+                "countries": ["ES","NL","SE","RS","DE","GB","BE","HU","FR","DK","RU","IE","IT","CH","FI","PT","MT","NO","CZ","BA","AT","PL","HR"],
+                "regions": ["UA-51"],
+                "airports": ["JTR"]
+            },
+            "ME1": {
+                "name": "Levant & NE Africa",
+                "type": "country_ref",
+                "countries": ["ET","EG","JO","ER","LB","DJ","SD","SO"]
+            },
+            "ME2": {
+                "name": "Middel East",
+                "type": "country_ref",
+                "countries": ["AE","BH","IQ","SA","IR","KW","OM"]
+            },
+            "QA": {
+                "name": "Qatar",
+                "type": "country_ref",
+                "countries": ["QA"]
+            },
+            "AS3": {
+                "name": "South Asian Subcontinent 1",
+                "type": "composite",
+                "countries": ["BK"],
+                "regions": ["IN-GJ","IN-PB","IN-DL","IN-GA"],
+                "airports": ["BOM"]
+            },
+            "AS4": {
+                "name": "South Asian Subcontinent 2",
+                "type": "composite",
+                "countries": ["LK","BD","NP","MV"],
+                "regions": ["IN-KA","IN-KL","IN-WB","IN-TS","IN-TN"],
+                "airports": ["NAG"]
+            }
+
+    }
+                                                                   
+        },
     "AY_self": {
       "description": "AY zoning for self",
       "zones": {
+        "FI": {
+          "name": "Finland",
+          "type":"country_ref",
+          "countries":["FI"]
+        },
         "EU_north": {
           "name": "Finland and Northern Europe",
-          "locations": ["FIN","NOR","DNK","POL","SWE","LVA","EST","LTU","POL"]
+          "type": "composite",
+          "countries": ["SE","LV","LT"],
+          "regions": ["NO-18","NO-50","DK-84","PL-PM","PL-MZ","EE-37"],
+          "airports": ["KKN"]
         },
         "EU_central": {
           "name": "Central Europe",
-          "locations": ["NLD","DEU","BEL","HUN","GBR","AUT","SVN","CZE","HRV","CHE"]
+          "countries": ["NL","BE","HU","GB","AT","CZ","LU","SI"],
+          "regions": ["NO-55","NO-03","NO-11","NO-46","DK-83","PL-MA","EE-74","CH-ZH","HR-01"],
+          "airports": ["ALF"]
         },        
         "EU_westsouth": {
           "name": "Western and Southern Europe",
-          "locations": ["ESP","ITA","GRC","PRT","FRA","ISL","IRL"]
+          "type": "composite",
+          "countries": ["TR","IT","GR","IE","FR","IS","CY","AL"],
+          "regions": ["CH-GE","HR-19","HR-17","ES-VC","ES-CT","ES-MD","ES-AN","ES-IB","ES-VC","PT-08","PT-11"]
         },
-        "NA": {
-          "name": "Most of Asia and North America plus Japan, Singapore and Los Angeles",
-          "locations": ["IL","TX","CHN","HKG","FL","NY","WA","KOR","CAN","CA","JPN"]
+        "EU4": {
+          "name": "Canary Islands, Madeira, Eilat and Tel Aviv",
+          "type":"composite",
+          "countries": ["IL"],
+          "regions": ["ES-CN","PT-30"]
+        },
+        "AS1": {
+          "name": "Doha, Dubai and India",
+          "type":"country_ref",
+          "countries": ["IN","QA","AE"]
+        },
+        "ASNA1": {
+          "name": "Most of Asia and North America & Bangkok–Melbourne",
+          "type": "composite",
+          "countries": ["TH","CN","HK","KR","CA"],
+          "regions":["US-IL","US-TX","US-FL","US-NY","US-WA"]
+        },
+        "ASNA2": {
+          "name": "Japan, Singapore and Los Angeles",
+          "type":"composite",
+          "countries":["JP","SG"],
+          "regions":["US-CA"]
+        },
+        "AU": {
+          "name": "Melbourne",
+          "type":"country_ref",
+          "countries":["AU"]
         }
         }
         },
     "AY_AS": {
       "description": "AY zoning for AS",
       "zones": {
-        "US49": {
+        "USCA": {
           "name": "Continental US & Canada",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
+          "type":"composite",
+          "countries": ["CA"],
+          "regions":["$glb_shared.US48","US-AK"]
         }, 
         "MEX": {
           "name": "Mexico",
-          "locations": ["MEX"]
+          "countries":["MX"]
         },
-        "US_HI": {
+        "Hawaii": {
           "name": "Hawaii",
-          "locations": ["HI"]
+          "regions": ["US-HI"]
         }
         }
-        }, 
-    "AY_AA": {
-      "description": "AY zoning for AA",
-      "zones": {
-        "US49": {
-          "name": "Continental US & Canada",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
-        }, 
-        "US_VI": {
-          "name": "the Caribbean and Mexico",
-          "locations": ["VI","MEX"]
         },
-        "US_HI": {
+    "AY_AA": {
+      "description": "AY zoning for AS",
+      "zones": {
+        "USCA": {
+          "name": "Continental US & Canada",
+          "countries": ["CA"],
+          "regions":["$glb_shared.US48","US-AK"]
+        }, 
+        "Caribbean": {
+          "name": "the Caribbean and Mexico",
+          "countries":["$glb_shared.Caribbean_AAdef","MX"]
+        },
+        "Hawaii": {
           "name": "Hawaii and Central America",
-          "locations": ["HI"]
+          "countries":["$glb_shared.CentralAmerica_AAdef"],
+          "regions":["US-HI"]
         },
         "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+          "name": "Europe",
+          "continents":["EU"]
         },
-        "ASIA": {
-          "name": "the Far East",
-          "locations": ["JPN","KOR","CHN","HKG","MAC","TWN"]
+        "SA":{
+            "name": "South America",
+            "continents": ["SA"]
+        },
+        "FarEast":{
+            "name":"The Far East",
+            "continents":["AS","OC"]
         }
         }
-        }, 
+        },
     "AY_CX": {
       "description": "AY zoning for CX",
       "zones": {
         "HK": {
           "name": "Hong Kong",
-          "locations": ["HKG"]
+          "countries": ["HK"]
         }, 
-        "CN": {
-          "name": "China ",
-          "locations": ["CHN","TWN"]
-        }, 
-        "ASIA": {
-          "name": "Asia ",
-          "locations": ["JPN","KOR"]
-        }, 
-        "NA": {
-          "name": "North America ",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
-        }, 
-        "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
-        }
-        }
+        "AS1": {
+          "name": "Hong Kong–China (except Dalian, Beijing, Qingdao, Shanghai and Shenyang), Taiwan and the Philippines",
+          "countries":["CN","TW","PH"],
+          "regions_exclude": ["CN-21","CN-11","CN-37","CN-31"]
         },
+        "AS2":{
+            "name": "Dalian, Beijing, Qingdao, Shanghai and Shenyang",
+            "regions": ["CN-21","CN-11","CN-37","CN-31"]
+        },
+        "AS": {
+          "name": "General Asia",
+          "continents": ["AS"],
+          "countries_exclude":["HK","CN","TW","PH"]
+        },
+        "OC": {
+          "name": "South Pacific",
+          "continents":["OC"]
+        },
+        "SA":{
+            "name": "South America",
+            "continents": ["SA"]
+        },
+        "NA":{
+            "name": "North America",
+            "continents": ["NA"]
+        },
+        "EUAF":{
+            "name":"Europe, South Africat",
+            "continents":["EU"],
+            "countries":["ZA"]
+        }
+        }
+    },
+    "AY_FJ": {
+      "description": "AY zoning for FJ",
+      "zones": {
+        "FJ": {
+          "name": "Fiji ",
+          "countries": ["FJ"]
+        }, 
+        "OC":{
+            "name": "Australia, New Zealand and Pacific Islands",
+            "continents": ["OC"],
+            "countries_exclude": ["FJ"]
+        },
+        "AS":{
+            "name": "Singapore, Hong Kong and Japan",
+            "countries":["SG","HK","JP"]
+        },
+        "NA1":{
+            "name": "Los Angeles, San Francisco & Honolulu",
+            "regions":["US-CA","US-HI"]
+        },
+        "NA2":{
+            "name": "Canada",
+            "countries":["CA"]
+        },
+        "NA3":{
+            "name":"Dallas",
+            "regions":["US-TX"]
+        },
+        "EU":{
+            "name": "Northern Europe",
+            "countries": ["SE","LV","LT","FI"],
+            "regions": ["NO-18","NO-50","DK-84","PL-PM","PL-MZ","EE-37"],
+            "airports": ["KKN"]
+        }
+        
+        }
+    },
     "AY_IB": {
       "description": "AY zoning for IB",
       "zones": {
-        "EU_ESP": {
-          "name": "Spain",
-          "locations": ["ESP"]
+        "ES": {
+          "name": "Spain ",
+          "countries": ["ES"],
+          "regions_exclude":["ES-CN"]
         }, 
-        "EU": {
-          "name": "General Europe w/o ESP",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","SWE","CHE","MAR","GBR","IRL","SRB"]
+        "ESCN":{
+            "name": "the Canary Islands",
+            "regions":["ES-CN"]
         },
-        "NA": {
-          "name": "North America ",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","CAN","MEX"]
-        }, 
-        "US_VI": {
-          "name": "Central America and the Caribbean",
-          "locations": ["VI"]
-        }
-        }
+        "EU":{
+            "name":"Europe",
+            "continents":["EU"],
+            "countries_exclude":["ES"]
         },
+        "NAIS":{
+            "name":"North Africa, Israel",
+            "countries":["$glb_shared.NorthAfrica","IL"]
+        },
+        "NA":{
+            "name":"North America",
+            "countries": ["CA","US","MX"]
+        },
+        "CA":{
+            "name": "Central America and the Caribbean",
+            "continents": ["NA"],
+            "countries_exclude":["CA","US","MX"]
+        },
+        "SA":{
+            "name": "South America",
+            "continents":["SA"]
+        },
+        "SAF":{
+            "name":"South Africa",
+            "countries":["ZA"]
+        }   
+        }
+    },
     "AY_JL": {
       "description": "AY zoning for JL",
       "zones": {
         "JP": {
-          "name": "Japan",
-          "locations": ["JPN"]
-        }, 
+          "name": "Japan ",
+          "countries": ["JP"]
+        },
         "KR": {
-          "name": "Korea",
-          "locations": ["KOR"]
+          "name": "Korea ",
+          "countries": ["KR"]
         },
         "CN": {
-          "name": "China & Guam",
-          "locations": ["CHN","HKG","MAC","TWN"]
+          "name": "China & Guam ",
+          "countries": ["CN","TW","HK","MO","GU"]
         },
-        "US_HI": {
-          "name": "Hawaii & India",
-          "locations": ["HI"]
+        "SA": {
+          "name": "South Asia ",
+          "countries": ["$glb_shared.SouthAsia"],
+          "countries_exclude":["IN"]
+        },
+        "HI":{
+            "name":"Hawaii & India",
+            "countries":["IN"],
+            "regions":["US-HI"]
+        },
+        "AU":{
+            "name":"Australia & New Zealand",
+            "countries":["AU","NZ"]
+        },
+        "EU":{
+            "name":"Europe",
+            "continents":["EU"]
+        },
+        "US":{
+            "name":"the United States",
+            "countries":["US"],
+            "regions_exclude":["US-HI"]
+        }
+        }
+    },
+    "AY_LA": {
+      "description": "AY zoning for LA",
+      "zones": {
+        "EasterIsland": {
+            "name": "Easter Island (Chile)",
+            "airports": ["IPC"]
+        },
+        "BR": {
+          "name": "Brazil ",
+          "countries": ["BR"]
+        },
+        "SA":{
+            "name":"South America",
+            "continents":["SA"],
+            "countries_exclude":["BZ"],
+            "airports_exclude":["IPC"]
+        },
+        "CA":{
+            "name":"Central America",
+            "countries":["$glb_shared.CentralAmerica_AAdef","$glb_shared.Caribbean_AAdef"]
+        },
+        "NA":{
+            "name":"North America",
+            "countries":["CA","US","MX"]
+        },
+        "EU":{
+            "name":"Europe",
+            "continents":["EU"]
+        },
+        "Papeete": {
+            "name": "Papeete (Tahiti)",
+            "type": "airport_ref",
+            "airports": ["PPT"]
+        }
+        }
+    },
+    "AY_MH": {
+      "description": "AY zoning for MH",
+      "zones": {
+        "MY": {
+          "name": "Malaysia ",
+          "countries": ["MY"]
+        },
+        "SG": {
+          "name": "Singapore ",
+          "countries": ["SG"]
+        },
+        "AS1": {
+          "name": "Brunei, Cambodia, Indonesia, Myanmar, Thailand and Vietnam ",
+          "countries": ["BN","KH","ID","MM","TH","VN"]
+        },
+        "AS2": {
+          "name": "Hong Kong and the Philippines ",
+          "countries": ["HK","PH"]
+        },
+        "AS3": {
+          "name": "the Middle East ",
+          "countries": ["$glb_shared.MiddleEast_ASdef"]
+        },
+        "AS4": {
+          "name": "rest of Asia ",
+          "continents":["AS"],
+          "countries_exclude":["MY","SG","BN","KH","ID","MM","TH","VN","HK","PH","$glb_shared.MiddleEast_ASdef"]
+        },
+        "AU": {
+          "name": "Australia, New Zealand ",
+          "countries": ["AU","NZ"]
         },
         "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
-        },
-        "US": {
-          "name": "the United States w/o Hawaii ",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK"]
-        }
-        }
-        },                
-    "JL_self": {
-      "description": "JL zoning for self",
-      "zones": {
-        "JP": {
-          "name": "Japan",
-          "locations": ["JPN"]
-        }, 
-        "HK": {
-          "name": "Hong Kong",
-          "locations": ["HKG"]
-        }, 
-        "TW": {
-          "name": "Taiwan",
-          "locations": ["TWN"]
-        }, 
-        "CN": {
-          "name": "China ",
-          "locations": ["CHN"]
-        }, 
-        "KR": {
-          "name": "Korea",
-          "locations": ["KOR"]
-        }, 
-        "US_HI": {
-          "name": "Hawaii",
-          "locations": ["HI"]
-        },
-        "EU1": {
-          "name": "London Paris",
-          "locations": ["GBR","FRA"]
-        },
-        "EU2": {
-          "name": "Frankfurt Helsinki",
-          "locations": ["DEU","FIN"]
+          "name": "Europe ",
+          "continents": ["EU"]
         },
         "NA": {
           "name": "North America ",
-          "locations": ["NY","MA","IL","TX","CA","WA","CAN"]
+          "continents": ["NA"]
         }
-        
         }
+    },
+    "AY_WY": {
+      "description": "AY zoning for WY",
+      "zones": {
+        "OM": {
+          "name": "Oman ",
+          "countries": ["OM"]
         },
-      "AC": {
-      "description": "AC zoning",
+        "AS1": {
+          "name": "Bahrain, Kuwait, UAE & Qatar",
+          "countries": ["BH","KW","AE","QA"]
+        },
+        "ASAF1": {
+          "name": "Egypt & Jordan",
+          "countries": ["EG","JO"]
+        },
+        "AS2": {
+          "name": "Pakistan & Saudi Arabia",
+          "countries": ["PK","SA"]
+        },
+        "ASEU1": {
+          "name": "Russia & Turkey",
+          "countries": ["RU","TR"]
+        },
+        "AS3": {
+          "name": "Bangladesh, India & Sri Lanka",
+          "countries": ["BD","IN","LK"]
+        },
+        "TH": {
+          "name": "Thailand",
+          "countries": ["TH"]
+        },
+        "AS4": {
+          "name": "China, Indonesia, Malaysia & the Philippines",
+          "countries": ["CN","ID","MY","PH","HK","TW","MO"]
+        },
+        "AF": {
+          "name": "Africa",
+          "continents":["AF"],
+          "countries_exclude":["eg"]
+        },
+        "EU1": {
+          "name": "Western Europe",
+          "countries":["$glb_shared.WesternEurope"]
+        },
+        "EU2":{
+            "name": "Northern Europe",
+            "countries": ["SE","LV","LT","FI"],
+            "regions": ["NO-18","NO-50","DK-84","PL-PM","PL-MZ","EE-37"],
+            "airports": ["KKN"]
+        }
+        }
+    },
+    "AY_QF": {
+      "description": "AY zoning for QF",
+      "zones": {
+        "AU": {
+          "name": "Australia ",
+          "countries": ["AU"]
+        },
+        "NZ": {
+          "name": "New Zealand ",
+          "countries": ["NZ"]
+        },
+        "OC1": {
+          "name": "New Zealand ",
+          "countries": ["NC","PG"]
+        },
+        "Papeete": {
+            "name": "Papeete (Tahiti)",
+            "type": "airport_ref",
+            "airports": ["PPT"]
+        },
+        "AS": {
+          "name": "Asia",
+          "continents":["AS"]
+        },
+        "AF": {
+          "name": "Africa",
+          "continents":["AF"]
+        },
+        "EU": {
+          "name": "Europe ",
+          "continents":["EU"]
+        },
+        "NA": {
+          "name": "North America",
+          "continents":["NA"]
+        },
+        "SA": {
+          "name": "South America",
+          "continents":["SA"]
+        }
+        }
+    },
+    "AY_QR": {
+      "description": "AY zoning for QR",
+      "zones": {
+        "QA": {
+          "name": "Qatar ",
+          "countries": ["QA"]
+        },
+        "AS1": {
+          "name": "Bahrain, U.A.E ",
+          "countries": ["BH","AE"]
+        },
+        "AS2": {
+          "name": "Kuwait, Oman",
+          "countries": ["KW","OM"]
+        },
+        "AS3": {
+          "name": "Iran, Iraq, Jordan, Lebanon, Pakistan, Saudi-Arabia, Yemen",
+          "countries": ["IR","IQ","JO","LB","PK","SA","YE"]
+        },
+        "AS4": {
+          "name": "Bangladesh, India, Maldives, Nepal, Seychelles, Sri Lanka, Turkey",
+          "countries": ["BD","IN","MV","NP","LK","TR"]
+        },
+        "AS":{
+            "name":"rest of Asia ",
+            "continents":["As"],
+            "countries_exclude":["QA","BH","AE","IR","IQ","JO","LB","PK","SA","YE","BD","IN","MV","NP","LK","TR"]
+        },
+        "SC":{
+            "name":"Seychelles",
+            "countries":["SC"]
+        },
+        "ZA":{
+            "name":" South-Africa",
+            "countries":["ZA"]
+        },
+        "AF":{
+            "name": "Africa",
+            "continents":["AF"],
+            "countries_exclude":["SC","ZA"]
+        },
+        "EU":{
+            "name": "Europe ",
+            "continents":["EU"]
+        },
+        "C1":{
+            "name": "Australia, North America",
+            "continents":["NA"],
+            "countries":["US"]
+        },
+        "C2":{
+            "name": "New Zealand, South America",
+            "continents":["SA"],
+            "countries":["NZ"]
+        }
+        }
+    },
+    "AY_AT": {
+      "description": "AY zoning for AT",
+      "zones": {
+        "MA": {
+          "name": "Morocco ",
+          "countries": ["MA"]
+        },
+        "EU1": {
+          "name": "Spain, Portugal ",
+          "countries": ["ES","PT"]
+        },
+        "EU":{
+            "name": "Europe ",
+            "continents":["EU"],
+            "countries_exclude":["ES","PT"]
+        },
+        "AF1": {
+          "name": " Algeria, Tunisia, Mauritania, Libya ",
+          "countries": ["DZ","TN","MR","LY"]
+        },
+        "CAF": {
+          "name": " Central Africa ",
+          "countries": ["TD","ST"]
+        },
+        "C1": {
+          "name": "Equatorial Guinea, Cameroon, Central African Republic, Gabon, Congo, Angola, Kenya, America (US, CA, BR) & Middle East",
+          "countries": ["GQ","CM","CF","GA","CD","CG","AO","KE","US","CA","BR","$glb_shared.MiddleEast_ASdef"]
+        }
+        }
+    },
+    "AY_RJ": {
+      "description": "AY zoning for RJ",
+      "zones": {
+        "ME": {
+          "name": "the Middle East ",
+          "countries": ["$glb_shared.MiddleEast_ASdef"]
+        },
+        "EU":{
+            "name": "Europe ",
+            "continents":["EU"]
+        },
+        "NA":{
+            "name": "North America",
+            "continents": ["NA"]
+        },
+        "AS":{
+            "name": "Asia",
+            "continents": ["AS"],
+            "countries_exclude":["$glb_shared.MiddleEast_ASdef"]
+        }
+        }
+    },
+    "AY_UL": {
+      "description": "AY zoning for UL",
+      "zones": {
+        "LK": {
+          "name": "Sri Lanka ",
+          "countries": ["LK"]
+        },
+        "AS1": {
+          "name": "India (except Delhi), Maldives",
+          "countries": ["IN","MV"],
+          "regions_exclude":["IN-DL"]
+        },
+        "AS2": {
+          "name": "Delhi, Indonesia, Malaysia, Singapore, Thailand",
+          "countries": ["ID","MY","SG","TH"],
+          "regions":["IN-DL"]
+        },
+        "AS3": {
+          "name": "Middle East (incl. Pakistan)",
+          "countries": ["$glb_shared.MiddleEast_ASdef","PK"]
+        },
+        "C1":{
+            "name": "Europe, China, Japan ",
+            "continents":["EU"],
+            "countries":["CN","HK","TW","MO","JP"]
+        }
+        }
+    },
+    
+    "JL_self": {
+      "description": "JL zoning for self",
+      "zones": {
+        "HND": {
+          "name": "Haneda ",
+          "airports": ["HND"]
+        },
+        "NRT": {
+          "name": "Narita ",
+          "airports": ["NRT"]
+        },
+        "KIX": {
+          "name": "Kansai ",
+          "airports": ["KIX"]
+        },
+        "NGO": {
+          "name": "Nagoya ",
+          "airports": ["NGO"]
+        },
+        "OKA": {
+          "name": "Naha ",
+          "airports": ["OKA"]
+        },
+        "JP":{
+            "name":"Japan ",
+            "countries":["JP"],
+            "airports_exclude":["HND","NRT","KIX","NGO","OKA"]
+        },
+        "Beijing":{
+            "name":"Beijing",
+            "regions":["CN-11"]
+        },
+        "SHA": {
+          "name": "Hongqiao ",
+          "airports": ["SHA"]
+        },
+        "PVG": {
+          "name": "Pudong ",
+          "airports": ["PVG"]
+        },
+        "Guangzhou":{
+            "name":"Guangzhou",
+            "regions":["CN-44"]
+        },
+        "Dalian":{
+            "name":"Dalian",
+            "regions":["CN-21"]
+        },
+        "Tianjin":{
+            "name":"Tianjin",
+            "regions":["CN-12"]
+        },
+        "HK":{
+            "name":"Hong Kong",
+            "countries":["HK"]
+        },
+        "TW":{
+            "name":"Taipei",
+            "countries":["TW"]
+        },
+        "KR":{
+            "name":"Seoul",
+            "countries":["KR"]
+        },
+        "TH":{
+            "name":"Bangkok",
+            "countries":["TH"]
+        },
+        "SG":{
+            "name":"Singapore ",
+            "countries":["SG"]
+        },
+        "MY":{
+            "name":"Kuala Lumpur",
+            "countries":["MY"]
+        },
+        "ID":{
+            "name":"Jakatar",
+            "countries":["KR"]
+        },
+        "Hanoi":{
+            "name":"Hanoi",
+            "regions":["VN-RRD"]
+        },
+        "HoChiMinh":{
+            "name":"Ho Chi Minh City",
+            "regions":["VN-SE"]
+        },
+        "PH":{
+            "name":"Manila",
+            "countries":["PH"]
+        },
+        "Delhi":{
+            "name":"Delhi",
+            "regions":["IN-DL"]
+        },
+        "Bengaluru":{
+            "name":"Bengaluru",
+            "regions":["IN-KA"]
+        },
+        "GU":{
+            "name":"Guam",
+            "countries":["GU"]
+        },
+        "HNL": {
+          "name": "Honolulu ",
+          "airports": ["HNL"]
+        },
+        "KOA": {
+          "name": "Kona ",
+          "airports": ["KOA"]
+        },
+        "Sydney":{
+            "name":"Sydney",
+            "regions":["AU-NSW"]
+        },
+        "Melbourne":{
+            "name":"Melbourne",
+            "regions":["AU-VIC"]
+        },
+        "QA":{
+            "name":"Doha",
+            "countries":["QA"]
+        },
+        "GB":{
+            "name":"London",
+            "countries":["GB"]
+        },
+        "FR":{
+            "name":"Paris",
+            "countries":["FR"]
+        },
+        "DE":{
+            "name":"Frankfurt",
+            "countries":["DE"]
+        },
+        "FI":{
+            "name":"Helsinki",
+            "countries":["FI"]
+        },
+        "NYC":{
+            "name":"New York",
+            "regions":["US-NY"]
+        },
+        "BOS":{
+            "name":"Boston",
+            "regions":["US-MA"]
+        },
+        "CHI":{
+            "name":"Chicago",
+            "regions":["US-IL"]
+        },
+        "DAL":{
+            "name":"Dallas",
+            "regions":["US-TX"]
+        },
+        "SFO": {
+          "name": "San Francisco ",
+          "airports": ["SFO"]
+        },
+        "LAX": {
+          "name": "Los Angeles ",
+          "airports": ["LAX"]
+        },
+        "SAN": {
+          "name": "San Diego ",
+          "airports": ["SAN"]
+        },
+        "SEA":{
+            "name":"Seattle",
+            "regions":["US-WA"]
+        },
+        "CA":{
+            "name":"Vancover",
+            "countries":["CA"]
+        }
+        }
+    },
+    "AC_part": {
+      "description": "AC zoning for partners",
       "zones": {
         "NA": {
           "name": "North America",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
+          "continents": ["NA"]
+        },
+        "SA": {
+          "name": "South America",
+          "continents": ["SA"]
+        },
+        "PAC": {
+          "name": "Pacific",
+          "continents": ["AS","OC"],
+          "countries_exclude":["$glb_shared.MiddleEast_ASdef","$glb_shared.SouthAsia","$glb_shared.CentralAsia","$glb_shared.Caucasus"]
         },
         "ATL": {
           "name": "Atlantic",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
-        },        
-        "APAC": {
-          "name": "pacific",
-          "locations": ["CHN","HKG","MAC","TWN","JPN","KOR"]
+          "continents": ["AF","EU"],
+          "countries":["$glb_shared.MiddleEast_ASdef","$glb_shared.SouthAsia","$glb_shared.CentralAsia","$glb_shared.Caucasus"]
         }
         }
-        },
+    },
     "AV_part": {
-      "description": "AV zoning for part",
+      "description": "AV zoning for partners",
       "zones": {
-        "US_HI": {
-          "name": "Hawaii",
-          "locations": ["HI"]
+        "NA1": {
+          "name": "North of Central America ",
+          "countries": ["CR","PA"]
         },
-        "US_AK": {
+        "NA2": {
+          "name": "Central America South ",
+          "countries": ["SV","GT","HN","NI"]
+        },
+        "HI": {
+          "name": "Hawaii",
+          "regions":["US-HI"]
+        },
+        "NA3": {
           "name": "Rest of North America",
-          "locations": ["AK","CAN"]
-        }, 
+          "countries": ["CA"],
+          "regions":["US-AK"]
+        },
         "US1": {
           "name": "US Zone 1",
-          "locations": ["CT","NC","SC","DE","KY","ME","MD","MA","MI","NJ","NY","NH","OH","PA","RI","VT","VA","WA"]
+          "regions": ["US-CT","US-NC","US-SC","US-DE","US-KY","US-ME","US-MD","US-MA","US-MI","US-NJ","US-NY","US-NH","US-OH","US-PA","US-RI","US-VT","US-VA","US-WA"]
         },
         "US2": {
           "name": "US Zone 2",
-          "locations": ["AL","AR","ND","SD","FL","GA","IL","IA","KS","LA","MN","MS","MO","MT","NE","OK","TN","TX","WI"]
+          "regions": ["US-AL","US-AR","US-ND","US-SD","US-FL","US-GA","US-IL","US-IA","US-KS","US-LA","US-MN","US-MS","US-MO","US-MT","US-NE","US-OK","US-TN","US-TX","US-WI"]
         },
         "US3": {
           "name": "US Zone 3",
-          "locations": ["AZ","CA","CO","ID","NV","NM","OR","UT","WY"]
+          "regions": ["US-AZ","US-CA","US-CO","US-ID","US-NV","US-NM","US-OR","US-UT","US-WY"]
         },
-        "MEX": {
-          "name": "Mexico",
-          "locations": ["MEX"]
+        "MX": {
+          "name": "Mexico ",
+          "countries": ["MX"]
         },
-        "US_VI": {
-          "name": "Caribbean",
-          "locations": ["VI"]
+        "Caribbean": {
+          "name": "Caribbean ",
+          "countries": ["AI","AW","BS","BB","BM","CU","CW","DO","GD","GP","HT","MQ","JM","PR","LC","MF","KY"]
+        },
+        "SA1": {
+          "name": "North of South America",
+          "countries": ["CO","EC","PE"]
+        },
+        "BR": {
+          "name": "Brazil ",
+          "countries": ["BR"]
+        },
+        "SA2": {
+          "name": "South of South America",
+          "continents":["SA"],
+          "countries_exclude": ["CO","EC","PE","BR"]
         },
         "EU1": {
-          "name": "EU Zone 1",
-          "locations": ["DNK","EST","FIN","GBR","ISL","IRL","NOR","SWE"]
+          "name": "Europe 1",
+          "countries": ["DK","EE","FI","GB","IS","IE","NO","RU","SE"]
         },
         "EU2": {
-          "name": "EU Zone 2",
-          "locations": ["DEU","AUT","BEL","HRV","SVK","SVN","ESP","FRA","HUN","ITA","CZE","LVA","LTU","NLD","LUX","MLT","POL","PRT","CHE"]
+          "name": "Europe 2",
+          "countries": ["DE","AT","BY","BE","HR","SK","SI","ES","FR","GI","HU","IT","CZ","LV","LT","NL","LU","MT","PL","PT","CH"]
         },
         "EU3": {
-          "name": "EU Zone 3",
-          "locations": ["BGR","GRC","ROU","SRB"]
+          "name": "Europe 3",
+          "countries": ["AL","BA","BG","CY","GR","MD","RO","RS","UA","TR"]
         },
-        "CN": {
+        "ASAF1": {
+          "name": "Middle East / North Africa",
+          "countries": ["DZ","LY","MA","TN","AZ","BH","EG","IR","IQ","IL","JO","KW","LB","OM","QA","SY","YE","AM","PS","GE","SA","AE"]
+        },
+        "SAF": {
+          "name": "South Africa",
+          "countries": ["AO","ML","NE","ET","CD","CG","MG","NA","ZA","TD","SD","GN","GW","SN","SO","UG","KE","CF","CM","GA","GM","TZ","TG","BJ","ST","EH","ZM","CI","CV","ER","DJ","RW","BI","MZ","BW","ZW","SH","BF","GH","GW","KM","LS","LR","MW","MU","MR","SC","SL","SZ","SS","GQ","RE"]
+        },
+        "AS1": {
           "name": "North Asia",
-          "locations": ["CHN","HKG","MAC","TWN","KOR","JPN"]
-        } 
+          "countries": ["CN","KP","KR","PH","GU","HK","MP","JP","MO","MN","PW","TW"]
+        },
+        "AS2": {
+          "name": "Central Asia",
+          "countries": ["AF","IN","KZ","KG","MV","NP","PK","LK","TJ","TM","UZ"]
+        },
+        "AS3": {
+          "name": "South Asia",
+          "countries": ["BD","BN","KH","ID","LA","MY","MM","SG","TH","VN"]
+        },
+        "C1":{
+          "name":"others",
+          "continents":["OC"]
         }
-        },
-    "BR_self": {
-      "description": "BR zoning for self",
+        }
+    },
+    "AV_G3": {
+      "description": "AV zoning for G3",
       "zones": {
-        "TW": {
-          "name": "Taiwan",
-          "locations": ["TWN"]
-        },
-        "HKMC": {
-          "name": "Hongkong and Macau",
-          "locations": ["HKG","MAC"]
-        },        
-        "CNm": {
-           "name": "Rest of Asia",
-           "locations": ["CHN","JPN","KOR"]
-         } ,
         "NA1": {
-          "name": "Most of NA",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","VI","AK","MEX"]
+          "name": "CentralAmericaNorth",
+          "countries": ["SV","GT","HN","NI"]
         },
         "NA2": {
-          "name": "Special NA",
-          "locations": ["IL","NY","TX","CAN"]
+          "name": "Central America South ",
+          "countries": ["CR","PA"]
         },
-         "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        "NA3": {
+          "name": "Rest of North America",
+          "countries": ["CA","US"]
+        },
+        "MX": {
+          "name": "Mexico ",
+          "countries": ["MX"]
+        },
+        "Caribbean": {
+          "name": "Caribbean ",
+          "countries": ["AW","CW","DO","PR"]
+        },
+        
+        "BR": {
+          "name": "Brazil ",
+          "countries": ["BR"]
+        },
+        "SA1": {
+          "name": "North of South America",
+          "countries": ["CO","VE","EC","PE"]
+        },
+        "SA2": {
+          "name": "South of South America",
+          "countries": ["CL","AR","UY","PY","BO"]
+        },
+        "EU": {
+          "name": "Europe",
+          "countries": ["ES","GB","DE"]
         }
         }
+    },
+    "AV_IB": {
+      "description": "AV zoning for IB",
+      "zones": {
+        "NA": {
+          "name": "CentralAmerica",
+          "countries": ["GT","BZ","SV","HN","NI","CR","PA","CU","DO","PR"]
         },
-    "BR_part": {
-      "description": "BR zoning for SA",
+        "SA": {
+          "name": "South America",
+          "countries": ["CO","EC","PE"]
+        },
+        "EU": {
+          "name": "Europe",
+          "countries": ["ES","FR"]
+        }
+        }
+    },
+    "BR_self_special": {
+      "description": "BR special zoning for self/UNI",
       "zones": {
         "TW": {
           "name": "Taiwan",
-          "locations": ["TWN"]
+          "countries": ["TW"]
         },
-        "HKMC": {
-          "name": "Hongkong and Macau",
-          "locations": ["HKG","MAC"]
-        },        
-        "CNm": {
-           "name": "Mainland",
-           "locations": ["CHN"]
-         } ,
-        "Asia": {
-           "name": "Northa Asia",
-           "locations": ["JPN","KOR"]
-         } , 
-        "US49": {
-          "name": "NA continent",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
-        }, 
-        "USp1": {
-          "name": "Hawaii and Caribbean",
-          "locations": ["HI","VI","Mex"]
-        },
-        "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        "HK": {
+          "name": " Hong Kong / Macau",
+          "countries": ["HK","MO"]
+        }    
         }
-        }
-        },
-    "SQ_part": {
-      "description": "SQ zoning for SA",
-      "zones": {       
-        "Asia1": {
-           "name": "North Asia 1",
-           "locations": ["HKG","MAC","TWN"]
-         } ,
-         "Asia2": {
-            "name": "North Asia 2",
-            "locations": ["CHN","JPN","KOR"]
-          } ,
-        "US49": {
-          "name": "NA continent",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","CAN"]
-        }, 
-        "USp1": {
-          "name": "Hawaii, central america",
-          "locations": ["HI","VI","MEX"]
-        },
-        "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
-        }
-        }
-        },
-    "TP_part": {
-      "description": "TP zoning for SA",
-      "zones": {       
-        "Asia": {
-           "name": "Asia",
-           "locations": ["HKG","MAC","TWN","CHN","JPN","KOR"]
-         } ,
-        "US": {
-          "name": "All US",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","AK","HI","VI","MEX","CAN"]
-        }, 
-        "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
-        }
-        }
-        },
-    "TK_part": {
-      "description": "TK zoning for part",
-      "domestic_override": {
-        "default": {
-          "economy": 15000,
-          "business": 22500,
-          "first": 30000
-        },
-        "hawaii": {
-          "economy": 25000,
-          "business": 40000,
-          "first": 50000
-        }
-  },
+    },
+    "BR_self": {
+      "description": "BR zoning for self/UNI",
       "zones": {
+        "AS": {
+          "name": "Asia",
+          "continents": ["AS"]
+        },
+        "OC": {
+          "name": "Oceania",
+          "continents": ["OC"]
+        },
+        "NA1": {
+          "name": "Chicago, New York, Houston, Dallas, and Toronto",
+          "airports":["ORD","JFK","IAH","DFW","YYZ"]
+        },
+        "NA": {
+          "name": "America",
+          "continents": ["NA","SA"],
+          "airports_exclude":["ORD","JFK","IAH","DFW","YYZ"]
+        },
+        "EU": {
+          "name": "Europe",
+          "continents": ["EU"]
+        }
+    }
+  },
+  "BR_part": {
+      "description": "BR zoning for SA partners",
+      "zones": {
+        "TW": {
+          "name": "Taiwan",
+          "countries": ["TW"]
+        },
+        "HK": {
+          "name": " Hong Kong / Macau",
+          "countries": ["HK","MO"]
+        },
+        "CN": {
+          "name": "China",
+          "countries": ["CN"]
+        },
+        "AS1": {
+          "name": "Guam, Japan, Micronesia, Palau, Russian Far East, South Korea, Marshall Islands, Mongolia, Saipan",
+          "countries": ["GU","JP","FM","PW","KR","MH","MN","MP"],
+          "regions":["RU-AMU","RU-BU","RU-YEV","RU-ZAB","RU-KAM","RU-MAG","RU-PRI","RU-SA","RU-SAK","RU-KHA","RU-CHU"]
+        },
+        "AS2": {
+          "name": "Brunei, Indonesia, Malaysia, Singapore, Cambodia, Laos, Myanmar, Philippines, Thailand, Vietnam",
+          "countries": ["BN","ID","MY","SG","KH","LA","MM","PH","TH","VN"]
+        },
+        "AS3": {
+          "name": "Afghanistan, Bangladesh, India, Kazakhstan, Kyrgyzstan, Maldives, Nepal, Pakistan, Sri Lanka, Tajikistan, Turkmenistan, Uzbekistan",
+          "countries": ["AF","BD","IN","KZ","KG","MV","NP","PK","LK","TJ","TM","UZ"]
+        },
+        "OC": {
+          "name": "Australia, Cook Islands, Fiji, New Zealand, Niue, Norfolk Island, Samoa, Tahiti, Tonga, Vanuatu",
+          "continents":["OC"],
+          "countries_exclude":["PW","FM"]
+        },
+        "NA1": {
+          "name": "Canada, USA ( excluding Hawaii)",
+          "countries":["CA","US"],
+          "regions_exclude":["US-HI"]
+        },
+        "NA2": {
+          "name": "Bermuda, Caribbean, Costa Rica, El Salvador, Guatemala, Hawaii, Mexico, Nicaragua, Panama, Puerto Rico, Cuba, Belize, Haiti, Honduras, U.S. Virgin Islands",
+          "countries":["BM","$glb_shared.Caribbean_AAdef","CR","SV","GT","MX","NI","PA","PR","CU","BZ","HT","HN","VI"],
+          "regions":["US-HI"]
+        },
+        "SA": {
+          "name": "Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay, Venezuela",
+          "continents":["SA"]
+        },
+        "EU": {
+          "name": "Albania, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Macedonia, Malta, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Kingdom, Iceland, Turkey",
+          "continents":["EU"]
+        },
+        "ME": {
+          "name": "Armenia, Azerbaijan, Bahrain, Cyprus, Egypt, Georgia, Iran, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia, Syria, United Arab Emirates, Yemen",
+          "countries": ["AM","AZ","BH","CY","EG","GE","IR","IQ","IL","JO","KW","LB","OM","QA","SA","SY","AE","YE"]
+        },
+        "NAF": {
+          "name": "Algeria, Canary Islands, Libya, Morocco, Tunisia",
+          "countries": ["DZ","LY","MA","TN"],
+          "regions":["ES-CN"]
+        },
+        "AF2": {
+          "name": "Angola, Botswana, Burundi, Congo, Cote d’Ivoire, Equatorial Guinea, Ethiopia, Ghana, Madagascar, Malawi, Mauritius, Mozambique, Namibia, Nigeria, Senegal, South Africa, Sudan, Tanzania, Uganda, Zambia, Zimbabwe, Kenya, Chad, Seychelles, Comoros, Sao Tome and Principe",
+          "countries": ["AO","BW","BI","CG","CI","GQ","ET","GH","MG","MW","MU","MZ","NA","NG","SN","ZA","SD","TZ","UG","ZM","ZW","KE","TD","SC","KM","ST"]
+        }       
+    }
+  },
+  "SQ_self": {
+      "description": "SQ special zoning for self",
+      "zones": {
+        "SG": {
+          "name": "Singapore ",
+          "countries": ["SG"]
+        },
+        "AS1": {
+          "name": "Malaysia, Indonesia& Brunei",
+          "countries": ["MY","ID","BN"]
+        },
+        "AS2": {
+          "name": "Philippines, Thailand, Vietnam, Myanmar & Cambodia",
+          "countries": ["PH","TH","VN","MM","KH"]
+        },
+        "AS3": {
+          "name": "South China, Hong Kong SAR, China & Taiwan, China",
+          "countries": ["HK","TW","CN"],
+          "regions_exclude":["CN-11","CN-31"]
+        },
+        "AS4": {
+          "name": "North China (Beijing & Shanghai)",
+          "regions":["CN-11","CN-31"]
+        },
+        "AS5": {
+          "name": "South Asia (India, Sri Lanka, Maldives, Nepal & Bangladesh)",
+          "countries": ["IN","LK","MV","NP","BD"]
+        },
+        "AS6": {
+          "name": "Japan & South Korea",
+          "countries": ["JP","KR"]
+        },
+        "OC1": {
+          "name": "Australia (Perth & Darwin)",
+          "regions":["AU-WA","AU-NT"]
+        },
+        "OC2": {
+          "name": "Australia (excl. Perth & Darwin) & New Zealand",
+          "countries":["AU","NZ"],
+          "regions_exclude":["AU-WA","AU-NT"]
+        },
+        "C1": {
+          "name": "Africa, Middle East & Turkey",
+          "continents":["AF"],
+          "countries": ["$glb_shared.MiddleEast_ASdef","TR"]
+        },
+        "EU": {
+          "name": "Europe",
+          "continents":["EU"]
+        },
+        "NA1": {
+          "name": "USA (West Coast)",
+          "regions":["US-CA","US-WA"]
+        },
+        "NA2": {
+          "name": "USA (East Coast)",
+          "regions":["US-NY","US-NJ"]
+        }
+       
+    }
+  },
+  "SQ_SA": {
+      "description": "SQ zoning for SA partners",
+      "zones": {
+        "AS1": {
+          "name": "Malaysia, Indonesia& Brunei",
+          "countries": ["MY","ID","BN","SG"]
+        },
+        "AS2": {
+          "name": "Philippines, Thailand, Vietnam, Myanmar & Cambodia, Laos",
+          "countries": ["PH","TH","VN","MM","KH","LA"]
+        },
+        "AS3": {
+          "name": "Hong Kong SAR, China & Taiwan, China, Macao",
+          "countries": ["HK","TW","CN","MO"]
+        },
+        "AS5": {
+          "name": "China, Guam, Japan, Micronesia, Palau, Russian Far East, South Korea",
+          "countries": ["CN","GU","JP","FM","PW","KR"],
+          "regions":["RU-AMU","RU-BU","RU-YEV","RU-ZAB","RU-KAM","RU-MAG","RU-PRI","RU-SA","RU-SAK","RU-KHA","RU-CHU"]
+        },
+        "OC": {
+          "name": "Australia, Cook Islands, Fiji, New Zealand, Niue, Norfolk Island, Samoa, Tahiti, Tonga, Vanuatu",
+          "continents":["OC"],
+          "countries_exclude":["PW","FM"]
+        },
+        "NA1": {
+          "name": "Canada, USA ( excluding Hawaii)",
+          "countries":["CA","US"],
+          "regions_exclude":["US-HI"]
+        },
+        "NA2": {
+          "name": "Bermuda, Caribbean, Costa Rica, El Salvador, Guatemala, Hawaii, Mexico, Nicaragua, Panama, Puerto Rico, ",
+          "countries":["BM","$glb_shared.Caribbean_AAdef","CR","SV","GT","MX","NI","PA","PR"],
+          "regions":["US-HI"]
+        },
+        "SA": {
+          "name": "Argentina, Bolivia, Brazil, Chile, Colombia, Ecuador, Paraguay, Peru, Uruguay, Venezuela",
+          "continents":["SA"]
+        },
+        "EU": {
+          "name": "Albania, Austria, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Macedonia, Malta, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Kingdom, Iceland, Turkey",
+          "continents":["EU"]
+        },
+        "ME": {
+          "name": "Algeria, Armenia, Azerbaijan, Bahrain, Cyprus, Egypt, Georgia, Iran, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia, Syria, Tunisia, Turkey, United Arab Emirates, Yemen",
+          "countries": ["DZ","AM","AZ","BH","CY","EG","GE","IR","IQ","IL","JO","KW","LB","OM","QA","SA","SY","TN","TR","AE","YE"]
+        },
+        "AF2": {
+          "name": "Angola, Botswana, Burundi, Congo, Cote d’Ivoire, Equatorial Guinea, Ethiopia, Ghana, Madagascar, Malawi, Mauritius, Mozambique, Namibia, Nigeria, Senegal, South Africa, Sudan, Tanzania, Uganda, Zambia, Zimbabwe",
+          "countries": ["AO","BW","BI","CG","CI","GQ","ET","GH","MG","MW","MU","MZ","NA","NG","SN","ZA","SD","TZ","UG","ZM","ZW"]
+        },
+        "AS4": {
+          "name": "Afghanistan, Bangladesh, India, Kazakhstan, Kyrgyzstan, Maldives, Nepal, Pakistan, Sri Lanka, Tajikistan, Turkmenistan, Uzbekistan",
+          "countries": ["AF","BD","IN","KZ","KG","MV","NP","PK","LK","TJ","TM","UZ"]
+        }
+    }
+  },
+  "SQ_VA": {
+      "description": "SQ zoning for VA",
+      "zones": {
+        "AU1": {
+          "name": "Australian Capital Territory New South Wales Queensland South Australia Tasmania Victoria",
+          "regions": ["AU-ACT","AU-NSW","AU-QLD","AU-SA","AU-TAS","AU-VIC"]
+        },
+        "AU2": {
+          "name": "Northern Territory",
+          "regions": ["AU-NT"]
+        },
+        "AU3": {
+          "name": "Christmas Island Cocos (Keeling) Islands Western Australia",
+          "countries": ["CX","CC"],
+          "regions":["AU-WA"]
+        },
+        "NZ": {
+          "name": "New Zealand",
+          "countries": ["NZ"]
+        },
+        "C1": {
+          "name": "Fiji Samoa Vanuatu",
+          "countries": ["FJ","WS","VU"]
+        },
+        "ID": {
+          "name": "Indonesia",
+          "countries": ["ID"]
+        }
+    }
+  },
+  "SQ_HO": {
+      "description": "SQ zoning for HO",
+      "zones": {
+        "AS1": {
+          "name": "China Japan Russian Far East South Korea",
+          "countries": ["CN","JP","KR"],
+          "regions":["RU-AMU","RU-BU","RU-YEV","RU-ZAB","RU-KAM","RU-MAG","RU-PRI","RU-SA","RU-SAK","RU-KHA","RU-CHU"]
+        },
+        "AS2": {
+          "name": "Hong Kong SAR Macau SAR Taiwan, China",
+          "countries": ["HK","MO","TW"]
+        },
+        "AS3": {
+          "name": "Phillipines Singapore Thailand Indonesia Malaysia Vietnam",
+          "countries": ["PH","SG","TH","ID","MY","VN"]
+        },
+        "EU": {
+          "name": "Finland Greece Belgium United Kingdom Italy",
+          "countries": ["FI","GR","BE","GB","IT"]
+        },
+        "AU": {
+          "name": "Australia",
+          "countries": ["AU"]
+        }
+    }
+  },
+  "SQ_MH": {
+      "description": "SQ zoning for MH",
+      "zones": {
+        "KUL": {
+          "name": "KUALA LUMPUR",
+          "airports":["KUL"]
+        },
+        "SIN": {
+          "name": "Singapore ",
+          "airports":["SIN"]
+        },
+        "LHR": {
+          "name": "LONDON",
+          "airports":["LHR"]
+        }
+    }
+  },
+  "SQ_GA": {
+      "description": "SQ zoning for ga",
+      "zones": {
+        "DPS": {
+          "name": "Denpasar",
+          "airports":["DPS"]
+        },
+        "LBJ": {
+          "name": "Labuan Bajo ",
+          "airports":["LBJ"]
+        },
+        "LOP": {
+          "name": "LOMBOK",
+          "airports":["LOP"]
+        },
+        "CGK": {
+          "name": "Jakarta",
+          "airports":["CGK","HLP"]
+        },
+        "MDC": {
+          "name": "Manado",
+          "airports":["MDC"]
+        },
+        "SIN": {
+          "name": "SINGAPORE",
+          "airports":["SIN"]
+        },
+        "SUB": {
+          "name": "Surabaya",
+          "airports":["SUB"]
+        }
+    }
+  },
+  "SQ_TR": {
+      "description": "SQ zoning for TR",
+      "zones": {
+        "SG": {
+          "name": "Singapore",
+          "countries":["SG"]
+        },
+        "MY1": {
+          "name": "Malaysia (excl. Kuching, Miri, Kota Kinabalu, Sibu)",
+          "countries":["MY"],
+          "airports_exclude":["KCH","BKI","SBW"]
+        },
+        "MY2": {
+          "name": "Kuching, Miri, Kota Kinabalu, Sibu ",
+          "airports":["KCH","BKI","SBW"]
+        },
+        
+        "ID1": {
+          "name": "Jakarta, Pekanbaru, Kertajati, Padang",
+          "airports":["CGK","PKU","KJT","PDG"]
+        },
+        "ID2": {
+          "name": "Indonesia  (excl. Jakarta, Pekanbaru, Kertajati, Padang, Labuan Bajo)",
+          "countries":["ID"],
+          "airports_exclude":["CGK","PKU","KJT","PDG","LBJ"]
+        },
+        "TH": {
+          "name": "Thailand (excl. Chiang Mai, Koh Samui, Chiang Rai)",
+          "countries":["TH"],
+          "airports_exclude":["CNX","USM","CNX"]
+        },
+        "THID": {
+          "name": "Thailand (Chiang Mai, Koh Samui, Chiang Rai), Indonesia (Labuan Bajo)",
+          "airports":["CNX","USM","CNX","LBJ"]
+        },
+        "LAVN": {
+          "name": "Laos, Vietnam (excl. Nha Trang)",
+          "countries":["LA","VN"],
+          "airports_exclude":["CXR"]
+        },
+        "PHVN": {
+          "name": "Philippines, Vietnam (Nha Trang)",
+          "countries":["PH"],
+          "airports":["CXR"]
+        },
+        "CN1": {
+          "name": "Hong Kong SAR, Macau SAR & China (Haikou, Nanning, Guangzhou)",
+          "countries":["HK","MO"],
+          "airports":["HAK","NNG","CAN"]
+        },
+        "TW": {
+          "name": "Taiwan, China",
+          "countries":["TW"]
+        },
+        "CN2": {
+          "name": "China (excl. Haikou, Nanning, Guangzhou)",
+          "countries":["CN"],
+          "airports_exclude":["HAK","NNG","CAN"]
+        },
+        "ID": {
+          "name": "India",
+          "countries":["IN"]
+        },
+        "KRJP": {
+          "name": "Japan, South Korea",
+          "countries":["JP","KR"]
+        },
+        "AU1": {
+          "name": "Australia (Perth)",
+          "airports":["PER"]
+        },
+        "AU2": {
+          "name": "Australia (excl. Perth)",
+          "countries":["AU"],
+          "airports_exclude":["PER"]
+        },
+        "GRAT": {
+          "name": "Greece, Austria",
+          "countries":["GR","AT"]
+        }
+    }
+  },
+  "TP_SA": {
+      "description": "TP zoning for SA partners",
+      "zones": {
+        "SAF": {
+          "name": "Southern Africa",
+          "countries":["$glb_shared.SouthernAfrica"]
+        },
+        "CAF": {
+          "name": "West, Central and East Africa",
+          "countries":["$glb_shared.WesternAfrica","$glb_shared.EasternAfrica","$glb_shared.CentralAfrica"]
+        },
+        "CAMSAM": {
+          "name": "Central and South America",
+          "continents":["SA"],
+          "countries":["$glb_shared.CentralAmerica_AAdef"]
+        },
+        "AS": {
+          "name": "Asia",
+          "continents":["AS"],
+          "countries_exclude":["$glb_shared.MiddleEast_ASdef"]
+        },
+        "NA": {
+          "name": "Canada, USA, Mexicoand the Caribbean",
+          "countries":["CA","US","MX","$glb_shared.Caribbean_AAdef"]
+        },
+        "EUAF": {
+          "name": "Europe and North Africa",
+          "continents":["EU"],
+          "countries":["$glb_shared.NorthAfrica"]
+        },
+        "ME": {
+          "name": "Middle East",
+          "countries":["$glb_shared.MiddleEast_ASdef"]
+        },
+        "OC": {
+          "name": "Oceania",
+          "continents":["OC"]
+        }
+    }
+  },
+  "TK_all": {
+      "description": "TK zoning for all",
+      "zones": {
+        "TK": {
+          "name": "Turkey",
+          "countries":["TR"]
+        },
         "EU1": {
-          "name": "EU Zone 1",
-          "locations": ["BGR","HRV","GRC","HUN","ROU","SVN","SRB"]
+          "name": "Albania, Armenia, Bosnia and Herzegovina, Bulgaria, Croatia, Turkish Republic of Northern Cyprus, Georgia, Greece, Hungary, Kosovo, Macedonia, Moldova, Montenegro, Romania, Serbia, Slovenia, Ukraine",
+          "countries":["AL","AM","BA","BG","HR","CY","GE","GR","HU","XK","MK","MD","ME","RO","RS","SI","UA"]
         },
         "EU2": {
-          "name": "EU Zone 2",
-          "locations": ["AUT","BEL","CZE","DNK","EST","FIN,","FRA","DEU","ISL","IRL","ITA","LVA","LTU","LUX","MLT","NLD","NOR","POL","PRT","SVK","ESP","SWE","CHE","GBR"]
+          "name": "Austria, Azerbaijan, Belarus, Belgium, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Russia, Slovakia, Spain, Sweden, Switzerland, United Kingdom",
+          "countries":["AT","AZ","BY","BE","CZ","DK","EE","FO","FI","FR","DE","IS","IE","IT","LV","LT","LU","MT","NL","NO","PL","PT","RU","SK","ES","SE","CH","GB"]
         },
-        "US50": {
-          "name": "North America",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IL", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "NY", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WA", "WI", "WV", "WY","HI","AK","VI","CAN","MEX"]
-        },        
-        "CN": {
-          "name": "Far East",
-          "locations": ["CHN","HKG","MAC","TWN","JPN","KOR"]
-        } 
-        }
+        "AF1": {
+          "name": "Algeria, Morocco, Libya, Egypt, Tunisia",
+          "countries":["DZ","MA","LY","EG","TN"]
         },
-    "AM_self": {
-      "description": "AM zoning for self",
-      "zones": {       
-        "MEX": {
-           "name": "Mexico",
-           "locations": ["MEX"]
-         } ,
-        "US1": {
-          "name": "North America 1:USA (except New York, Seattle and Chicago)",
-          "locations": ["AL", "AR", "AZ", "CA", "CO", "CT", "DE","DC", "FL", "GA", "IA", "ID", "IN", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN", "MO", "MS", "MT", "NC", "ND", "NE", "NH", "NJ", "NM", "NV", "OH", "OK", "OR","PA", "RI", "SC", "SD", "TN", "TX", "UT", "VA", "VT", "WI", "WV", "WY","AK"]
-        }, 
-        "US2": {
-          "name": "Canada + New York and Chicago",
-          "locations": ["NY","WA","IL","CAN"]
-        }, 
-        "US_VI": {
-          "name": "Central America and the Caribbean",
-          "locations": ["VI"]
+        "AF2": {
+          "name": "Benin, Burkina Faso, Burundi, Cameroon, Congo, Djibouti, Chad, Dem, Congo C, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Kenya, Ivory Coast, Mali, Mauritania, Niger, Nigeria, Rwanda, Senegal, Sierra Leone, Somalia, Sudan, South Sudan, Tanzania, Uganda, Equatorial Guinea",
+          "countries":["BJ","BF","CM","CD","CG","DJ","TD","ER","ET","GA","GM","GH","GN","KE","CI","ML","MR","NE","NG","RW","SN","SL","SO","SD","SS","TZ","UG","GQ"]
         },
-        "Asia": {
-           "name": "Northeast Asia",
-           "locations": ["HKG","MAC","TWN","CHN","JPN","KOR"]
-         } ,
-        "EU": {
-          "name": "General Europe",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","GBR","IRL","SRB"]
+        "AF3": {
+          "name": "Angola, Republic of South Africa, Union of Comoros, Madagascar, Mauritius, Mozambique, Seychelles, Zambia",
+          "countries":["AO","ZA","KM","MG","MU","MZ","SC","ZM"]
         },
-        "US_HI": {
+        "OC": {
+          "name": "Australia, Cook Islands, Federated States of Micronesia, Fiji, French Polynesia, Guam, Marshall Islands, New Caledonia, New Zealand, Niue, Norfolk Island, Northern Mariana Islands, Palau, Papua New Guinea, Samoa, Tonga, Vanuatu",
+          "countries":["AU","CK","FM","FJ","PF","GU","MH","NC","NZ","NU","NF","MP","PW","PG","TO","VU"]
+        },
+        "AS1": {
+          "name": "Bahrain, Iran, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia, Syria, United Arab Emirates, Yemen",
+          "countries":["BH","IR","IQ","IL","JO","KW","LB","OM","QA","SA","SY","AE","YE"]
+        },
+        "AS2": {
+          "name": "Afghanistan, Bangladesh, India, Kazakhstan, Kyrgyzstan, Nepal, Pakistan, Tajikistan, Turkmenistan, Uzbekistan",
+          "countries":["AF","BD","IN","KZ","NP","KG","PK","TJ","TM","UZ"]
+        },
+        "NA": {
+          "name": "Antilles Nether, Bermuda, Canada, Mexico, United States, Honolulu",
+          "countries":["AW","BM","CA","MX","US"]
+        },
+        "SA": {
+          "name": "Antigua and Barbuda, Argentina, Aruba, Bahamas, Barbados, Bonaire, Saint Eustatius and Saba, Belize, Bolivia, Brazil, Cayman Islands, CHILE, Colombia, Costa Rica, Cuba, Curacao, Dominican Republic, Ecuador, El Salvador, Grenada, Guadeloupe, Guatemala, Guyana, Haiti, Honduras, Jamaica, Martinique, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Saint Kitts and Nevis, Saint Lucia, St Maarten (Dutch Part), Suriname, Trinidad and Tobago, Turks and Caicos Islands, Uruguay, Venezuela, Virgin Islands (US)",
+          "countries":["AG","AR","AW","BS","BB","BZ","BO","BR","KY","CL","CO","CR","CU","CW","DO","EC","SV","GD","GP","GT","GY","HT","HN","JM","MQ","NI","PA","PY","PE","PR","KN","LC","SX","SR","TT","TC","UY","VE","VI"],
+          "airports":["BON","EUX","SAB"]
+        },
+        "AS3": {
+          "name": "Brunei, Cambodia, China (except Hong Kong and Macao), China Taipei, Hong Kong - SAR of China, Indonesia, Japan, Korea, Laos, Macau, Malaysia, Maldives, Mongolia, Myanmar, Philippines, Singapore, Sri Lanka, Thailand, Vietnam",
+          "countries":["BN","KH","CN","TW","HK","ID","JP","KR","LA","MO","MY","MV","MN","MM","PH","SG","LK","TH","VN"]
+        }    
+    }
+  },
+  "TK_spec": {
+      "description": "TP special zoning for SA US domestic",
+      "zones": {
+        "HI": {
           "name": "Hawaii",
-          "locations": ["HI"]
-        }
-        }
+          "regions":["US-HI"]
         },
-    "VS_self": {
+        "US": {
+          "name": "Rest of US",
+          "countries":["US"],
+          "regions_exclude":["US-HI"]
+        }    
+    }
+  },
+  "VS_self": {
       "description": "VS zoning for self",
-      "zones": {       
+      "zones": {
         "UK": {
-           "name": "UK",
-           "locations": ["GBR"]
-         } ,
+          "name": "UK",
+          "countries":["GB"]
+        },
+        "IL": {
+          "name": "Israel",
+          "countries":["IL"]
+        },
+        "INAE": {
+          "name": "India, Dubai",
+          "countries":["IN","AE"]
+        },
         "US1": {
           "name": "U.S. Northeast (Boston, Newark, New York–JFK, Washington D.C.)",
-          "locations": ["MA","NJ","NY","DC"]
-        }, 
-        "US_VI": {
+          "regions":["US-MA","US-NJ","US-NY","US-VA"]
+        },
+        "Caribbean": {
           "name": "Caribbean",
-          "locations": ["VI"]
+          "countries":["AI", "AG", "AW", "BS", "BM", "BQ", "VG","KY", "CW", "DM", "DO", "GP", "HT", "JM","MQ", "PR", "KN", "LC", "SX", "TT", "TC", "VI"]
+        },
+        "BB": {
+          "name": "Barbados ",
+          "countries":["BB"]
+        },
+        "VC": {
+          "name": "St. Vincent",
+          "countries":["VC"]
+        },
+        "GD": {
+          "name": "Grenada ",
+          "countries":["GD"]
         },
         "US2": {
           "name": "U.S. Midwest and South (Atlanta, Miami, Orlando, Tampa)",
-          "locations": ["GA","FL"]
-        }, 
+          "regions":["US-GA","US-FL"]
+        },
+        "NGCN": {
+          "name": "Nigeria, China",
+          "countries":["NG","CN"]
+        },
+        "ZA": {
+          "name": "South Africa, Indian Ocean",
+          "countries":["ZA"]
+        },
         "US3": {
           "name": "U.S. West (Austin, Las Vegas, Los Angeles, San Francisco, Seattle)",
-          "locations": ["TX","NV","CA","WA"]
-        }
-        }
+          "regions":["US-TX","US-NV","US-CA","US-WA"]
+        } 
+    }
+  },
+  "VS_DL": {
+      "description": "VS zoning for DL",
+      "zones": {
+        "UK": {
+          "name": "UK",
+          "countries":["GB"]
         },
-    "VS_AFKLM": {
+        "EU": {
+          "name": "Europe exclude UK",
+          "continents":["EU"],
+          "countries_exclude":["GB"]
+        },
+        "US1": {
+          "name": "East Coast US",
+          "regions":["US-MA","US-NY","US-PA"]
+        },
+        "US2": {
+          "name": "Central US",
+          "regions":["US-GA","US-MI","US-MN","US-FL"]
+        },
+        "US3": {
+          "name": "West Coast US",
+          "regions":["US-UT","US-WA","US-CA","US-NV","US-OR"]
+        }
+    }
+  },
+  "VS_AFKL": {
       "description": "VS zoning for AF KLM",
       "zones": {
         "EU1": {
-          "name": "1. West EU",
-          "locations": ["GBR","DEU","FRA","BEL","NLD","IRL","CHE","LUX","ESP","PRT","AUT","DNK","FIN","ITA","MLT","NOR","SWE"]
+          "name": "UK, Germany, France, Belgium, Netherlands, Ireland, Switzerland, Luxembourg, Spain, Portugal, Austria, Denmark, Balearic Islands, Finland, Italy, Malta, Norway and Sweden.",
+          "countries":["GB","DE","FR","BE","NL","IE","CH","LU","ES","PT","AT","DK","FI","IT","MT","NO","SE"],
+          "regions_exclude":["ES-CN","PT-30"]
         },
-        "EU2": {
-          "name": "2. East EU",
-          "locations": ["BGR","HRV","EST","GRC","HUN","ISL","LTU","LVA","MAR","POL","CZE","ROU","SVK","SVN","SRB"]
+        "EUAFAS": {
+          "name": "Albania, Algeria, Armenia, Belarus, Bosnia Herzegovina, Bulgaria, Cyprus, Croatia, Canary Islands, Estonia, Greece, Hungary, Iceland, Israel, Libya, Lithuania, Latvia, Macedonia, Madeira, Moldavia, Morocco, Poland, Czech Republic, Romania, West Russia, Serbia, Slovakia, Slovenia, Turkey, Tunisia, Ukraine, Montenegro, Turkmenistan and Tajikistan.",
+          "countries":["AL","DZ","AM","BY","BA","BG","CY","HR","EE","GR","HU","IS","IL","LY","LT","LV","MK","MD","MO","PL","CZ","RO","RS","SK","SI","TR","TN","UA","ME","TM","TJ"],
+          "regions":["ES-CN","PT-30","RU-BEL","RU-BRY","RU-VLA","RU-VOR","RU-IVA","RU-KLU","RU-KOS","RU-KRS","RU-LIP","RU-MOS","RU-MOW","RU-ORL","RU-RYA","RU-SMO","RU-TAM","RU-TVE","RU-TUL","RU-YAR","RU-ARK","RU-VLG","RU-KGD","RU-KR","RU-KO","RU-LEN","RU-MUR","RU-NEN","RU-NGR","RU-PSK","RU-SPE","RU-BA","RU-KIR","RU-ME","RU-MO","RU-NIZ","RU-ORE","RU-PNZ","RU-PER","RU-SAM","RU-SAR","RU-TA","RU-UD","RU-ULY","RU-CU","RU-AD","RU-AST","RU-KL","RU-KDA","RU-ROS","RU-VGG","RU-DA","RU-IN","RU-KB","RU-KC","RU-SE","RU-STA","RU-CE"]
         },
-        "US1": {
-          "name": "6. US EAST",
-          "locations": ["ME","NH","VT","NY","MA","RI","CT","NJ","PA","DE","MD","DC","WV","VA","MI","IN","WI","IL","OH","KY","TN","NC","SC","GA","AL","MS","FL","VI","CAN"]
+        "AS": {
+          "name": "Saudi Arabia, Azerbaijan, Bahrain, Central Russia, Egypt, UAE, Georgia, Iraq, Iran, Jordan, Kazakhstan, Kirghizstan, Kuwait, Lebanon, Oman, Syria, Qatar, Uzbekistan and Djibouti.",
+          "countries":["SA","AZ","BH","EG","AE","GE","IR","IQ","JO","KZ","KG","KW","LB","OM","SY","QA","UZ","DJ"],
+          "regions":["RU-KGN","RU-SVE","RU-TYU","RU-KHM","RU-CHE","RU-YAN","RU-AL","RU-ALT","RU-IRK","RU-KEM","RU-KYA","RU-NVS","RU-OMS","RU-TOM","RU-TY","RU-KK"]
         },
-        "US2": {
-          "name": "7. US Central and West",
-          "locations": ["MN","IA","MO","AR","LA","ND","SD","NE","KS","OK","TX","MT","WY","CO","NM","ID","UT","AZ","NV","WA","OR","CA","HI","AK","MEX"]
+        "AF": {
+          "name": "Benin, Burkina, Burundi, Cameroon, Cape Verde, Congo, Ivory Coast, Ethiopia, Gabon, Gambia, Ghana, Guinea, Equatorial Guinea, Kenya, Liberia, Malawi, Mali, Mauritania, Niger, Nigeria, Uganda, Central African Republic, Democratic Republic of Congo, Rwanda, Senegal, Sudan, Republic of South Sudan, Tanzania, Togo, Chad, Zambia and Sierra Leone.",
+          "countries":["BJ","BF","BI","CM","CV","CD","CG","CI","ET","GA","GM","GH","GN","GQ","KE","LR","MW","ML","MR","NE","NG","UG","CF","RW","SN","SD","SS","TZ","TG","TD","ZM","SL"]
         },
-        "Asia": {
-           "name": "9. Far Eastern Asia and Eastern Russia",
-           "locations": ["HKG","MAC","TWN","CHN","JPN","KOR"]
-         }
+        "AFAS": {
+          "name": "Angola, South Africa, Botswana, Mozambique, Namibia, Zimbabwe, Mauritius, Rodrigues, Reunion Island, Seychelles, Mayotte, Comoros, Madagascar, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan and Sri Lanka.",
+          "countries":["AO","ZA","BW","MZ","NA","ZW","MU","RE","SC","YT","KM","MG","BD","BT","IN","MV","NP","PK","LK"]
+        },
+        "NA1": {
+          "name": "East Coast USA, East Canada, Antigua, Barbados, Bahamas, Cuba, Bermuda, Dominican Republic, French Guyana, Grenada, Guadeloupe, Caiman Islands, Turks and Caicos Islands, Virgin Islands, Jamaica, Martinique, Haiti, Porto Rico, Trinidad and Tobago and Saint Marteen.",
+          "countries":["AI","BB","BS","CU","BM","DO","GF","GD","GP","KY","TC","VI","VG","JM","MQ","HT","PR","TT","SX"],
+          "regions":["US-ME","US-NH","US-VT","US-NY","US-MA","US-RI","US-CT","US-NJ","US-PA","US-DE","US-MD","US-DC","US-WV","US-VA","US-MI","US-IN","US-WI","US-IL","US-OH","US-KY","US-TN","US-NC","US-SC","US-GA","US-AL","US-MS","US-FL","CA-ON","CA-QC","CA-NL","CA-NB","CA-NS","CA-PE"]
+        },
+        "NA2": {
+          "name": "Central & West USA, Hawaii, Central & West Canada, Mexico, Belize, Costa Rica, El Salvador, Guatemala, Honduras, Panama and Nicaragua.",
+          "countries":["MX","BZ","CR","SV","GT","HN","PA","NI"],
+          "regions":["US-MN","US-IA","US-MO","US-AR","US-LA","US-ND","US-SD","US-NE","US-KS","US-OK","US-TX","US-MT","US-WY","US-CO","US-NM","US-ID","US-UT","US-AZ","US-WA","US-OR","US-NV","US-CA","US-HI","US-AK","CA-NU","CA-MB","CA-SK","CA-AB","CA-NT","CA-BC","CA-YT"]
+        },
+        "SA": {
+          "name": "Colombia, Ecuador, Peru, Venezuela, Argentina, Brazil, Bolivia, Chile, Paraguay and Uruguay.",
+          "countries":["CO","EC","PE","VE","AR","BR","BO","CL","PY","UY"]
+        },
+        "AS2": {
+          "name": "China, South Korea, Japan, Mongolia, East Russia (& Siberia), Cambodia, Hong Kong, Indonesia, Laos, Macau, Myanmar, Malaysia, Philippines, Singapore, Taiwan, Thailand and Vietnam.",
+          "countries":["CN","KR","JP","MN","KH","HK","ID","LA","MO","MM","MY","PH","SG","TW","TH","VN"],
+          "regions":["RU-AMU","RU-BU","RU-YEV","RU-ZAB","RU-KAM","RU-MAG","RU-PRI","RU-SA","RU-SAK","RU-KHA","RU-CHU"]
+        },
+        "OC": {
+          "name": "Australia, Fiji, Guam, Marianas Islands, Marshall Islands, Micronesia, New Zealand, Palau Islands, Vanuatu, Wallis and Futuna, New Caledonia and French Polynesia.",
+          "countries":["AU","FJ","GU","MP","MH","FM","NZ","PW","VU","WF","NC","PF"]
         }
-        },
-    "VS_DL": {
-      "description": "VS zoning for DL",
+    }
+  },
+  "VS_NZ": {
+      "description": "VS zoning for NZ",
       "zones": {
-        "US1": {
-          "name": "US East",
-          "locations": ["MA","NY","PA"]
+        "NZ": {
+          "name": "New Zealand",
+          "countries":["NZ"]
         },
-        "US2": {
-          "name": "US Central",
-          "locations": ["GA","MI","MN","FL"]
+        "AU": {
+          "name": "Australia",
+          "countries":["AU"]
         },
-        "US3": {
-          "name": "US West",
-          "locations": ["UT","WA","CA","NV","OR"]
+        "OC": {
+          "name": "Pacific Islands",
+          "continents":["OC"],
+          "countries_exclude":["AU","NZ"]
         },
-        "EU_GBR": {
-          "name": "GBR",
-          "locations": ["GBR"]
+        "AS": {
+          "name": "Pacific Islands",
+          "continents":["AS"]
+        },
+        "HI": {
+          "name": "Hawaii",
+          "regions":["US-HI"]
+        },
+        "LA": {
+          "name": "Los Angeles",
+          "regions":["US-CA"]
         },
         "EU": {
-          "name": "EU w/o GBR",
-          "locations": ["AUT","BEL","BGR","HRV","CZE","DNK","EST","FIN","FRA","DEU","GRC","HUN","ISL","ITA","LVA","LIE","LTU","LUX","MLT","NLD","NOR","POL","PRT","ROU","SVK","SVN","ESP","SWE","CHE","MAR","IRL","SRB"]
+          "name": "Europe",
+          "continents":["EU"]
         }
-        }
-        },
-    "VS_NH": {
+    }
+  },
+  "VS_NH": {
       "description": "VS zoning for NH",
       "zones": {
         "JP": {
           "name": "Japan",
-          "locations": ["JPN"]
+          "countries":["JP"]
         },
         "KR": {
-          "name": "Korea",
-          "locations": ["KOR"]
+          "name": "South Korea",
+          "countries":["KR"]
         },
-        "CN": {
+        "AS1": {
           "name": "China / Guam / Hong Kong / Philippines / Taiwan",
-          "locations": ["CHN","HKG","TWN"]
+          "countries":["CN","GU","HK","PH","TW"]
         },
-        "US_HI": {
-          "name": " Hawaii / India / Indonesia",
-          "locations": ["US_HI"]
+        "AS2": {
+          "name": "Malaysia / Myanmar / Singapore / Thailand / Vietnam",
+          "countries":["MY","MM","SG","TH","VN"]
         },
-        "US1": {
+        "ASNA": {
+          "name": "Hawaii / India / Indonesia",
+          "countries":["IN","ID"],
+          "regions":["US-HI"]
+        },
+        "OCNA": {
           "name": "Australia / Canada / Western USA",
-          "locations": ["CAN","CA","WA"]
+          "countries":["AU","CA"],
+          "regions":["US-CA","US-WA"]
         },
-        "EUUS": {
+        "EUNA": {
           "name": "Europe / Central & Eastern USA / Mexico",
-          "locations": ["AUT","BEL","FRA","DEU","ITA","SWE","GBR","IL","TX","NY","DC","MEX"]
+          "continents":["EU"],
+          "countries":["MX"],
+          "regions":["US-IL","US-TX","US-NY","US-VA"]
         }
+    }
+  },
+  "VS_LA": {
+      "description": "VS zoning for LA",
+      "zones": {
+        "BR": {
+          "name": "Brazil ",
+          "countries":["BR"]
+        },
+        "CL": {
+          "name": "Chile",
+          "countries":["CL"]
+        },
+        "NA": {
+          "name": "North America",
+          "continents":["NA"]
+        },
+        "UK": {
+          "name": "UK ",
+          "countries":["GB"]
+        },
+        "WORLD": {
+          "name": "Rest of World ",
+          "continents":["AF","AS","EU","SA","OC"],
+          "countries_exclude":["BR","CL","GB"]
         }
-        }                                                               
-        }                                                                              
- 
+    }
+  },
+  "VS_SA": {
+      "description": "VS zoning for SA",
+      "zones": {
+        "ZA": {
+          "name": "South Africa ",
+          "countries":["ZA"]
+        },
+        "AF1": {
+          "name": "Southern Africa: Botswana/ Lesotho/ Madagascar/ Malawi/ Mozambique/ Namibia/ Swaziland/ Zambia/ Zimbabwe",
+          "countries":["BW","LS","MG","MW","MZ","NA","SZ","ZM","ZW"]
+        },
+        "AF2": {
+          "name": "Central & Northern Africa: Angola/ Benin/ Cameroon/ Côte d'Ivoire/ DR Congo/ Republic of Congo/ Gabon/ Ghana/ Kenya/ Nigeria/ Senegal/ Tanzania/ Uganda",
+          "countries":["AO","BJ","CM","CI","CD","CG","GA","KE","NG","TZ","UG"]
+        },
+        "SN": {
+          "name": "Senegal  ",
+          "countries":["SN"]
+        },
+        "GH": {
+          "name": "Ghana",
+          "countries":["GH"]
+        },
+        "US": {
+          "name": "USA  ",
+          "countries":["US"]
+        },
+        "EUSA": {
+          "name": "Europe / South America  ",
+          "continents":["EU","SA"]
+        },
+        "AU": {
+          "name": "Australia",
+          "countries":["AU"]
+        },
+        "AS": {
+          "name": "Asia",
+          "continents":["AS"]
+        }
+    }
+  }
+}
 }

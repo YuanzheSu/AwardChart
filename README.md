@@ -1,5 +1,19 @@
 详见 https://www.uscardforum.com/t/topic/451800
 
+## Version History
+v0.2.0 Major Update
+### Functionalities
+0. Include (almost) all civil aviation airports. Data credit to: ourairports.com.
+1. Update code logic for better handling of transfer itinerary.
+
+Now in tab2, for each segment, simply define origin and destination airport, carrier and cabin.
+
+### Data
+0. Updates all ffp award charts to incorporate the expanded regions support.
+1. BA devaluation (Dec 2025): Add a 1.1X multiplier to the (already guessed/imperical) BA chart.
+2. IB devaluation (Dec 2025) Noticed IB increased the award miles needed for short haul AA/BA again.
+3. Adds Spirit program.
+4. AC adds Air baltic as redeem partner. AS adds ITA as earn partner.
 
 
 ## Install
@@ -30,21 +44,25 @@ Purpose: Find which FFP(s) can (in theory) be used to redeem award ticket on a s
 
 ### Tab2
 
-Purpose: Find the miles needed for a desired itinerary. Currently, it is not designed to find the 'cheapest route' between your departure and destination. It is designed to find all the redeem options for your desired route (include departure, destination, flying distance carrier and cabin for each segment.) If for some reason (most likely due to availability) that issue your trip on one ticket is not applicable, the program also searches for options with subsegments. A few examples below
+Purpose: Find the miles needed for a desired itinerary. Currently, it is not designed to find the 'cheapest route' between your departure and destination. It is designed to find all the redeem options for your desired route. If for some reason (most likely due to availability) that issue your trip on one ticket is not applicable, the program also searches for options with subsegments. A few examples below
 
 
 
-![Direct flight](/assets/readme/example%201.png)
+![Direct flight](/assets/readme/example1.png)
+*Example 1: Domestic short haul.*
 
-![Transfer](/assets/readme/example%202.png)
+![Direct flight](/assets/readme/example2.png)
+*Example 2: International long haul.*
 
-![Breaking up the segments.](/assets/readme/example%203.png)
+![Transfer1](/assets/readme/example3.png)
+*Example 3: Transfer (involving 1 carrier).*
 
-
+![Transfer2](/assets/readme/example3.png)
+*Example 3: Transfer involving multiple carriers.*
 
 ### Tab3
 
-Purpose: Compare if it is worth it to use award ticket. Tax and fees for the award ticket and cash price for the same itinerary needs to be manually input. Mile evaluation can be changed by personal preference.
+Purpose: Compare if it is worth it to use award ticket. Tax and fees for the award ticket and cash price for the same itinerary needs manual input. Mile evaluation can be changed by personal preference.
 
 
 

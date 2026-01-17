@@ -2,57 +2,57 @@
 "carriers": [
             {"code": "AS",
              "name": "Alaska Airlines",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "AA",
              "name": "American Airlines",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "BA",
              "name": "British Airways",
-             "country": "EU"            },
+             "country": "GB"            },
             {"code": "CX",
              "name": "Cathay Pacific",
-             "country": "China"            },
+             "country": "HK"            },
             {"code": "FJ",
              "name": "Fiji Airways",
-             "country": "Fiji"
+             "country": "FJ"
             },
             {"code": "AY",
              "name": "Finnair",
-             "country": "EU"            },
+             "country": "FI"            },
             {"code": "IB",
              "name": "Iberia",
-             "country": "EU"            },
+             "country": "ES"            },
             {"code": "JL",
              "name": "Japan Airlines",
-             "country": "Japan"
+             "country": "JP"
             },
             {"code": "MH",
              "name": "Malaysia Airlines",
-             "country": "Malaysia"
+             "country": "MY"
             },
             {"code": "WY",
              "name": "Oman Air",
-             "country": "Oman"
+             "country": "OM"
             },
             {"code": "QF",
              "name": "Qantas",
-             "country": "Australia"
+             "country": "AU"
             },
             {"code": "QR",
              "name": "Qatar Airways",
-             "country": "Qatar"
+             "country": "QA"
             },
             {"code": "AT",
              "name": "Royal Air Maroc",
-             "country": "Morocco"
+             "country": "MA"
             },
             {"code": "RJ",
              "name": "Royal Jordanian",
-             "country": "Jordan"
+             "country": "JO"
             },
             {"code": "UL",
              "name": "SriLankan Airlines",
-             "country": "Sri Lanka"
+             "country": "LK"
             },
             
             
@@ -61,422 +61,422 @@
             
             {"code": "A3",
              "name": "Aegean Airlines",
-             "country": "EU"            },
+             "country": "GR"            },
             {"code": "AC",
              "name": "Air Canada",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "CA",
              "name": "Air China",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "AI",
              "name": "Air India",
-             "country": "India"
+             "country": "IN"
             },
             {"code": "NZ",
              "name": "Air New Zealand",
-             "country": "New Zealand"
+             "country": "NZ"
             },
             {"code": "NH",
              "name": "All Nippon Airways",
-             "country": "Japan"
+             "country": "JP"
             },
             {"code": "OS",
              "name": "Austrian Airlines",
-             "country": "EU"            },
+             "country": "AT"            },
             {"code": "AV",
              "name": "Avianca",
-             "country": "Colombia"
+             "country": "CO"
             },
             {"code": "SN",
              "name": "Brussels Airlines",
-             "country": "EU"            },
+             "country": "BE"            },
             {"code": "CM",
              "name": "Copa Airlines",
-             "country": "Panama"
+             "country": "PA"
             },
             {"code": "OU",
              "name": "Croatia Airlines",
-             "country": "EU"            },
+             "country": "HR"            },
             {"code": "MS",
              "name": "Egyptair",
-             "country": "Egypt"
+             "country": "EG"
             },
             {"code": "ET",
              "name": "Ethiopian Airlines",
-             "country": "Ethiopia"
+             "country": "ET"
             },
             {"code": "BR",
              "name": "Eva Air",
-             "country": "China"            },
+             "country": "TW"            },
             {"code": "LO",
              "name": "LOT Polish Airlines",
-             "country": "EU"            },
+             "country": "PL"            },
             {"code": "LH",
              "name": "Lufthansa",
-             "country": "EU"            },
+             "country": "DE"            },
             {"code": "ZH",
              "name": "Shenzhen Airlines",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "SQ",
              "name": "Singapore Airlines",
-             "country": "Singapore"
+             "country": "SG"
             },
             {"code": "SA",
              "name": "South African Airways",
-             "country": "South Africa"
+             "country": "ZA"
             },
             {"code": "LX",
              "name": "Swiss International Air Lines",
-             "country": "EU"            },
+             "country": "CH"            },
             {"code": "TP",
              "name": "TAP Air Portugal",
-             "country": "EU"            },
+             "country": "PT"            },
             {"code": "TG",
              "name": "Thai Airways International",
-             "country": "Thailand"
+             "country": "TH"
             },
             {"code": "TK",
              "name": "Turkish Airlines",
-             "country": "Turkey"
+             "country": "TR"
             },
             {"code": "UA",
              "name": "United Airlines",
-             "country": "U.S.A"            },
+             "country": "US"            },
             
             
             
             {"code": "AR",
              "name": "Aerolíneas Argentinas",
-             "country": "Argentina"
+             "country": "AR"
             },
             {"code": "AM",
              "name": "Aeroméxico",
-             "country": "Mexico"
+             "country": "MX"
             },
             {"code": "UX",
              "name": "Air Europa",
-             "country": "EU"            },
+             "country": "ES"            },
             {"code": "AF",
              "name": "Air France",
-             "country": "EU"            },
+             "country": "FR"            },
             {"code": "CI",
              "name": "China Airlines",
-             "country": "China"            },
+             "country": "TW"            },
             {"code": "MU",
              "name": "China Eastern Airlines",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "DL",
              "name": "Delta Air Lines",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "GA",
              "name": "Garuda Indonesia",
-             "country": "Indonesia"
+             "country": "ID"
             },
             {"code": "KQ",
              "name": "Kenya Airways",
-             "country": "Kenya"
+             "country": "KE"
             },
             {"code": "KL",
              "name": "KLM",
-             "country": "EU"            },
+             "country": "NL"            },
             {"code": "KE",
              "name": "Korean Air",
-             "country": "Korea"
+             "country": "KR"
             },
             {"code": "ME",
              "name": "Middle East Airlines",
-             "country": "Lebanon"
+             "country": "LB"
             },
             {"code": "SV",
              "name": "Saudia",
-             "country": "Saudi Arabia"
+             "country": "SA"
             },
             {"code": "SK",
              "name": "Scandinavian Airlines",
-             "country": "EU"            },
+             "country": "SE"            },
             {"code": "RO",
              "name": "TAROM",
-             "country": "EU"            },
+             "country": "RO"            },
             {"code": "VN",
              "name": "Vietnam Airlines",
-             "country": "Vietnam"
+             "country": "VN"
             },
             {"code": "VS",
              "name": "Virgin Atlantic",
-             "country": "EU"            },
+             "country": "GB"            },
             {"code": "MF",
              "name": "XiamenAir",
-             "country": "China"            },
+             "country": "CN"            },
             
             
             
             {"code": "EI",
              "name": "Aer Lingus",
-             "country": "EU"            },
+             "country": "IE"            },
             {"code": "TN",
              "name": "Air Tahiti Nui",
-             "country": "EU"            },
+             "country": "PF"            },
             {"code": "DE",
              "name": "Condor",
-             "country": "EU"            },
+             "country": "DE"            },
             {"code": "HU",
              "name": "Hainan Airlines",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "FI",
              "name": "Icelandair",
-             "country": "EU"            },
+             "country": "IS"            },
             {"code": "PR",
              "name": "Philippine Airlines",
-             "country": "Philippines"
+             "country": "PH"
             },
             {"code": "PD",
              "name": "Porter Airlines",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "JX",
              "name": "Starlux Airlines",
-             "country": "China"            },
+             "country": "TW"            },
             {"code": "VC",
              "name": "Aleutian Airways",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "UP",
              "name": "Bahamassair",
-             "country": "Bahamas"
+             "country": "BS"
             },
             {"code": "9K",
              "name": "Cape Air",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "LF",
              "name": "Contour Airlines",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "M5",
              "name": "Kenmore Air",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "9X",
              "name": "Southern Airways Express",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "CZ",
              "name": "China Southern Airlines",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "EY",
              "name": "Etihad Airways",
-             "country": "United Arab Emirates"
+             "country": "AE"
             },
             {"code": "G3",
              "name": "Gol Linhas Aéreas Inteligentes",
-             "country": "Brazil"
+             "country": "BR"
             },
             {"code": "6E",
              "name": "IndiGo",
-             "country": "India"
+             "country": "IN"
             },
             {"code": "JA",
              "name": "JetSMART",
-             "country": "Chile"
+             "country": "CL"
             },
             {"code": "LL",
              "name": "Level",
-             "country": "EU"            },
+             "country": "ES"            },
             {"code": "LA",
              "name": "LATAM Airlines",
-             "country": "Chile"
+             "country": "CL"
             },
             {"code": "VY",
              "name": "Vueling",
-             "country": "EU"            },
+             "country": "ES"            },
             {"code": "NT",
              "name": "Binter Canarias",
-             "country": "EU"            },
+             "country": "ES"            },
             {"code": "HO",
              "name": "Juneyao Air",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "4Z",
              "name": "Airlink",
-             "country": "South Africa"
+             "country": "ZA"
             },
             {"code": "PG",
              "name": "Bangkok Airways",
-             "country": "Thailand"
+             "country": "TH"
             },
             {"code": "B6",
              "name": "JetBlue",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "WB",
              "name": "RwandAir",
-             "country": "Rwanda"
+             "country": "RW"
             },
             {"code": "S7",
              "name": "S7 Airlines",
-             "country": "Russia"
+             "country": "RU"
             },
             {"code": "VA",
              "name": "Virgin Australia",
-             "country": "Australia"
+             "country": "AU"
             },
             {"code": "UO",
              "name": "HK Express",
-             "country": "China"            },
+             "country": "HK"            },
             {"code": "JQ",
              "name": "Jetstar",
-             "country": "Australia"
+             "country": "AU"
             },
             {"code": "SB",
              "name": "Aircalin",
-             "country": "EU"            },
+             "country": "NC"            },
             {"code": "LY",
              "name": "El Al",
-             "country": "Isreal"
+             "country": "IL"
             },
             {"code": "EK",
              "name": "Emirates",
-             "country": "United Arab Emirates"
+             "country": "AE"
             },
             {"code": "WS",
              "name": "WestJet",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "QN",
              "name": "SmartLynx Australia",
-             "country": "Australia"
+             "country": "AU"
             },
             {"code": "GK",
              "name": "Jetstar Japan",
-             "country": "Japan"
+             "country": "JP"
             },
             {"code": "YN",
              "name": "Air Creebec",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "EN",
              "name": "Air Dolomiti",
-             "country": "EU"            },
+             "country": "IT"            },
             {"code": "3H",
              "name": "Air Inuit",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "MK",
              "name": "Air Mauritius",
-             "country": "Mauritius"
+             "country": "MU"
             },
             {"code": "JU",
              "name": "Air Serbia",
-             "country": "EU"            },
+             "country": "RS"            },
             {"code": "AD",
              "name": "Azul Brazilian Airlines",
-             "country": "Brazil"
+             "country": "BR"
             },
             {"code": "QH",
              "name": "Bamboo Airways",
-             "country": "Vietnam"
+             "country": "VN"
             },
             {"code": "MO",
              "name": "Calm Air",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "5T",
              "name": "Canadian North",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "9M",
              "name": "Central Mountain Air",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "4Y",
              "name": "Discover Airlines",
-             "country": "EU"            },
+             "country": "DE"            },
             {"code": "WK",
              "name": "Edelweiss Air",
-             "country": "EU"            },
+             "country": "CH"            },
             {"code": "EW",
              "name": "Eurowings",
-             "country": "EU"            },
+             "country": "DE"            },
             {"code": "FZ",
              "name": "Flydubai",
-             "country": "United Arab Emirates"
+             "country": "AE"
             },
             {"code": "GF",
              "name": "Gulf Air",
-             "country": "Bahrain"
+             "country": "BH"
             },
             {"code": "OA",
              "name": "Olympic Air",
-             "country": "EU"            },
+             "country": "GR"            },
             {"code": "PB",
              "name": "PAL Airlines",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "XQ",
              "name": "SunExpress",
-             "country": "EU"            },
+             "country": "TR"            },
             {"code": "VE",
              "name": "Clic Air",
-             "country": "Columbia"
+             "country": "CO"
             },
             {"code": "B7",
              "name": "Uni Air",
-             "country": "China"            },
+             "country": "TW"            },
             {"code": "TR",
              "name": "Scoot",
-             "country": "Singapore"
+             "country": "SG"
             },
             {"code": "S4",
              "name": "Azores Airlines",
-             "country": "EU"            },
+             "country": "PT"            },
             {"code": "VF",
              "name": "AJet",
-             "country": "Turkey"
+             "country": "TR"
             },
             {"code": "AZ",
              "name": "ITA Airways",
-             "country": "EU"            },
+             "country": "IT"            },
             {"code": "XE",
              "name": "JSX",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "XK",
              "name": "Air Corsica",
-             "country": "EU"            },
+             "country": "FR"            },
             {"code": "VT",
              "name": "Air Tahiti",
-             "country": "EU"            },
+             "country": "PF"            },
             {"code": "BT",
              "name": "airBaltic",
-             "country": "EU"            },
+             "country": "LV"            },
             {"code": "CE",
              "name": "Chalair Aviation",
-             "country": "EU"            },
+             "country": "FR"            },
             {"code": "HV",
              "name": "Transavia",
-             "country": "EU"            },
+             "country": "NL"            },
             {"code": "T7",
              "name": "Twin Jet",
-             "country": "EU"            },
+             "country": "FR"            },
             {"code": "WM",
              "name": "Winair",
-             "country": "EU"            },
+             "country": "NL"            },
             {"code": "AE",
              "name": "Mandarin Airlines",
-             "country": "China"            },
+             "country": "TW"            },
             {"code": "FM",
              "name": "Shanghai Airlines",
-             "country": "China"            },
+             "country": "CN"            },
             {"code": "U2",
              "name": "easyJet",
-             "country": "EU"            },
+             "country": "GB"            },
             {"code": "WN",
              "name": "Southwest Airlines",
-             "country": "U.S.A"            },
+             "country": "US"            },
             {"code": "JV",
              "name": "Bearskin Airlines",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "YB",
              "name": "Harbour Air",
-             "country": "Canada"
+             "country": "CA"
             },
             {"code": "JB",
              "name": "Helijet",
-             "country": "Canada"
+             "country": "CA"
             }
             
                    

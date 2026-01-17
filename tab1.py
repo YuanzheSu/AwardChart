@@ -1,6 +1,8 @@
 """
-tab1.py: Eligibility Finder - UPDATED
+tab1_v2.py: Eligibility Finder - Simplified with Pre-processed Data
 
+Core logic moved to gui.py startup.
+Tab receives pre-processed data structures and handles UI only.
 """
 
 import tkinter as tk
@@ -9,299 +11,192 @@ from tkinter import ttk, messagebox
 class Tab1Frame(ttk.Frame):
     """Tab 1: Eligibility Finder"""
 
-    def __init__(self, parent, app):
+    def __init__(self, parent, carriers_country_tab1, carrierlist_tab1, ffp_dict_redeem):
         super().__init__(parent)
-        self.app = app
-        try:
-            # Process shared data (no file loading)
-            self._process_data()
-            # Setup UI
-            self._setup_ui()
-        except Exception as e:
-            messagebox.showerror("Tab 1 Error", str(e))
-            raise
 
-    def _process_data(self):
-        """
-        Process shared data from app into internal structures.
-        """
-        # ==================== Carriers ====================
-        carriers_data = self.app.carriers['carriers']
-        self.carriers = carriers_data
-        carrier_codes = {c['code'] for c in carriers_data}
+        # Store pre-processed data
+        self.carriers_country_tab1 = carriers_country_tab1
+        self.carrierlist_tab1 = carrierlist_tab1
+        self.ffp_dict_redeem = ffp_dict_redeem
 
-        # ==================== Alliances ====================
-        alli_data = self.app.alliance['alliances']
-        self.alli_map = {}  # Maps alliance code -> set of member carriers
-        self.alli_countries = {}  # Maps alliance code -> set of countries in that alliance
-        self.alliances = []
-        carrier_to_alliances = {}
+        # Current filter states
+        self.alliance_filtered = []
+        self.carrierlist_tab1_filtered = []
 
-        for a in alli_data:
-            alliance_code = a['code']
-            self.alli_map[alliance_code] = set()
-            self.alli_countries[alliance_code] = set()
-
-            for m in a['members']:
-                # Check if carrier exists
-                if m not in carrier_codes:
-                    raise ValueError(f"Alliance '{alliance_code}' has unknown carrier '{m}'")
-
-                # Check if carrier is in multiple alliances
-                if m in carrier_to_alliances:
-                    raise ValueError(
-                        f"Carrier '{m}' is in multiple alliances: "
-                        f"{carrier_to_alliances[m]} and '{alliance_code}'"
-                    )
-
-                carrier_to_alliances[m] = alliance_code
-                self.alli_map[alliance_code].add(m)
-
-                # Add this carrier's country to the alliance's countries
-                carrier_obj = next((c for c in carriers_data if c['code'] == m), None)
-                if carrier_obj:
-                    self.alli_countries[alliance_code].add(carrier_obj['country'])
-
-            self.alliances.append(alliance_code)
-
-        self.alliances.append('None')  # Option for carriers not in any alliance
-
-        # Build set of all carriers in any alliance
-        self.carriers_in_alliances = set()
-        for members in self.alli_map.values():
-            self.carriers_in_alliances.update(members)
-
-        # ==================== Country-to-Alliance Mapping ====================
-        # NEW: Build mapping of countries to alliances that operate there
-        self.country_alliances = {}  # Maps country -> list of alliance codes
-        for country in {c['country'] for c in carriers_data}:
-            self.country_alliances[country] = []
-            # Check which alliances have carriers in this country
-            for alliance_code in self.alliances:
-                if alliance_code == 'None':
-                    # Check if country has carriers not in any alliance
-                    has_non_alliance = any(
-                        c['country'] == country and c['code'] not in self.carriers_in_alliances
-                        for c in carriers_data
-                    )
-                    if has_non_alliance:
-                        self.country_alliances[country].append('None')
-                else:
-                    if country in self.alli_countries.get(alliance_code, set()):
-                        self.country_alliances[country].append(alliance_code)
-
-        # ==================== FFPs ====================
-        self.ffps = self.app.ffp['ffps']
-
-        # Validate FFPs - check that carriers exist
-        for ffp_code, ffp_info in self.ffps.items():
-            for carrier in ffp_info.get('carriers', []):
-                if carrier not in carrier_codes:
-                    raise ValueError(f"FFP '{ffp_code}' uses unknown carrier '{carrier}'")
-
-        # ==================== Partners ====================
-        partners_data = self.app.partners['programs']
-        self.partners_raw = partners_data
-        self.ffp_redeem_partners = {}  # Maps FFP code -> set of carriers that can redeem
-
-        # Validate and expand partners
-        for p in partners_data:
-            ffp_code = p['ffp']
-
-            # Validate FFP exists
-            if ffp_code not in self.ffps:
-                raise ValueError(f"Unknown FFP code '{ffp_code}' in partners")
-
-            # Initialize set for this FFP if not exists
-            if ffp_code not in self.ffp_redeem_partners:
-                self.ffp_redeem_partners[ffp_code] = set()
-
-            # Only process redeem relationships
-            if p['relationship'] not in ['both', 'redeem_only']:
-                continue
-
-            if p['type'] == 'alliance':
-                # Expand alliance to individual carriers
-                alliance_code = p['alliance']
-                if alliance_code not in self.alli_map:
-                    raise ValueError(
-                        f"Unknown alliance code '{alliance_code}' in partners for FFP '{ffp_code}'"
-                    )
-
-                # Add all carriers in this alliance as redeem partners
-                self.ffp_redeem_partners[ffp_code].update(self.alli_map[alliance_code])
-
-            elif p['type'] == 'individual':
-                # Add individual carriers as redeem partners
-                for carrier in p.get('carriers', []):
-                    if carrier not in carrier_codes:
-                        raise ValueError(
-                            f"Unknown carrier '{carrier}' in partner entry for FFP '{ffp_code}'"
-                        )
-                    self.ffp_redeem_partners[ffp_code].add(carrier)
-
-        # ==================== Countries ====================
-        # All countries available in the dataset
-        self.all_countries = sorted({c['country'] for c in carriers_data})
+        # Setup UI
+        self._setup_ui()
 
     def _setup_ui(self):
-        """Setup user interface"""
-        self.country_var = tk.StringVar(value='')
-        self.alliance_var = tk.StringVar(value='')
-        self.carrier_var = tk.StringVar(value='')
+        """Build the user interface"""
+        # Main container
+        container = ttk.Frame(self, padding="20")
+        container.pack(fill='both', expand=True)
 
-        # Country dropdown (FIRST)
-        ttk.Label(self, text="Select Country:").grid(row=0, column=0, sticky='w', padx=5, pady=2)
-        self.country_combo = ttk.Combobox(self, textvariable=self.country_var,
-                                         values=self.all_countries, state='readonly', width=40)
-        self.country_combo.grid(row=1, column=0, sticky='ew', padx=5, pady=2)
-        self.country_combo.bind('<<ComboboxSelected>>', lambda e: self._on_country_change())
+        # Title
+        title = ttk.Label(container, text="Eligibility Finder", 
+                         font=('Helvetica', 16, 'bold'))
+        title.grid(row=0, column=0, columnspan=3, pady=(0, 20), sticky='w')
 
-        # Alliance dropdown (SECOND)
-        ttk.Label(self, text="Select Alliance:").grid(row=2, column=0, sticky='w', padx=5, pady=2)
-        self.alliance_combo = ttk.Combobox(self, textvariable=self.alliance_var,
-                                          state='readonly', width=40)
-        self.alliance_combo.grid(row=3, column=0, sticky='ew', padx=5, pady=2)
-        self.alliance_combo.bind('<<ComboboxSelected>>', lambda e: self._on_alliance_change())
+        # Instructions
+        instructions = ttk.Label(container, 
+                                text="Find which frequent flyer programs can redeem awards on a specific carrier",
+                                foreground='gray')
+        instructions.grid(row=1, column=0, columnspan=3, pady=(0, 20), sticky='w')
 
-        # Carrier dropdown (THIRD)
-        ttk.Label(self, text="Select Carrier:").grid(row=4, column=0, sticky='w', padx=5, pady=2)
-        self.carrier_combo = ttk.Combobox(self, textvariable=self.carrier_var,
-                                         state='readonly', width=40)
-        self.carrier_combo.grid(row=5, column=0, sticky='ew', padx=5, pady=2)
-        self.carrier_combo.bind('<<ComboboxSelected>>', lambda e: self._update_results())
+        # ==================== Row 1: Country Selection ====================
+        ttk.Label(container, text="1. Select Country:", font=('Helvetica', 10, 'bold')).grid(
+            row=2, column=0, sticky='w', pady=(0, 5))
 
-        # Results label
-        ttk.Label(self, text="Available FFPs to Redeem:").grid(row=6, column=0, sticky='w', padx=5, pady=2)
+        # Country dropdown with search functionality
+        self.country_var = tk.StringVar()
+        self.country_combo = ttk.Combobox(container, textvariable=self.country_var, 
+                                         state='normal', width=40)
+        self.country_combo['values'] = self.carriers_country_tab1
+        self.country_combo.grid(row=3, column=0, sticky='ew', pady=(0, 15))
+        self.country_combo.bind('<<ComboboxSelected>>', self._on_country_selected)
+        self.country_combo.bind('<KeyRelease>', self._on_country_search)
 
-        # Results listbox
-        self.result_box = tk.Listbox(self, height=12, font=("Courier", 9))
-        self.result_box.grid(row=7, column=0, sticky='nsew', padx=5, pady=2)
+        # ==================== Row 2: Alliance Selection ====================
+        ttk.Label(container, text="2. Select Alliance:", font=('Helvetica', 10, 'bold')).grid(
+            row=4, column=0, sticky='w', pady=(0, 5))
+
+        self.alliance_var = tk.StringVar()
+        self.alliance_combo = ttk.Combobox(container, textvariable=self.alliance_var, 
+                                          state='disabled', width=40)
+        self.alliance_combo.grid(row=5, column=0, sticky='ew', pady=(0, 15))
+        self.alliance_combo.bind('<<ComboboxSelected>>', self._on_alliance_selected)
+
+        # ==================== Row 3: Carrier Selection ====================
+        ttk.Label(container, text="3. Select Carrier:", font=('Helvetica', 10, 'bold')).grid(
+            row=6, column=0, sticky='w', pady=(0, 5))
+
+        self.carrier_var = tk.StringVar()
+        self.carrier_combo = ttk.Combobox(container, textvariable=self.carrier_var, 
+                                         state='disabled', width=40)
+        self.carrier_combo.grid(row=7, column=0, sticky='ew', pady=(0, 15))
+        self.carrier_combo.bind('<<ComboboxSelected>>', self._on_carrier_selected)
+
+        # ==================== Results Display ====================
+        ttk.Label(container, text="Available FFPs:", font=('Helvetica', 10, 'bold')).grid(
+            row=8, column=0, sticky='w', pady=(10, 5))
+
+        # Results text box
+        self.results_text = tk.Text(container, height=10, width=50, wrap='word', 
+                                   state='disabled', bg='#f0f0f0')
+        self.results_text.grid(row=9, column=0, sticky='nsew', pady=(0, 10))
+
+        # Scrollbar for results
+        scrollbar = ttk.Scrollbar(container, orient='vertical', command=self.results_text.yview)
+        scrollbar.grid(row=9, column=1, sticky='ns', pady=(0, 10))
+        self.results_text.config(yscrollcommand=scrollbar.set)
 
         # Configure grid weights
-        self.columnconfigure(0, weight=1)
-        self.rowconfigure(7, weight=1)
+        container.columnconfigure(0, weight=1)
+        container.rowconfigure(9, weight=1)
 
-        # Initial populate - set first country and cascade
-        if self.all_countries:
-            self.country_var.set(self.all_countries[0])
-            self._populate_alliances()
-            self._build_carrier_menu()
-            self._update_results()
+    def _on_country_search(self, event):
+        """Filter country dropdown as user types"""
+        typed = self.country_var.get().lower()
+        if not typed:
+            self.country_combo['values'] = self.carriers_country_tab1
+            return
 
-    def _on_country_change(self):
-        """Handle country selection change - update alliance dropdown"""
-        self._populate_alliances()
+        # Filter countries that match typed text (code or name)
+        filtered = [country for country in self.carriers_country_tab1 
+                   if typed in country.lower()]
+        self.country_combo['values'] = filtered
+
+    def _on_country_selected(self, event):
+        """Handle country selection - filter alliances"""
+        selected_country = self.country_var.get()
+        if not selected_country:
+            return
+
+        # Filter carriers for this country
+        self.carrierlist_tab1_filtered = [
+            carrier for carrier in self.carrierlist_tab1 
+            if carrier['country'] == selected_country
+        ]
+
+        # Get unique alliances in this country
+        self.alliance_filtered = []
+        for carrier in self.carrierlist_tab1_filtered:
+            alliance = carrier['alliance']
+            if alliance not in self.alliance_filtered:
+                self.alliance_filtered.append(alliance)
+
+        # Update alliance dropdown
+        self.alliance_combo['values'] = self.alliance_filtered
+        self.alliance_combo['state'] = 'readonly'
         self.alliance_var.set('')
+
+        # Reset downstream selections
+        self.carrier_combo['state'] = 'disabled'
         self.carrier_var.set('')
-        self.result_box.delete(0, tk.END)
+        self._clear_results()
 
-    def _populate_alliances(self):
-        """Populate alliance dropdown based on selected country"""
-        country = self.country_var.get()
-
-        if not country:
-            self.alliance_combo['values'] = []
-            self.alliance_var.set('')
+    def _on_alliance_selected(self, event):
+        """Handle alliance selection - filter carriers"""
+        selected_alliance = self.alliance_var.get()
+        if not selected_alliance:
             return
 
-        # Get alliances that have carriers in this country
-        alliances = self.country_alliances.get(country, [])
-
-        self.alliance_combo['values'] = alliances
-
-        # Set first alliance if available
-        if alliances:
-            self.alliance_var.set(alliances[0])
-            self._build_carrier_menu()
-        else:
-            self.alliance_var.set('')
-
-    def _on_alliance_change(self):
-        """Handle alliance selection change - update carrier dropdown"""
-        self._build_carrier_menu()
-        self._update_results()
-
-    def _build_carrier_menu(self):
-        """Build list of carriers based on selected country and alliance"""
-        country = self.country_var.get()
-        alliance = self.alliance_var.get()
-
-        if not country or not alliance:
-            self.carrier_combo['values'] = []
-            self.carrier_var.set('')
-            return
+        selected_country = self.country_var.get()
 
         # Filter carriers by country and alliance
-        if alliance == 'None':
-            # Only carriers NOT in any alliance
-            items = [cc for cc in self.carriers
-                    if cc['code'] not in self.carriers_in_alliances
-                    and cc['country'] == country]
-        else:
-            # Only carriers in the selected alliance
-            members = self.alli_map.get(alliance, set())
-            items = [cc for cc in self.carriers
-                    if cc['code'] in members and cc['country'] == country]
+        carriers_filtered = [
+            carrier for carrier in self.carrierlist_tab1 
+            if carrier['country'] == selected_country and carrier['alliance'] == selected_alliance
+        ]
 
-        items.sort(key=lambda x: x['code'])
+        # Extract carrier names for display
+        carriers_name_display = [carrier['name'] for carrier in carriers_filtered]
 
-        # NEW: Display both code and name, like in tab2
-        carrier_list = [f"{i['code']} - {i['name']}" for i in items]
+        # Update carrier dropdown
+        self.carrier_combo['values'] = carriers_name_display
+        self.carrier_combo['state'] = 'readonly'
+        self.carrier_var.set('')
 
-        self.carrier_combo['values'] = carrier_list
+        # Clear results
+        self._clear_results()
 
-        # Set first carrier if available
-        if carrier_list:
-            self.carrier_var.set(carrier_list[0])
-        else:
-            self.carrier_var.set('')
-
-    def _update_results(self):
-        """Update the results listbox based on selected carrier"""
-        self.result_box.delete(0, tk.END)
-
-        carrier_str = self.carrier_var.get()
-        if not carrier_str:
+    def _on_carrier_selected(self, event):
+        """Handle carrier selection - find available FFPs"""
+        selected_carrier = self.carrier_var.get()
+        if not selected_carrier:
             return
 
-        # Extract carrier code from "CODE - Name" format
-        carrier = carrier_str.split(' - ')[0]
+        # Extract carrier code from display name (format: "CODE - Name")
+        carrier_code = selected_carrier.split('-')[0].strip()
 
-        ffp_results = self._find_redeem_ffps(carrier)
+        # Find FFPs that can redeem this carrier
+        display_ffps_available = []
+        for ffp_name, ffp_value in self.ffp_dict_redeem.items():
+            if (ffp_value.get('redeem_partner') and carrier_code in ffp_value.get('redeem_partner')) or (ffp_value.get('carriers') and carrier_code in ffp_value.get('carriers')):
+                display_ffps_available.append(ffp_value['name'])
 
-        # Display results (already sorted with self FFP first)
-        for ffp_name in ffp_results:
-            self.result_box.insert(tk.END, ffp_name)
+        # Display results
+        self._display_results(display_ffps_available, selected_carrier)
 
-    def _find_redeem_ffps(self, carrier_code):
-        """
-        Find all FFPs that can redeem the specified carrier.
+    def _display_results(self, ffps, carrier_name):
+        """Display FFP results in text box"""
+        self.results_text.config(state='normal')
+        self.results_text.delete('1.0', tk.END)
 
-        Args:
-            carrier_code: Two-letter carrier code (e.g., 'AA', 'UA')
+        if ffps:
+            result_text = f"Carrier: {carrier_name}\n\n"
+            result_text += f"You can redeem awards on this carrier using the following {len(ffps)} FFPs:\n\n"
+            for i, ffp in enumerate(ffps, 1):
+                result_text += f"{i}. {ffp}\n"
+        else:
+            result_text = f"Carrier: {carrier_name}\n\n"
+            result_text += "No FFPs found that can redeem awards on this carrier."
 
-        Returns:
-            List of FFP names, sorted with self FFPs first, then partners
-        """
-        self_ffps = []
-        partner_ffps = []
+        self.results_text.insert('1.0', result_text)
+        self.results_text.config(state='disabled')
 
-        # Step 1: Find self FFPs (where carrier is registered in FFP)
-        for ffp_code, ffp_info in self.ffps.items():
-            if carrier_code in ffp_info.get('carriers', []):
-                self_ffps.append(ffp_info['name'])
-
-        # Step 2: Find partner FFPs (where carrier can redeem via partnership)
-        for ffp_code, redeem_partners in self.ffp_redeem_partners.items():
-            if carrier_code in redeem_partners:
-                # Don't add if already in self FFPs (avoid duplicates)
-                ffp_name = self.ffps[ffp_code]['name']
-                if ffp_name not in self_ffps:
-                    partner_ffps.append(ffp_name)
-
-        # Sort and combine: self FFPs first, then partner FFPs
-        self_ffps.sort()
-        partner_ffps.sort()
-
-        return self_ffps + partner_ffps
+    def _clear_results(self):
+        """Clear results text box"""
+        self.results_text.config(state='normal')
+        self.results_text.delete('1.0', tk.END)
+        self.results_text.config(state='disabled')
