@@ -135,7 +135,7 @@
     },
     "VS": {
       "name": "VS Flyingclub",
-      "carriers": ["DL"],
+      "carriers": ["VS"],
       "seperate_Segment_pricing": true,
       "family_pooling":  "Allowed",
       "expiration": "Never expire"
