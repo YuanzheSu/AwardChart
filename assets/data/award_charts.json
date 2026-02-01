@@ -8129,7 +8129,7 @@
     "EK_U2": {
       "ffp_code": "EK",
       "applies_to": "specific",
-      "specific_partners": ["FZ","U2"],
+      "specific_partners": ["FZ","U2","LS"],
       "type": "dynamic",
       "cabins": {
         "economy": [{}],

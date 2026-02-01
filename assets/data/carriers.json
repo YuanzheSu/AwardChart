@@ -477,6 +477,10 @@
             {"code": "JB",
              "name": "Helijet",
              "country": "CA"
+            },
+            {"code": "LS",
+             "name": "Jet2",
+             "country": "GB"
             }
             
                    

@@ -1,19 +1,10 @@
 详见 https://www.uscardforum.com/t/topic/451800
 
 ## Version History
-v0.2.0 Major Update
-### Functionalities
-0. Include (almost) all civil aviation airports. Data credit to: ourairports.com.
-1. Update code logic for better handling of transfer itinerary.
+v0.2.1 Regular data update
 
-Now in tab2, for each segment, simply define origin and destination airport, carrier and cabin.
-
-### Data
-0. Updates all ffp award charts to incorporate the expanded regions support.
-1. BA devaluation (Dec 2025): Add a 1.1X multiplier to the (already guessed/imperical) BA chart.
-2. IB devaluation (Dec 2025) Noticed IB increased the award miles needed for short haul AA/BA again.
-3. Adds Spirit program.
-4. AC adds Air baltic as redeem partner. AS adds ITA as earn partner.
+0. Emirates add Jet2 as redeem partner. [source](https://www.emirates.com/us/english/skywards/partners/jet2/), [ref](https://awardwallet.com/news/airlines/emirates-jet2-partnership/)
+1. AA enables redeeming on Aer Lingus. [source](https://www.aa.com/web/i18n/aadvantage-program/use-miles/partner-airline-flights.html), [ref](https://www.uscardforum.com/t/topic/167388/915)
 
 
 ## Install
@@ -28,11 +19,11 @@ Now in tab2, for each segment, simply define origin and destination airport, car
 
 FFPs: Transfer partners of major banks in the US. (26) 
 
-Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs. (134)
+Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs. (135)
 
 POIs: (Almost) All civil aviation airports. 
 
-Data last update on: 01/17/2026
+Data last update on: 01/31/2026
 
 
 
@@ -74,3 +65,20 @@ Purpose: Find which FFP can be used to collect miles when taking cash price tick
 
 
 
+<details>
+    <summary>Previous version histories</summary>
+
+    ## v0.2.0 Major Update
+    ### Functionalities
+    0. Include (almost) all civil aviation airports. Data credit to: ourairports.com.
+    1. Update code logic for better handling of transfer itinerary.
+
+    Now in tab2, for each segment, simply define origin and destination airport, carrier and cabin.
+
+    ### Data
+    0. Updates all ffp award charts to incorporate the expanded regions support.
+    1. BA devaluation (Dec 2025): Add a 1.1X multiplier to the (already guessed/imperical) BA chart.
+    2. IB devaluation (Dec 2025) Noticed IB increased the award miles needed for short haul AA/BA again.
+    3. Adds Spirit program.
+    4. AC adds Air baltic as redeem partner. AS adds ITA as earn partner.
+</details>

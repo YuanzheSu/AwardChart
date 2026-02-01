@@ -27,13 +27,13 @@
     {
       "ffp": "AA",
       "type": "individual",
-      "carriers": ["TN","9K","CZ","EY","G3","JA"],
+      "carriers": ["EI","TN","9K","CZ","EY","G3","JA"],
       "relationship": "both"
     },
     {
       "ffp": "AA",
       "type": "individual",
-      "carriers": ["EI","6E","LL","PD"],
+      "carriers": ["6E","LL","PD"],
       "relationship": "earn_only"
     },
     {
@@ -333,7 +333,7 @@
     {
       "ffp": "EK",
       "type": "individual",
-      "carriers": ["U2"],
+      "carriers": ["U2","LS"],
       "relationship": "redeem_only"
     },
     {
