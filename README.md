@@ -5,13 +5,12 @@
 v0.2.2 Regular data update
 
 0. AC adds ITA(AZ) as redeem partner. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/partners.html#/), [ref](https://awardwallet.com/airlines/air-canada-aeroplan/ita-airways-partnership/)  
-1. VS adds Westjet(WS) as earn & redeem partner. [source](https://www.virginatlantic.com/en-US/flying-club/airline-partners/westjet), [ref](https://awardwallet.com/news/virgin-atlantic-flying-club/westjet-partnership/)[ref2](https://www.uscardforum.com/t/topic/266791)
+1. VS adds Westjet(WS) as earn & redeem partner. [source](https://www.virginatlantic.com/en-US/flying-club/airline-partners/westjet), [ref](https://awardwallet.com/news/virgin-atlantic-flying-club/westjet-partnership/),[ref2](https://www.uscardforum.com/t/topic/266791)
 2. EY adds Hong Kong Airline (HX) as earn & redeem partner. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/hong-kong-airlines), [ref](https://www.uscardforum.com/t/topic/238405/103)
-3. IB Avios enables family sharing. [source](https://www.iberia.com/us/iberiaclub/family-Account/
-), [ref](https://awardwallet.com/news/club-iberia-plus/family-pooling/)  
+3. IB Avios enables family sharing. [source](https://www.iberia.com/us/iberiaclub/family-Account/), [ref](https://awardwallet.com/news/club-iberia-plus/family-pooling/)  
 4. EY devaluates some partner short haul business class. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/china-eastern-airlines)
 5. B6 ends partnership with JSX. [source](https://www.jetblue.com/airline-partners/jsx)
-6. Updated award chart for BA and QR, based on search examples.
+6. Updated award chart for BA and QR, based on data points.
 
 ## Install
 
