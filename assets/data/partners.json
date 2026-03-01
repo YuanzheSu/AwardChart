@@ -153,7 +153,7 @@
     {
       "ffp": "AC",
       "type": "individual",
-      "carriers": ["JU","JV","MO","FZ","XQ","BT"],
+      "carriers": ["JU","JV","MO","FZ","XQ","BT","AZ"],
       "relationship": "redeem_only"
     },
     {
@@ -315,7 +315,7 @@
     {
       "ffp": "VS",
       "type": "individual",
-      "carriers": ["NZ","NH","LY","LA","SA","VA"],
+      "carriers": ["NZ","NH","LY","LA","SA","VA","WS"],
       "relationship": "both"
     },
     {
@@ -345,7 +345,7 @@
     {
       "ffp": "EY",
       "type": "individual",
-      "carriers": ["AC","UX","AF","NZ","JU","NH","AA","AD","SN","MU","LY","ET","GA","GF","HU","B6","KL","MH","WY","AT","SV","SK","UL","TP","VN"],
+      "carriers": ["AC","UX","AF","NZ","JU","NH","AA","AD","SN","MU","LY","ET","GA","GF","HU","B6","KL","MH","WY","AT","SV","SK","UL","TP","VN","HX"],
       "relationship": "both"
     },
     {
@@ -363,7 +363,7 @@
     {
       "ffp": "B6",
       "type": "individual",
-      "carriers": ["XE","SQ","SA"],
+      "carriers": ["SQ","SA"],
       "relationship": "earn_only"
     }
   ]

@@ -25,7 +25,7 @@
       "name": "IB Avios Club",
       "carriers": ["IB"],
       "seperate_Segment_pricing": false,
-      "family_pooling":  "Not allowed",
+      "family_pooling":  "Allowed",
       "expiration": "Extend by activity"
     },
     "AY": {

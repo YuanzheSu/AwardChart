@@ -1,11 +1,17 @@
 详见 https://www.uscardforum.com/t/topic/451800
 
 ## Version History
+
 v0.2.1 Regular data update
 
-0. Emirates add Jet2 as redeem partner. [source](https://www.emirates.com/us/english/skywards/partners/jet2/), [ref](https://awardwallet.com/news/airlines/emirates-jet2-partnership/)
-1. AA enables redeeming on Aer Lingus. [source](https://www.aa.com/web/i18n/aadvantage-program/use-miles/partner-airline-flights.html), [ref](https://www.uscardforum.com/t/topic/167388/915)
-
+0. AC adds ITA(AZ) as redeem partner. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/partners.html#/), [ref](https://awardwallet.com/airlines/air-canada-aeroplan/ita-airways-partnership/)  
+1. VS adds Westjet(WS) as earn & redeem partner. [source](https://www.virginatlantic.com/en-US/flying-club/airline-partners/westjet), [ref](https://awardwallet.com/news/virgin-atlantic-flying-club/westjet-partnership/)[ref2](https://www.uscardforum.com/t/topic/266791)
+2. EY adds Hong Kong Airline (HX) as earn & redeem partner. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/hong-kong-airlines), [ref](https://www.uscardforum.com/t/topic/238405/103)
+3. IB Avios enables family sharing. [source](https://www.iberia.com/us/iberiaclub/family-Account/
+), [ref](https://awardwallet.com/news/club-iberia-plus/family-pooling/)  
+4. EY devaluates some partner short haul business class. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/china-eastern-airlines)
+5. B6 ends partnership with JSX. [source](https://www.jetblue.com/airline-partners/jsx)
+6. Updated award chart for BA and QR, based on search examples.
 
 ## Install
 
@@ -19,11 +25,11 @@ v0.2.1 Regular data update
 
 FFPs: Transfer partners of major banks in the US. (26) 
 
-Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs. (135)
+Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs. (136)
 
 POIs: (Almost) All civil aviation airports. 
 
-Data last update on: 01/31/2026
+Data last update on: 02/28/2026
 
 
 
@@ -67,6 +73,11 @@ Purpose: Find which FFP can be used to collect miles when taking cash price tick
 
 <details>
     <summary>Previous version histories</summary>
+
+    v0.2.1 Regular data update
+
+    0. Emirates add Jet2 as redeem partner. [source](https://www.emirates.com/us/english/skywards/partners/jet2/), [ref](https://awardwallet.com/news/airlines/emirates-jet2-partnership/)
+    1. AA enables redeeming on Aer Lingus. [source](https://www.aa.com/web/i18n/aadvantage-program/use-miles/partner-airline-flights.html), [ref](https://www.uscardforum.com/t/topic/167388/915)
 
     ## v0.2.0 Major Update
     ### Functionalities

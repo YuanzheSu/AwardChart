@@ -481,6 +481,10 @@
             {"code": "LS",
              "name": "Jet2",
              "country": "GB"
+            },
+            {"code": "HX",
+             "name": "Hong Kong Airlines",
+             "country": "HK"
             }
             
                    
