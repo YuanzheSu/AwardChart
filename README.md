@@ -2,7 +2,7 @@
 
 ## Version History
 
-v0.2.1 Regular data update
+v0.2.2 Regular data update
 
 0. AC adds ITA(AZ) as redeem partner. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/partners.html#/), [ref](https://awardwallet.com/airlines/air-canada-aeroplan/ita-airways-partnership/)  
 1. VS adds Westjet(WS) as earn & redeem partner. [source](https://www.virginatlantic.com/en-US/flying-club/airline-partners/westjet), [ref](https://awardwallet.com/news/virgin-atlantic-flying-club/westjet-partnership/)[ref2](https://www.uscardforum.com/t/topic/266791)
