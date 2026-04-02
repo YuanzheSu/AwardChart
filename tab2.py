@@ -1073,6 +1073,7 @@ class Tab2Frame(ttk.Frame):
                     type1part = type1part_a + type1part_b
                     type2part = list(set(ffp_redeempartners) - set(type1part))
                     type1part += ["QF"]
+                    type3part = ["EK"]
 
                     if all(item in type1part_b for item in unique_carriers):
                         chart['chart_name'] = 'QF_GK'
@@ -1089,7 +1090,9 @@ class Tab2Frame(ttk.Frame):
                     elif all(item in type2part for item in unique_carriers):
                         chart['chart_name'] = 'QF_partners'
                         self._findPrice_SingleSeg(chart, origs[0], dests[-1], cabin, sum(distances))
-
+                    elif all(item in type3part for item in unique_carriers):
+                        chart['chart_name'] = 'QF_EK'
+                        self._findPrice_SingleSeg(chart, origs[0], dests[-1], cabin, sum(distances))
                     else:
                         chart['chart_name'] = 'N/A'
                         chart['award_miles'] = 'This itinerary is not allowed. QF charts rules.'

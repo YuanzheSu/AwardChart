@@ -1,16 +1,12 @@
 详见 https://www.uscardforum.com/t/topic/451800
 
 ## Version History
-
-v0.2.2 Regular data update
-
-0. AC adds ITA(AZ) as redeem partner. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/partners.html#/), [ref](https://awardwallet.com/airlines/air-canada-aeroplan/ita-airways-partnership/)  
-1. VS adds Westjet(WS) as earn & redeem partner. [source](https://www.virginatlantic.com/en-US/flying-club/airline-partners/westjet), [ref](https://awardwallet.com/news/virgin-atlantic-flying-club/westjet-partnership/),[ref2](https://www.uscardforum.com/t/topic/266791)
-2. EY adds Hong Kong Airline (HX) as earn & redeem partner. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/hong-kong-airlines), [ref](https://www.uscardforum.com/t/topic/238405/103)
-3. IB Avios enables family sharing. [source](https://www.iberia.com/us/iberiaclub/family-Account/), [ref](https://awardwallet.com/news/club-iberia-plus/family-pooling/)  
-4. EY devaluates some partner short haul business class. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/china-eastern-airlines)
-5. B6 ends partnership with JSX. [source](https://www.jetblue.com/airline-partners/jsx)
-6. Updated award chart for BA and QR, based on data points.
+v0.2.3 Regular data update.
+1. ITA(AZ) is officially part of Star Alliance. Alliance partners SHOULD be able to earn and redeem on it. [source](https://www.staralliance.com/en/ita-joins-star-alliance)
+2. Emirates(EK) chart chage involving some partners. [source](https://www.emirates.com/us/english/skywards/partners/?partner=airlines), [ref](https://awardwallet.com/news/airlines/emirates-partner-award-chart-changes-2026/)
+3. Cathay Pacifix (CX) slight devaluation on self-operating flights. [source](https://www.cathaypacific.com/cx/en_US/book-a-trip/redeem-flights/redeem-flight-awards.html), [ref](https://awardwallet.com/news/airlines/cathay-award-chart-changes-may-2026/)
+4. JetBlue(B6) and Japan Airlines(JL) ends partnership. [source1](https://www.jetblue.com/airline-partners/japan-airlines), [source2](https://www.jal.co.jp/jp/en/info/2025/jmb/b6/)
+5. Qantas(QF) devaluation on Emirates(EK) redemption. [source](https://www.qantas.com/au/en/frequent-flyer/use-points/classic-flight-rewards/tables.html#emirates-classic-flight-rewards), [ref](https://awardwallet.com/news/airlines/qantas-devalues-emirates-awards/)
 
 ## Install
 
@@ -28,7 +24,7 @@ Carriers: Someone who is a redeem/earn partner of at least one of the FFP progra
 
 POIs: (Almost) All civil aviation airports. 
 
-Data last update on: 02/28/2026
+Data last update on: 04/01/2026
 
 
 
@@ -72,6 +68,16 @@ Purpose: Find which FFP can be used to collect miles when taking cash price tick
 
 <details>
     <summary>Previous version histories</summary>
+    
+    v0.2.2 Regular data update
+
+    0. AC adds ITA(AZ) as redeem partner. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/partners.html#/), [ref](https://awardwallet.com/airlines/air-canada-aeroplan/ita-airways-partnership/)  
+    1. VS adds Westjet(WS) as earn & redeem partner. [source](https://www.virginatlantic.com/en-US/flying-club/airline-partners/westjet), [ref](https://awardwallet.com/news/virgin-atlantic-flying-club/westjet-partnership/),[ref2](https://www.uscardforum.com/t/topic/266791)
+    2. EY adds Hong Kong Airline (HX) as earn & redeem partner. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/hong-kong-airlines), [ref](https://www.uscardforum.com/t/topic/238405/103)
+    3. IB Avios enables family sharing. [source](https://www.iberia.com/us/iberiaclub/family-Account/), [ref](https://awardwallet.com/news/club-iberia-plus/family-pooling/)  
+    4. EY devaluates some partner short haul business class. [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/china-eastern-airlines)
+    5. B6 ends partnership with JSX. [source](https://www.jetblue.com/airline-partners/jsx)
+    6. Updated award chart for BA and QR, based on data points.
 
     v0.2.1 Regular data update
 

@@ -127,12 +127,6 @@
       "relationship": "both"
     },
     {
-      "ffp": "JL",
-      "type": "individual",
-      "carriers": ["B6"],
-      "relationship": "redeem_only"
-    },
-    {
       "ffp": "AC",
       "type": "alliance",
       "alliance": "SA",
@@ -153,7 +147,7 @@
     {
       "ffp": "AC",
       "type": "individual",
-      "carriers": ["JU","JV","MO","FZ","XQ","BT","AZ"],
+      "carriers": ["JU","JV","MO","FZ","XQ","BT"],
       "relationship": "redeem_only"
     },
     {
@@ -249,7 +243,7 @@
     {
       "ffp": "UA",
       "type": "individual",
-      "carriers": ["EI","EN","4Z","AD","9K","4Y","WK","EK","EW","FZ","AZ","B6","XE","OA","VA"],
+      "carriers": ["EI","EN","4Z","AD","9K","4Y","WK","EK","EW","FZ","B6","XE","OA","VA"],
       "relationship": "both"
     },
     {
@@ -353,12 +347,6 @@
       "type": "individual",
       "carriers": ["9K","DE","EY","FI","QR"],
       "relationship": "both"
-    },
-    {
-      "ffp": "B6",
-      "type": "individual",
-      "carriers": ["JL"],
-      "relationship": "redeem_only"
     },
     {
       "ffp": "B6",
