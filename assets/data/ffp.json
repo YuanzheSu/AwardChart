@@ -156,7 +156,7 @@
     },
     "EY": {
       "name": "Etihad Guest",
-      "carriers": ["EK"],
+      "carriers": ["EY"],
       "seperate_Segment_pricing": true,
       "family_pooling":  "Allowed",
       "expiration": "Extend by activity"
