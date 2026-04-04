@@ -2239,37 +2239,37 @@
                     {
                         "min_miles": 0,
                         "max_miles": 650,
-                        "miles": 9075
+                        "miles": 6500
                     },
                     {
                         "min_miles": 651,
                         "max_miles": 1151,
-                        "miles": 12100
+                        "miles": 10000
                     },
                     {
                         "min_miles": 1152,
                         "max_miles": 2000,
-                        "miles": 14300
+                        "miles": 12500
                     },
                     {
                         "min_miles": 2001,
                         "max_miles": 3000,
-                        "miles": 17600
+                        "miles": 14500
                     },
                     {
                         "min_miles": 3001,
                         "max_miles": 4000,
-                        "miles": 22825
+                        "miles": 23000
                     },
                     {
                         "min_miles": 4001,
                         "max_miles": 5500,
-                        "miles": 28325
+                        "miles": 28500
                     },
                     {
                         "min_miles": 5501,
                         "max_miles": 6500,
-                        "miles": 34100
+                        "miles": 34500
                     },
                     {
                         "min_miles": 6501,
@@ -2333,37 +2333,37 @@
                     {
                         "min_miles": 0,
                         "max_miles": 650,
-                        "miles": 18150
+                        "miles": 14000
                     },
                     {
                         "min_miles": 651,
                         "max_miles": 1151,
-                        "miles": 22550
+                        "miles": 18500
                     },
                     {
                         "min_miles": 1152,
                         "max_miles": 2000,
-                        "miles": 31900
+                        "miles": 24500
                     },
                     {
                         "min_miles": 2001,
                         "max_miles": 3000,
-                        "miles": 46200
+                        "miles": 43000
                     },
                     {
                         "min_miles": 3001,
                         "max_miles": 4000,
-                        "miles": 68200
+                        "miles": 68500
                     },
                     {
                         "min_miles": 4001,
                         "max_miles": 5500,
-                        "miles": 84975
+                        "miles": 85000
                     },
                     {
                         "min_miles": 5501,
                         "max_miles": 6500,
-                        "miles": 102025
+                        "miles": 102500
                     },
                     {
                         "min_miles": 6501,
