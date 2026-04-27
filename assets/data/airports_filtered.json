@@ -2809,8 +2809,8 @@
     },
     {
         "name":"Narsarsuaq Airport",
-        "latitude_deg":61.1605,
-        "longitude_deg":-45.425999,
+        "latitude_deg":61.15958,
+        "longitude_deg":-45.42469,
         "continent":"NA",
         "iso_country":"GL",
         "iso_region":"GL-KU",
@@ -3366,6 +3366,15 @@
         "iata_code":"JGS"
     },
     {
+        "name":"Hainanzhou Gonghe Airport",
+        "latitude_deg":36.3367,
+        "longitude_deg":100.480003,
+        "continent":"AS",
+        "iso_country":"CN",
+        "iso_region":"CN-63",
+        "iata_code":"HNG"
+    },
+    {
         "name":"Jiaxing Nanhu Airport",
         "latitude_deg":30.698056,
         "longitude_deg":120.663056,
@@ -3375,7 +3384,7 @@
         "iata_code":"JNH"
     },
     {
-        "name":"Rikaze Dingri Airport",
+        "name":"Shigatse Tingri Airport",
         "latitude_deg":28.604567,
         "longitude_deg":86.798,
         "continent":"AS",
@@ -5320,8 +5329,8 @@
     },
     {
         "name":"Yorkton Municipal Airport",
-        "latitude_deg":51.2647018433,
-        "longitude_deg":-102.4619979858,
+        "latitude_deg":51.264702,
+        "longitude_deg":-102.461998,
         "continent":"NA",
         "iso_country":"CA",
         "iso_region":"CA-SK",
@@ -7102,8 +7111,8 @@
     },
     {
         "name":"Kaya Airport",
-        "latitude_deg":13.067,
-        "longitude_deg":-1.1,
+        "latitude_deg":13.077361,
+        "longitude_deg":-1.100278,
         "continent":"AF",
         "iso_country":"BF",
         "iso_region":"BF-SMT",
@@ -11773,8 +11782,8 @@
     },
     {
         "name":"Johan Pienaar Airport",
-        "latitude_deg":-27.4566993713,
-        "longitude_deg":23.4113998413,
+        "latitude_deg":-27.456596,
+        "longitude_deg":23.411946,
         "continent":"AF",
         "iso_country":"ZA",
         "iso_region":"ZA-NC",
@@ -12292,15 +12301,6 @@
         "iso_country":"BW",
         "iso_region":"BW-NW",
         "iata_code":"KHW"
-    },
-    {
-        "name":"Lobatse Airport",
-        "latitude_deg":-25.1981,
-        "longitude_deg":25.7139,
-        "continent":"AF",
-        "iso_country":"BW",
-        "iso_region":"BW-LO",
-        "iata_code":"LOQ"
     },
     {
         "name":"Maun International Airport",
@@ -14832,9 +14832,9 @@
         "iata_code":"WKI"
     },
     {
-        "name":"Chelinda Malawi Airport",
-        "latitude_deg":-10.55,
-        "longitude_deg":33.799999,
+        "name":"Chelinda Airfield",
+        "latitude_deg":-10.557293,
+        "longitude_deg":33.797109,
         "continent":"AF",
         "iso_country":"MW",
         "iso_region":"MW-RU",
@@ -15912,15 +15912,6 @@
         "iata_code":"KNZ"
     },
     {
-        "name":"Koutiala Airport",
-        "latitude_deg":12.351048,
-        "longitude_deg":-5.429471,
-        "continent":"AF",
-        "iso_country":"ML",
-        "iso_region":"ML-3",
-        "iata_code":"KTX"
-    },
-    {
         "name":"Kayes Dag Dag Airport",
         "latitude_deg":14.482521,
         "longitude_deg":-11.399335,
@@ -16180,6 +16171,15 @@
         "iso_country":"GW",
         "iso_region":"GW-BS",
         "iata_code":"OXB"
+    },
+    {
+        "name":"Qaqortoq Airport",
+        "latitude_deg":60.76383,
+        "longitude_deg":-46.065001,
+        "continent":"NA",
+        "iso_country":"GL",
+        "iso_region":"GL-KU",
+        "iata_code":"JJU"
     },
     {
         "name":"Buchanan Airport",
@@ -17118,7 +17118,7 @@
         "iata_code":"JIJ"
     },
     {
-        "name":"Baco Airport",
+        "name":"Jinka Airport",
         "latitude_deg":5.749655,
         "longitude_deg":36.560165,
         "continent":"AF",
@@ -17622,7 +17622,7 @@
         "iata_code":"CCE"
     },
     {
-        "name":"Ad Dakhla Airport",
+        "name":"Dakhla Oasis Airport",
         "latitude_deg":25.41116,
         "longitude_deg":29.003273,
         "continent":"AF",
@@ -17812,11 +17812,11 @@
     },
     {
         "name":"Amboseli Airport",
-        "latitude_deg":-2.6450500488,
-        "longitude_deg":37.2531013489,
+        "latitude_deg":-2.644786,
+        "longitude_deg":37.252922,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-34",
         "iata_code":"ASV"
     },
     {
@@ -17825,16 +17825,16 @@
         "longitude_deg":35.238899,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-27",
         "iata_code":"EDL"
     },
     {
         "name":"Eliye Springs Airport",
-        "latitude_deg":3.23635,
-        "longitude_deg":35.97664,
+        "latitude_deg":3.236405,
+        "longitude_deg":35.974938,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-23",
         "iata_code":"EYS"
     },
     {
@@ -17843,7 +17843,7 @@
         "longitude_deg":35.836777,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-23",
         "iata_code":"KLK"
     },
     {
@@ -17852,16 +17852,16 @@
         "longitude_deg":39.6483,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-500",
+        "iso_region":"KE-07",
         "iata_code":"GAS"
     },
     {
         "name":"Hola Airport",
-        "latitude_deg":-1.522,
-        "longitude_deg":40.004002,
+        "latitude_deg":-1.521276,
+        "longitude_deg":40.003621,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-300",
+        "iso_region":"KE-04",
         "iata_code":"HOA"
     },
     {
@@ -17870,7 +17870,7 @@
         "longitude_deg":36.928233,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-110",
+        "iso_region":"KE-47",
         "iata_code":"NBO"
     },
     {
@@ -17879,16 +17879,16 @@
         "longitude_deg":35.257455,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-33",
         "iata_code":"KEU"
     },
     {
         "name":"Kakamega Airport",
-        "latitude_deg":0.2713420093,
-        "longitude_deg":34.7873001099,
+        "latitude_deg":0.271353,
+        "longitude_deg":34.78812,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-900",
+        "iso_region":"KE-37",
         "iata_code":"GGM"
     },
     {
@@ -17897,16 +17897,16 @@
         "longitude_deg":34.728901,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-600",
+        "iso_region":"KE-42",
         "iata_code":"KIS"
     },
     {
         "name":"Kilaguni Airport",
-        "latitude_deg":-2.91061,
-        "longitude_deg":38.065201,
+        "latitude_deg":-2.906848,
+        "longitude_deg":38.071738,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-300",
+        "iso_region":"KE-06",
         "iata_code":"ILU"
     },
     {
@@ -17915,7 +17915,7 @@
         "longitude_deg":35.242093,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-35",
         "iata_code":"KEY"
     },
     {
@@ -17924,7 +17924,7 @@
         "longitude_deg":34.958599,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-26",
         "iata_code":"KTL"
     },
     {
@@ -17933,7 +17933,7 @@
         "longitude_deg":34.348202,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-23",
         "iata_code":"LKG"
     },
     {
@@ -17942,7 +17942,7 @@
         "longitude_deg":35.6087,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-23",
         "iata_code":"LOK"
     },
     {
@@ -17951,25 +17951,25 @@
         "longitude_deg":40.912892,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-300",
+        "iso_region":"KE-05",
         "iata_code":"LAU"
     },
     {
-        "name":"Loyengalani Airport",
-        "latitude_deg":2.75,
-        "longitude_deg":36.716999,
+        "name":"Loiyangalani Airport",
+        "latitude_deg":2.763605,
+        "longitude_deg":36.718325,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-400",
+        "iso_region":"KE-10",
         "iata_code":"LOY"
     },
     {
         "name":"Mandera Airport",
-        "latitude_deg":3.934045,
-        "longitude_deg":41.844437,
+        "latitude_deg":3.933816,
+        "longitude_deg":41.844114,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-500",
+        "iso_region":"KE-09",
         "iata_code":"NDE"
     },
     {
@@ -17978,7 +17978,7 @@
         "longitude_deg":37.999996,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-400",
+        "iso_region":"KE-10",
         "iata_code":"RBT"
     },
     {
@@ -17987,7 +17987,7 @@
         "longitude_deg":38.195141,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-400",
+        "iso_region":"KE-12",
         "iata_code":"JJM"
     },
     {
@@ -17996,7 +17996,7 @@
         "longitude_deg":40.1017,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-300",
+        "iso_region":"KE-03",
         "iata_code":"MYD"
     },
     {
@@ -18005,16 +18005,16 @@
         "longitude_deg":39.5942,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-300",
+        "iso_region":"KE-01",
         "iata_code":"MBA"
     },
     {
         "name":"Mara Serena Lodge Airstrip",
-        "latitude_deg":-1.406111,
-        "longitude_deg":35.008057,
+        "latitude_deg":-1.404588,
+        "longitude_deg":35.008349,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-33",
         "iata_code":"MRE"
     },
     {
@@ -18023,7 +18023,7 @@
         "longitude_deg":39.101398,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-400",
+        "iso_region":"KE-10",
         "iata_code":"OYL"
     },
     {
@@ -18032,34 +18032,34 @@
         "longitude_deg":36.978485,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-200",
+        "iso_region":"KE-19",
         "iata_code":"NYE"
     },
     {
-        "name":"Lanet Military Airstrip",
+        "name":"Nakuru Lanet Airport",
         "latitude_deg":-0.298419,
         "longitude_deg":36.159193,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-32",
         "iata_code":"NUU"
     },
     {
-        "name":"Nanyuki Airport",
-        "latitude_deg":-0.062399,
-        "longitude_deg":37.041008,
+        "name":"Nanyuki Civil Airport",
+        "latitude_deg":-0.062352,
+        "longitude_deg":37.041296,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-200",
+        "iso_region":"KE-19",
         "iata_code":"NYK"
     },
     {
         "name":"Nairobi Wilson Airport",
-        "latitude_deg":-1.3217200041,
-        "longitude_deg":36.8148002625,
+        "latitude_deg":-1.32172,
+        "longitude_deg":36.8148,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-110",
+        "iso_region":"KE-47",
         "iata_code":"WIL"
     },
     {
@@ -18068,7 +18068,7 @@
         "longitude_deg":37.531991,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-700",
+        "iso_region":"KE-11",
         "iata_code":"UAS"
     },
     {
@@ -18077,7 +18077,7 @@
         "longitude_deg":39.571098,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-300",
+        "iso_region":"KE-02",
         "iata_code":"UKA"
     },
     {
@@ -18086,7 +18086,7 @@
         "longitude_deg":40.091599,
         "continent":"AF",
         "iso_country":"KE",
-        "iso_region":"KE-500",
+        "iso_region":"KE-08",
         "iata_code":"WJR"
     },
     {
@@ -18226,8 +18226,8 @@
     },
     {
         "name":"Gisenyi Airport",
-        "latitude_deg":-1.6771999598,
-        "longitude_deg":29.2588996887,
+        "latitude_deg":-1.6772,
+        "longitude_deg":29.2589,
         "continent":"AF",
         "iso_country":"RW",
         "iso_region":"RW-04",
@@ -18487,8 +18487,8 @@
     },
     {
         "name":"Dodoma Airport",
-        "latitude_deg":-6.17044,
-        "longitude_deg":35.752602,
+        "latitude_deg":-6.170559,
+        "longitude_deg":35.756036,
         "continent":"AF",
         "iso_country":"TZ",
         "iso_region":"TZ-03",
@@ -18847,8 +18847,8 @@
     },
     {
         "name":"Dhoho International Airport",
-        "latitude_deg":-7.750278,
-        "longitude_deg":111.947222,
+        "latitude_deg":-7.749527,
+        "longitude_deg":111.946831,
         "continent":"AS",
         "iso_country":"ID",
         "iso_region":"ID-JI",
@@ -18943,6 +18943,15 @@
         "iso_country":"IT",
         "iso_region":"IT-75",
         "iata_code":"TQR"
+    },
+    {
+        "name":"Jos Orno Imsula Airport",
+        "latitude_deg":-8.140683,
+        "longitude_deg":127.909669,
+        "continent":"AS",
+        "iso_country":"ID",
+        "iso_region":"ID-MA",
+        "iata_code":"JIO"
     },
     {
         "name":"Jamba Airport",
@@ -20718,7 +20727,7 @@
         "iata_code":"BUM"
     },
     {
-        "name":"Hollywood Burbank Airport",
+        "name":"Hollywood Burbank\/Bob Hope Airport",
         "latitude_deg":34.202834,
         "longitude_deg":-118.35805,
         "continent":"NA",
@@ -22534,6 +22543,42 @@
         "iso_country":"US",
         "iso_region":"US-TX",
         "iata_code":"DYS"
+    },
+    {
+        "name":"Ol Seki Naboisho Airstrip",
+        "latitude_deg":-1.378468,
+        "longitude_deg":35.38032,
+        "continent":"AF",
+        "iso_country":"KE",
+        "iso_region":"KE-33",
+        "iata_code":"OSJ"
+    },
+    {
+        "name":"Musiara Airstrip",
+        "latitude_deg":-1.298636,
+        "longitude_deg":35.063885,
+        "continent":"AF",
+        "iso_country":"KE",
+        "iso_region":"KE-33",
+        "iata_code":"MDR"
+    },
+    {
+        "name":"Mara-Olkiombo Airport",
+        "latitude_deg":-1.408586,
+        "longitude_deg":35.110689,
+        "continent":"AF",
+        "iso_country":"KE",
+        "iso_region":"KE-33",
+        "iata_code":"OLX"
+    },
+    {
+        "name":"Kiunga Airport",
+        "latitude_deg":-1.741272,
+        "longitude_deg":41.482707,
+        "continent":"AF",
+        "iso_country":"KE",
+        "iso_region":"KE-05",
+        "iata_code":"KIU"
     },
     {
         "name":"Phifer Airfield",
@@ -32346,6 +32391,15 @@
         "iata_code":"WWR"
     },
     {
+        "name":"Kiwayu Airport",
+        "latitude_deg":-1.960644,
+        "longitude_deg":41.297156,
+        "continent":"AF",
+        "iso_country":"KE",
+        "iso_region":"KE-05",
+        "iata_code":"KWY"
+    },
+    {
         "name":"Yellowstone Airport",
         "latitude_deg":44.6884,
         "longitude_deg":-111.117996,
@@ -32682,7 +32736,7 @@
         "name":"Bilbao Airport",
         "latitude_deg":43.301102,
         "longitude_deg":-2.91061,
-        "continent":"AF",
+        "continent":"EU",
         "iso_country":"ES",
         "iso_region":"ES-PV",
         "iata_code":"BIO"
@@ -32745,7 +32799,7 @@
         "name":"Girona-Costa Brava Airport",
         "latitude_deg":41.904639,
         "longitude_deg":2.761774,
-        "continent":"AF",
+        "continent":"EU",
         "iso_country":"ES",
         "iso_region":"ES-CT",
         "iata_code":"GRO"
@@ -32787,10 +32841,10 @@
         "iata_code":"XRY"
     },
     {
-        "name":"Le\u00f3n Int'l Airport",
+        "name":"Le\u00f3n Airport",
         "latitude_deg":42.590709,
         "longitude_deg":-5.653406,
-        "continent":"AF",
+        "continent":"EU",
         "iso_country":"ES",
         "iso_region":"ES-CL",
         "iata_code":"LEN"
@@ -32826,7 +32880,7 @@
         "name":"Region of Murcia International Airport",
         "latitude_deg":37.802852,
         "longitude_deg":-1.124884,
-        "continent":"AF",
+        "continent":"EU",
         "iso_country":"ES",
         "iso_region":"ES-MC",
         "iata_code":"RMU"
@@ -37341,7 +37395,7 @@
         "iata_code":"ISJ"
     },
     {
-        "name":"Plan De Guadalupe International Airport",
+        "name":"Plan de Guadalupe International Airport",
         "latitude_deg":25.53786,
         "longitude_deg":-100.928346,
         "continent":"NA",
@@ -38032,15 +38086,6 @@
         "iso_country":"PA",
         "iso_region":"PA-8",
         "iata_code":"PTY"
-    },
-    {
-        "name":"El Porvenir Airport",
-        "latitude_deg":9.559212,
-        "longitude_deg":-78.946631,
-        "continent":"NA",
-        "iso_country":"PA",
-        "iso_region":"PA-GY",
-        "iata_code":"PVE"
     },
     {
         "name":"Wannukandi Airport",
@@ -38962,8 +39007,8 @@
     },
     {
         "name":"Manihiki Island Airport",
-        "latitude_deg":-10.3767,
-        "longitude_deg":-161.001999,
+        "latitude_deg":-10.38091,
+        "longitude_deg":-160.999424,
         "continent":"OC",
         "iso_country":"CK",
         "iso_region":"CK-U-A",
@@ -41058,6 +41103,15 @@
         "iata_code":"MZR"
     },
     {
+        "name":"Nimroz Airport",
+        "latitude_deg":30.963333,
+        "longitude_deg":62.060833,
+        "continent":"AS",
+        "iso_country":"AF",
+        "iso_region":"AF-NIM",
+        "iata_code":"IMZ"
+    },
+    {
         "name":"Urgun Airport",
         "latitude_deg":32.931135,
         "longitude_deg":69.153167,
@@ -41173,15 +41227,6 @@
         "iso_country":"AF",
         "iso_region":"AF-HEL",
         "iata_code":"OAZ"
-    },
-    {
-        "name":"Zaranj Airport",
-        "latitude_deg":30.972222,
-        "longitude_deg":61.865833,
-        "continent":"AS",
-        "iso_country":"AF",
-        "iso_region":"AF-NIM",
-        "iata_code":"ZAJ"
     },
     {
         "name":"Bahrain International Airport",
@@ -42957,9 +43002,9 @@
         "iata_code":"NJF"
     },
     {
-        "name":"Sulaymaniyah International Airport",
-        "latitude_deg":35.5617485046,
-        "longitude_deg":45.3167381287,
+        "name":"Jalal Talabani International Airport",
+        "latitude_deg":35.560487,
+        "longitude_deg":45.315137,
         "continent":"AS",
         "iso_country":"IQ",
         "iso_region":"IQ-SW",
@@ -44973,9 +45018,9 @@
         "iata_code":"GUM"
     },
     {
-        "name":"Tinian International Airport",
-        "latitude_deg":15.000453,
-        "longitude_deg":145.618974,
+        "name":"Francisco Manglona Borja \/ Tinian International Airport",
+        "latitude_deg":14.999207,
+        "longitude_deg":145.619355,
         "continent":"OC",
         "iso_country":"MP",
         "iso_region":"MP-U-A",
@@ -47727,7 +47772,7 @@
         "iata_code":"PUD"
     },
     {
-        "name":"Hermes Quijada International Airport",
+        "name":"Gobernador Ram\u00f3n Trejo Noel International Airport",
         "latitude_deg":-53.7777,
         "longitude_deg":-67.7494,
         "continent":"SA",
@@ -50563,8 +50608,8 @@
     },
     {
         "name":"Orocue Airport",
-        "latitude_deg":4.79222,
-        "longitude_deg":-71.3564,
+        "latitude_deg":4.790355,
+        "longitude_deg":-71.348187,
         "continent":"SA",
         "iso_country":"CO",
         "iso_region":"CO-CAS",
@@ -50691,7 +50736,7 @@
         "name":"Paz de Ariporo Airport",
         "latitude_deg":5.876146,
         "longitude_deg":-71.886671,
-        "continent":"NA",
+        "continent":"SA",
         "iso_country":"CO",
         "iso_region":"CO-CAS",
         "iata_code":"PZA"
@@ -51085,8 +51130,8 @@
     },
     {
         "name":"San Joaqu\u00edn Airport",
-        "latitude_deg":-13.0528,
-        "longitude_deg":-64.661697,
+        "latitude_deg":-13.067209,
+        "longitude_deg":-64.675205,
         "continent":"SA",
         "iso_country":"BO",
         "iso_region":"BO-B",
@@ -51273,7 +51318,7 @@
         "iata_code":"TDD"
     },
     {
-        "name":"Uyuni Joya Andina Airport",
+        "name":"Joya Andina International Airport",
         "latitude_deg":-20.441304,
         "longitude_deg":-66.857553,
         "continent":"SA",
@@ -53056,8 +53101,8 @@
     },
     {
         "name":"Paramillo Airport",
-        "latitude_deg":7.80132,
-        "longitude_deg":-72.202904,
+        "latitude_deg":7.801389,
+        "longitude_deg":-72.202778,
         "continent":"SA",
         "iso_country":"VE",
         "iso_region":"VE-S",
@@ -54199,8 +54244,8 @@
     },
     {
         "name":"Piarco International Airport",
-        "latitude_deg":10.597811,
-        "longitude_deg":-61.337463,
+        "latitude_deg":10.59535,
+        "longitude_deg":-61.337568,
         "continent":"NA",
         "iso_country":"TT",
         "iso_region":"TT-TUP",
@@ -54333,6 +54378,15 @@
         "iata_code":"BXJ"
     },
     {
+        "name":"Taldykorgan Airport",
+        "latitude_deg":45.12255,
+        "longitude_deg":78.442758,
+        "continent":"AS",
+        "iso_country":"KZ",
+        "iso_region":"KZ-JET",
+        "iata_code":"TDK"
+    },
+    {
         "name":"Nursultan Nazarbayev International Airport",
         "latitude_deg":51.027035,
         "longitude_deg":71.467094,
@@ -54387,7 +54441,7 @@
         "iata_code":"OSS"
     },
     {
-        "name":"Karakol Airport",
+        "name":"Karakol International Airport",
         "latitude_deg":42.508099,
         "longitude_deg":78.407799,
         "continent":"AS",
@@ -54406,8 +54460,8 @@
     },
     {
         "name":"Hazrat Sultan International Airport",
-        "latitude_deg":43.311742,
-        "longitude_deg":68.550185,
+        "latitude_deg":43.311087,
+        "longitude_deg":68.550352,
         "continent":"AS",
         "iso_country":"KZ",
         "iso_region":"KZ-YUZ",
@@ -54493,6 +54547,15 @@
         "iso_country":"KZ",
         "iso_region":"KZ-ABA",
         "iata_code":"PLX"
+    },
+    {
+        "name":"Zaysan Airport",
+        "latitude_deg":47.487491,
+        "longitude_deg":84.887675,
+        "continent":"AS",
+        "iso_country":"KZ",
+        "iso_region":"KZ-VOS",
+        "iata_code":"SZI"
     },
     {
         "name":"Aktau International Airport",
@@ -54610,6 +54673,15 @@
         "iso_country":"AZ",
         "iso_region":"AZ-YE",
         "iata_code":"YLV"
+    },
+    {
+        "name":"Lachin International Airport",
+        "latitude_deg":39.883787,
+        "longitude_deg":46.363137,
+        "continent":"AS",
+        "iso_country":"AZ",
+        "iso_region":"AZ-LAC",
+        "iata_code":"LHL"
     },
     {
         "name":"Issyk-Kul International Airport",
@@ -55884,7 +55956,7 @@
         "name":"Krasnodar Pashkovsky International Airport",
         "latitude_deg":45.034465,
         "longitude_deg":39.174215,
-        "continent":"AS",
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-KDA",
         "iata_code":"KRR"
@@ -55911,7 +55983,7 @@
         "name":"Mineralnye Vody Airport",
         "latitude_deg":44.225101,
         "longitude_deg":43.081902,
-        "continent":"AS",
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-STA",
         "iata_code":"MRV"
@@ -56458,8 +56530,8 @@
     },
     {
         "name":"Sugraly Airport",
-        "latitude_deg":41.613899,
-        "longitude_deg":64.2332,
+        "latitude_deg":41.613795,
+        "longitude_deg":64.232963,
         "continent":"AS",
         "iso_country":"UZ",
         "iso_region":"UZ-NW",
@@ -56482,6 +56554,15 @@
         "iso_country":"UZ",
         "iso_region":"UZ-SU",
         "iata_code":"TMJ"
+    },
+    {
+        "name":"Tashkent-Khumo International Airport",
+        "latitude_deg":41.312889,
+        "longitude_deg":69.395535,
+        "continent":"AS",
+        "iso_country":"UZ",
+        "iso_region":"UZ-TO",
+        "iata_code":"TVT"
     },
     {
         "name":"Tashkent International Airport",
@@ -56550,7 +56631,7 @@
         "name":"Zhukovsky International Airport",
         "latitude_deg":55.553299,
         "longitude_deg":38.150002,
-        "continent":"AS",
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-MOS",
         "iata_code":"ZIA"
@@ -56878,6 +56959,15 @@
         "iso_country":"RU",
         "iso_region":"RU-SAM",
         "iata_code":"KUF"
+    },
+    {
+        "name":"Urzhar Airport",
+        "latitude_deg":47.091786,
+        "longitude_deg":81.668216,
+        "continent":"AS",
+        "iso_country":"KZ",
+        "iso_region":"KZ-ABA",
+        "iata_code":"UZR"
     },
     {
         "name":"Diu Airport",
@@ -60066,6 +60156,15 @@
         "iata_code":"RGN"
     },
     {
+        "name":"Maranggo Airport",
+        "latitude_deg":-5.766423,
+        "longitude_deg":123.918668,
+        "continent":"AS",
+        "iso_country":"ID",
+        "iso_region":"ID-SG",
+        "iata_code":"TQQ"
+    },
+    {
         "name":"Sultan Hasanuddin International Airport",
         "latitude_deg":-5.075539,
         "longitude_deg":119.553702,
@@ -60246,6 +60345,15 @@
         "iata_code":"MJU"
     },
     {
+        "name":"Maulana Prins Mandapar Airstrip",
+        "latitude_deg":-1.548841,
+        "longitude_deg":123.554133,
+        "continent":"AS",
+        "iso_country":"ID",
+        "iso_region":"ID-ST",
+        "iata_code":"BQR"
+    },
+    {
         "name":"Tanjung Api Airport",
         "latitude_deg":-0.865437,
         "longitude_deg":121.628625,
@@ -60310,8 +60418,8 @@
     },
     {
         "name":"Jenderal Besar Soedirman Airport",
-        "latitude_deg":-7.461342,
-        "longitude_deg":109.414612,
+        "latitude_deg":-7.461239,
+        "longitude_deg":109.414124,
         "continent":"AS",
         "iso_country":"ID",
         "iso_region":"ID-JT",
@@ -60478,15 +60586,6 @@
         "iso_country":"ID",
         "iso_region":"ID-KI",
         "iata_code":"DTD"
-    },
-    {
-        "name":"Nusantara International Airport",
-        "latitude_deg":-1.158611,
-        "longitude_deg":116.708054,
-        "continent":"AS",
-        "iso_country":"ID",
-        "iso_region":"ID-KI",
-        "iata_code":"IVD"
     },
     {
         "name":"Sultan Aji Muhammad Sulaiman Sepinggan International Airport",
@@ -60831,7 +60930,7 @@
         "iata_code":"JOG"
     },
     {
-        "name":"Adisumarmo Airport",
+        "name":"Adisoemarmo International Airport",
         "latitude_deg":-7.516044,
         "longitude_deg":110.757492,
         "continent":"AS",
@@ -61597,8 +61696,8 @@
     },
     {
         "name":"Halim Perdanakusuma International Airport",
-        "latitude_deg":-6.267221,
-        "longitude_deg":106.891733,
+        "latitude_deg":-6.266989,
+        "longitude_deg":106.890318,
         "continent":"AS",
         "iso_country":"ID",
         "iso_region":"ID-JK",
@@ -61651,8 +61750,8 @@
     },
     {
         "name":"Binaka Airport",
-        "latitude_deg":1.16628,
-        "longitude_deg":97.704327,
+        "latitude_deg":1.166275,
+        "longitude_deg":97.705196,
         "continent":"AS",
         "iso_country":"ID",
         "iso_region":"ID-SU",
@@ -62143,6 +62242,15 @@
         "iso_country":"TL",
         "iso_region":"TL-VI",
         "iata_code":"VIQ"
+    },
+    {
+        "name":"Sangkimah Airport",
+        "latitude_deg":0.384421,
+        "longitude_deg":117.542832,
+        "continent":"AS",
+        "iso_country":"ID",
+        "iso_region":"ID-KI",
+        "iata_code":"SGQ"
     },
     {
         "name":"Yuvai Semaring Airport",
@@ -66150,6 +66258,15 @@
         "iata_code":"SWC"
     },
     {
+        "name":"(Duplicate)Western Sydney International Airport",
+        "latitude_deg":-33.88806,
+        "longitude_deg":150.71472,
+        "continent":"OC",
+        "iso_country":"AU",
+        "iso_region":"AU-NSW",
+        "iata_code":"WSI"
+    },
+    {
         "name":"Tara Airport",
         "latitude_deg":-27.163054,
         "longitude_deg":150.476423,
@@ -67545,7 +67662,7 @@
         "iata_code":"DNH"
     },
     {
-        "name":"Delingha Airport",
+        "name":"Haixi Delingha Airport",
         "latitude_deg":37.125286,
         "longitude_deg":97.268658,
         "continent":"AS",
@@ -69102,7 +69219,7 @@
         "iata_code":"URC"
     },
     {
-        "name":"Yining Airport",
+        "name":"Ili Yining International Airport",
         "latitude_deg":43.955799,
         "longitude_deg":81.330299,
         "continent":"AS",
