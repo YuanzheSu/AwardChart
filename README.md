@@ -24,7 +24,7 @@ Carriers: Someone who is a redeem/earn partner of at least one of the FFP progra
 
 POIs: (Almost) All civil aviation airports. 
 
-Data last update on: 04/01/2026
+Data last update on: 04/26/2026
 
 
 
