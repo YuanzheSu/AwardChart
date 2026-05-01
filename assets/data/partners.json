@@ -345,8 +345,14 @@
     {
       "ffp": "B6",
       "type": "individual",
-      "carriers": ["9K","DE","EY","FI","QR"],
+      "carriers": ["UA","9K","DE","EY","FI","QR"],
       "relationship": "both"
+    },
+    {
+      "ffp": "B6",
+      "type": "individual",
+      "carriers": ["CI"],
+      "relationship": "redeem_only"
     },
     {
       "ffp": "B6",
