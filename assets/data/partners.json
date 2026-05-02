@@ -327,13 +327,13 @@
     {
       "ffp": "EK",
       "type": "individual",
-      "carriers": ["U2","LS"],
+      "carriers": ["U2","LS","DE"],
       "relationship": "redeem_only"
     },
     {
       "ffp": "EK",
       "type": "individual",
-      "carriers": ["FZ","A3","AC","MK","AD","PG","DE","CM","GA","G3","JL","JQ","GK","KE","MH","OA","QF","SA","TP","UA"],
+      "carriers": ["FZ","A3","AC","MK","AD","PG","CM","GA","G3","JL","JQ","GK","KE","MH","OA","QF","SA","TP","UA"],
       "relationship": "both"
     },
     {

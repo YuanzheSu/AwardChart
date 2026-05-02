@@ -174,13 +174,6 @@
       "seperate_Segment_pricing": true,
       "family_pooling":  "Not allowed",
       "expiration": "Never expire"
-    },
-    "NK": {
-      "name": "Spirit Free Spirit",
-      "carriers": ["NK"],
-      "seperate_Segment_pricing": true,
-      "family_pooling": "Conditional",
-      "expiration": "Extend by activity"
     }
   }
 }
