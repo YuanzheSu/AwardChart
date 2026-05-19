@@ -87,7 +87,7 @@
     {
       "ffp": "QR",
       "type": "individual",
-      "carriers": ["4Z","PG","GA","B6","LA","ME","WB","S7","VA","MF"],
+      "carriers": ["4Z","PG","GA","B6","LA","ME","PR","WB","S7","VA","MF"],
       "relationship": "both"
     },
     {
