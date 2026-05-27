@@ -8575,7 +8575,7 @@
     "EY_part3": {
       "ffp_code": "EY",
       "applies_to": "specific",
-      "specific_partners": ["NZ","MU","HX","VN","UX","AF","JU","SN","KL","SK","TP","UL","ET","GF","AT","SV","AC","AD","B6"],
+      "specific_partners": ["NZ","PG","MU","HX","VN","UX","AF","JU","SN","KL","SK","TP","UL","ET","GF","AT","SV","AC","AD","B6"],
       "type": "distance_based",
       "cabins": {
         "economy": [

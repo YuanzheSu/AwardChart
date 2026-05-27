@@ -339,8 +339,14 @@
     {
       "ffp": "EY",
       "type": "individual",
-      "carriers": ["AC","UX","AF","NZ","JU","NH","AA","AD","SN","MU","LY","ET","GA","GF","HU","B6","KL","MH","WY","AT","SV","SK","UL","TP","VN","HX"],
+      "carriers": ["NZ","NH","MU","GA","HU","HX","MH","VN","UX","AF","JU","SN","KL","SK","TP","UL","LY","ET","GF","WY","AT","SV","AC","AA","AD","B6"],
       "relationship": "both"
+    },
+    {
+      "ffp": "EY",
+      "type": "individual",
+      "carriers": ["PG","DE"],
+      "relationship": "redeem_only"
     },
     {
       "ffp": "B6",
