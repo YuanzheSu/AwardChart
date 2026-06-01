@@ -342,15 +342,6 @@
         "iata_code":"TLG"
     },
     {
-        "name":"(Duplicate)Vlora International Airport",
-        "latitude_deg":40.605556,
-        "longitude_deg":19.426111,
-        "continent":"EU",
-        "iso_country":"AL",
-        "iso_region":"AL-12",
-        "iata_code":"VLO"
-    },
-    {
         "name":"Syunik Airport",
         "latitude_deg":39.202272,
         "longitude_deg":46.455204,
@@ -385,6 +376,15 @@
         "iso_country":"AU",
         "iso_region":"AU-QLD",
         "iata_code":"LYT"
+    },
+    {
+        "name":"Kimberley Downs Airport",
+        "latitude_deg":-17.398577,
+        "longitude_deg":124.355565,
+        "continent":"OC",
+        "iso_country":"AU",
+        "iso_region":"AU-WA",
+        "iata_code":"KBD"
     },
     {
         "name":"Alxa Left Banner Bayanhot Airport",
@@ -1756,8 +1756,8 @@
     },
     {
         "name":"Nuku Airport",
-        "latitude_deg":-3.676651,
-        "longitude_deg":142.484334,
+        "latitude_deg":-3.676765,
+        "longitude_deg":142.48492,
         "continent":"OC",
         "iso_country":"PG",
         "iso_region":"PG-SAN",
@@ -2125,8 +2125,8 @@
     },
     {
         "name":"Safia Airport",
-        "latitude_deg":-9.5930555556,
-        "longitude_deg":148.636111111,
+        "latitude_deg":-9.594471,
+        "longitude_deg":148.639305,
         "continent":"OC",
         "iso_country":"PG",
         "iso_region":"PG-NPP",
@@ -8019,7 +8019,7 @@
         "iata_code":"CRL"
     },
     {
-        "name":"Flanders International Airport Kortrijk-Wevelgem",
+        "name":"Kortrijk-Wevelgem International Airport",
         "latitude_deg":50.818878,
         "longitude_deg":3.209551,
         "continent":"EU",
@@ -8317,8 +8317,8 @@
     },
     {
         "name":"Hamburg-Finkenwerder Airport",
-        "latitude_deg":53.5352783203,
-        "longitude_deg":9.8355560303,
+        "latitude_deg":53.535278,
+        "longitude_deg":9.835556,
         "continent":"EU",
         "iso_country":"DE",
         "iso_region":"DE-HH",
@@ -8431,15 +8431,6 @@
         "iso_country":"DE",
         "iso_region":"DE-BY",
         "iata_code":"AGB"
-    },
-    {
-        "name":"Landshut Airfield",
-        "latitude_deg":48.512019,
-        "longitude_deg":12.034865,
-        "continent":"EU",
-        "iso_country":"DE",
-        "iso_region":"DE-BY",
-        "iata_code":"QLG"
     },
     {
         "name":"Oberpfaffenhofen Airport",
@@ -13527,7 +13518,7 @@
         "iata_code":"MJN"
     },
     {
-        "name":"Nosy Be-Fascene International Airport",
+        "name":"Nosy Be International Airport",
         "latitude_deg":-13.3121,
         "longitude_deg":48.3148,
         "continent":"AF",
@@ -20340,6 +20331,15 @@
         "iata_code":"BKL"
     },
     {
+        "name":"Blackwell Tonkawa Municipal Airport",
+        "latitude_deg":36.745212,
+        "longitude_deg":-97.349619,
+        "continent":"NA",
+        "iso_country":"US",
+        "iso_region":"US-OK",
+        "iata_code":"BWL"
+    },
+    {
         "name":"Allen C Perkinson Blackstone Army Air Field",
         "latitude_deg":37.0741996765,
         "longitude_deg":-77.9574966431,
@@ -25327,8 +25327,8 @@
     },
     {
         "name":"Winkler County Airport",
-        "latitude_deg":31.7796001434,
-        "longitude_deg":-103.200996399,
+        "latitude_deg":31.7796,
+        "longitude_deg":-103.200996,
         "continent":"NA",
         "iso_country":"US",
         "iso_region":"US-TX",
@@ -32970,7 +32970,7 @@
         "name":"Pirineus - la Seu d'Urgel Airport",
         "latitude_deg":42.3386,
         "longitude_deg":1.40917,
-        "continent":"AF",
+        "continent":"EU",
         "iso_country":"ES",
         "iso_region":"ES-CT",
         "iata_code":"LEU"
@@ -34542,15 +34542,6 @@
         "iata_code":"PEV"
     },
     {
-        "name":"Gy\u0151r-P\u00e9r Airport",
-        "latitude_deg":47.628436,
-        "longitude_deg":17.804718,
-        "continent":"EU",
-        "iso_country":"HU",
-        "iso_region":"HU-GS",
-        "iata_code":"QGY"
-    },
-    {
         "name":"H\u00e9v\u00edz\u2013Balaton Airport",
         "latitude_deg":46.686391,
         "longitude_deg":17.159084,
@@ -34885,8 +34876,8 @@
     },
     {
         "name":"Trieste Airport",
-        "latitude_deg":45.827499,
-        "longitude_deg":13.4722,
+        "latitude_deg":45.827862,
+        "longitude_deg":13.466672,
         "continent":"EU",
         "iso_country":"IT",
         "iso_region":"IT-36",
@@ -35269,6 +35260,15 @@
         "iso_country":"MC",
         "iso_region":"MC-U-A",
         "iata_code":"MCM"
+    },
+    {
+        "name":"Sankt Anton am Arlberg Heliport",
+        "latitude_deg":47.119621,
+        "longitude_deg":10.240524,
+        "continent":"EU",
+        "iso_country":"AT",
+        "iso_region":"AT-8",
+        "iata_code":"ANT"
     },
     {
         "name":"Hohenems-Dornbirn Airfield",
@@ -36403,15 +36403,6 @@
         "iso_country":"MD",
         "iso_region":"MD-CU",
         "iata_code":"RMO"
-    },
-    {
-        "name":"Daugavpils International Airport",
-        "latitude_deg":55.944721,
-        "longitude_deg":26.665001,
-        "continent":"EU",
-        "iso_country":"LV",
-        "iso_region":"LV-111",
-        "iata_code":"DGP"
     },
     {
         "name":"Ohrid St. Paul the Apostle Airport",
@@ -43291,8 +43282,8 @@
     },
     {
         "name":"Allen Army Airfield",
-        "latitude_deg":63.9944992065,
-        "longitude_deg":-145.722000122,
+        "latitude_deg":63.994499,
+        "longitude_deg":-145.722,
         "continent":"NA",
         "iso_country":"US",
         "iso_region":"US-AK",
@@ -45138,7 +45129,7 @@
         "name":"Daniel K. Inouye International Airport",
         "latitude_deg":21.318387,
         "longitude_deg":-157.92567,
-        "continent":"NA",
+        "continent":"OC",
         "iso_country":"US",
         "iso_region":"US-HI",
         "iata_code":"HNL"
@@ -45347,13 +45338,13 @@
         "longitude_deg":119.958376,
         "continent":"AS",
         "iso_country":"TW",
-        "iso_region":"TW-X-LK",
+        "iso_region":"TW-LIE",
         "iata_code":"LZN"
     },
     {
         "name":"Taitung Airport",
-        "latitude_deg":22.7549991608,
-        "longitude_deg":121.1019973755,
+        "latitude_deg":22.754856,
+        "longitude_deg":121.101794,
         "continent":"AS",
         "iso_country":"TW",
         "iso_region":"TW-TTT",
@@ -45424,11 +45415,11 @@
     },
     {
         "name":"Matsu Beigan Airport",
-        "latitude_deg":26.224199,
-        "longitude_deg":120.002998,
+        "latitude_deg":26.22414,
+        "longitude_deg":120.002679,
         "continent":"AS",
         "iso_country":"TW",
-        "iso_region":"TW-X-LK",
+        "iso_region":"TW-LIE",
         "iata_code":"MFK"
     },
     {
@@ -47176,6 +47167,15 @@
         "iso_country":"SA",
         "iso_region":"SA-07",
         "iata_code":"RSI"
+    },
+    {
+        "name":"Velikiye Luki Airport",
+        "latitude_deg":56.381066,
+        "longitude_deg":30.607846,
+        "continent":"EU",
+        "iso_country":"RU",
+        "iso_region":"RU-PSK",
+        "iata_code":"VLU"
     },
     {
         "name":"Comodoro Pierrestegui Airport",
@@ -49132,8 +49132,8 @@
     },
     {
         "name":"San Rafael Airport",
-        "latitude_deg":-32.814201,
-        "longitude_deg":-70.646698,
+        "latitude_deg":-32.813912,
+        "longitude_deg":-70.646642,
         "continent":"SA",
         "iso_country":"CL",
         "iso_region":"CL-VS",
@@ -49168,8 +49168,8 @@
     },
     {
         "name":"Desierto de Atacama Airport",
-        "latitude_deg":-27.2611999512,
-        "longitude_deg":-70.7791976929,
+        "latitude_deg":-27.2612,
+        "longitude_deg":-70.779198,
         "continent":"SA",
         "iso_country":"CL",
         "iso_region":"CL-AT",
@@ -53344,8 +53344,8 @@
     },
     {
         "name":"Canarana Airport",
-        "latitude_deg":-13.574444,
-        "longitude_deg":-52.270557,
+        "latitude_deg":-13.576545,
+        "longitude_deg":-52.268296,
         "continent":"SA",
         "iso_country":"BR",
         "iso_region":"BR-MT",
@@ -55585,8 +55585,8 @@
     },
     {
         "name":"Leshukonskoye Airport",
-        "latitude_deg":64.8960037231,
-        "longitude_deg":45.7229995728,
+        "latitude_deg":64.896004,
+        "longitude_deg":45.723,
         "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-ARK",
@@ -55803,7 +55803,7 @@
         "name":"Podkamennaya Tunguska Airport",
         "latitude_deg":61.589699,
         "longitude_deg":89.994003,
-        "continent":"EU",
+        "continent":"AS",
         "iso_country":"RU",
         "iso_region":"RU-KYA",
         "iata_code":"TGP"
@@ -56073,7 +56073,7 @@
         "name":"Volgograd International Airport",
         "latitude_deg":48.78134,
         "longitude_deg":44.339194,
-        "continent":"AS",
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-VGG",
         "iata_code":"VOG"
@@ -56475,6 +56475,15 @@
         "iata_code":"FEG"
     },
     {
+        "name":"Kokand Airport",
+        "latitude_deg":40.447781,
+        "longitude_deg":70.991149,
+        "continent":"AS",
+        "iso_country":"UZ",
+        "iso_region":"UZ-FA",
+        "iata_code":"OQN"
+    },
+    {
         "name":"Muynak Airport",
         "latitude_deg":43.753636,
         "longitude_deg":59.029884,
@@ -56649,7 +56658,7 @@
         "name":"Golden Ring Yaroslavl International Airport",
         "latitude_deg":57.560699,
         "longitude_deg":40.157398,
-        "continent":"AS",
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-YAR",
         "iata_code":"IAR"
@@ -56710,9 +56719,9 @@
     },
     {
         "name":"Voronezh International Airport",
-        "latitude_deg":51.813683,
-        "longitude_deg":39.231711,
-        "continent":"AS",
+        "latitude_deg":51.814324,
+        "longitude_deg":39.230948,
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-VOR",
         "iata_code":"VOZ"
@@ -56854,9 +56863,9 @@
     },
     {
         "name":"Ulyanovsk Baratayevka Airport",
-        "latitude_deg":54.268299,
-        "longitude_deg":48.2267,
-        "continent":"AS",
+        "latitude_deg":54.27016,
+        "longitude_deg":48.225569,
+        "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-ULY",
         "iata_code":"ULV"
@@ -56890,9 +56899,9 @@
     },
     {
         "name":"Penza Airport",
-        "latitude_deg":53.1105995178,
-        "longitude_deg":45.0210990906,
-        "continent":"EU",
+        "latitude_deg":53.1106,
+        "longitude_deg":45.021099,
+        "continent":"AS",
         "iso_country":"RU",
         "iso_region":"RU-PNZ",
         "iata_code":"PEZ"
@@ -57814,6 +57823,15 @@
         "iso_country":"IN",
         "iso_region":"IN-AS",
         "iata_code":"TEZ"
+    },
+    {
+        "name":"Utkela Airport",
+        "latitude_deg":20.097778,
+        "longitude_deg":83.183333,
+        "continent":"AS",
+        "iso_country":"IN",
+        "iso_region":"IN-OR",
+        "iata_code":"UKE"
     },
     {
         "name":"Visakhapatnam International Airport",
@@ -65575,8 +65593,8 @@
     },
     {
         "name":"Palm Island Airport",
-        "latitude_deg":-18.7553005219,
-        "longitude_deg":146.5809936523,
+        "latitude_deg":-18.755301,
+        "longitude_deg":146.580994,
         "continent":"OC",
         "iso_country":"AU",
         "iso_region":"AU-QLD",
@@ -66258,7 +66276,7 @@
         "iata_code":"SWC"
     },
     {
-        "name":"(Duplicate)Western Sydney International Airport",
+        "name":"[Duplicate] Western Sydney International Airport",
         "latitude_deg":-33.88806,
         "longitude_deg":150.71472,
         "continent":"OC",
@@ -66643,15 +66661,6 @@
         "iso_country":"AU",
         "iso_region":"AU-SA",
         "iata_code":"WYA"
-    },
-    {
-        "name":"Wittenoom Airport",
-        "latitude_deg":-22.224992,
-        "longitude_deg":118.353739,
-        "continent":"OC",
-        "iso_country":"AU",
-        "iso_region":"AU-WA",
-        "iata_code":"WIT"
     },
     {
         "name":"Warracknabeal Airport",
@@ -67816,8 +67825,8 @@
     },
     {
         "name":"Xi'an Xianyang International Airport",
-        "latitude_deg":34.447102,
-        "longitude_deg":108.751999,
+        "latitude_deg":34.442207,
+        "longitude_deg":108.762385,
         "continent":"AS",
         "iso_country":"CN",
         "iso_region":"CN-61",

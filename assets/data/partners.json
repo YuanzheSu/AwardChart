@@ -147,7 +147,7 @@
     {
       "ffp": "AC",
       "type": "individual",
-      "carriers": ["JU","JV","MO","FZ","XQ","BT"],
+      "carriers": ["JU","BT","JV","MO","FZ","XQ"],
       "relationship": "redeem_only"
     },
     {

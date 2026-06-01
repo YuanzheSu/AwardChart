@@ -1,12 +1,13 @@
 详见 https://www.uscardforum.com/t/topic/451800
 
 ## Version History
-v0.2.3 Regular data update.
-1. ITA(AZ) is officially part of Star Alliance. Alliance partners SHOULD be able to earn and redeem on it. [source](https://www.staralliance.com/en/ita-joins-star-alliance)
-2. Emirates(EK) chart chage involving some partners. [source](https://www.emirates.com/us/english/skywards/partners/?partner=airlines), [ref](https://awardwallet.com/news/airlines/emirates-partner-award-chart-changes-2026/)
-3. Cathay Pacifix (CX) slight devaluation on self-operating flights. [source](https://www.cathaypacific.com/cx/en_US/book-a-trip/redeem-flights/redeem-flight-awards.html), [ref](https://awardwallet.com/news/airlines/cathay-award-chart-changes-may-2026/)
-4. JetBlue(B6) and Japan Airlines(JL) ends partnership. [source1](https://www.jetblue.com/airline-partners/japan-airlines), [source2](https://www.jal.co.jp/jp/en/info/2025/jmb/b6/)
-5. Qantas(QF) devaluation on Emirates(EK) redemption. [source](https://www.qantas.com/au/en/frequent-flyer/use-points/classic-flight-rewards/tables.html#emirates-classic-flight-rewards), [ref](https://awardwallet.com/news/airlines/qantas-devalues-emirates-awards/)
+v0.2.4 Regular data update.
+1. Jetblue (B6) establishes partnership with China Airlines (CI). [source](https://www.jetblue.com/airline-partners).
+2. Emirates (EK) drops Condor (DE) as earning partner. Redeem is not affected. [source](https://www.emirates.com/us/english/skywards/partners/condor/), [ref](https://awardwallet.com/news/airlines/emirates-drops-condor-earning-partner/).
+3. Spirit (NK) is DEAD. RIP. [source](https://www.spiritrestructuring.com/).
+4. Qatar (QR) establishes partnership with Philippine Airlines (PR). [source](https://www.qatarairways.com/en/Privilege-Club/our-partners.html#), [ref](https://awardwallet.com/news/airlines/qatar-philippine-partnership/).
+5. Etihad (EY) establishes partnership with Bangkok Airways (PG). [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/bangkok-airways), [ref](https://awardwallet.com/news/airlines/etihad-bangkok-partnership/).
+6. Air Canada (AC) devalues (mostly) partner redemption. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/redeem/air-canada.html#/).
 
 ## Install
 
@@ -18,13 +19,13 @@ v0.2.3 Regular data update.
 
 ## Data coverage
 
-FFPs: Transfer partners of major banks in the US. (26) 
+FFPs: Transfer partners of major banks in the US. (25) 
 
 Carriers: Someone who is a redeem/earn partner of at least one of the FFP programs. (136)
 
 POIs: (Almost) All civil aviation airports. 
 
-Data last update on: 04/26/2026
+Data last update on: 05/31/2026
 
 
 
@@ -68,6 +69,14 @@ Purpose: Find which FFP can be used to collect miles when taking cash price tick
 
 <details>
     <summary>Previous version histories</summary>
+
+    v0.2.3 Regular data update.
+
+    1. ITA(AZ) is officially part of Star Alliance. Alliance partners SHOULD be able to earn and redeem on it. [source](https://www.staralliance.com/en/ita-joins-star-alliance)
+    2. Emirates(EK) chart chage involving some partners. [source](https://www.emirates.com/us/english/skywards/partners/?partner=airlines), [ref](https://awardwallet.com/news/airlines/emirates-partner-award-chart-changes-2026/)
+    3. Cathay Pacifix (CX) slight devaluation on self-operating flights. [source](https://www.cathaypacific.com/cx/en_US/book-a-trip/redeem-flights/redeem-flight-awards.html), [ref](https://awardwallet.com/news/airlines/cathay-award-chart-changes-may-2026/)
+    4. JetBlue(B6) and Japan Airlines(JL) ends partnership. [source1](https://www.jetblue.com/airline-partners/japan-airlines), [source2](https://www.jal.co.jp/jp/en/info/2025/jmb/b6/)
+    5. Qantas(QF) devaluation on Emirates(EK) redemption. [source](https://www.qantas.com/au/en/frequent-flyer/use-points/classic-flight-rewards/tables.html#emirates-classic-flight-rewards), [ref](https://awardwallet.com/news/airlines/qantas-devalues-emirates-awards/)
     
     v0.2.2 Regular data update
 
