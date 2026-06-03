@@ -919,10 +919,10 @@ class Tab2Frame(ttk.Frame):
 
     def _multiseg_Case2(self, ffpname, origs, dests, distances, carriers, cabin, subchart):
         """Case 2: Transfer involving only one partner as carrier"""
-        if ffpname in ['AS', 'AA', 'IB', 'AY', 'CX', 'AV', 'BR', 'SQ', 'TP', 'UA', 'AM', 'FB', 'DL', 'VS', 'EY', 'B6']:
+        if ffpname in ['AS', 'AA', 'AY', 'CX', 'AV', 'BR', 'SQ', 'TP', 'UA', 'AM', 'FB', 'DL', 'VS', 'EY', 'B6']:
             chart = self._cumulativePricing(ffpname, origs, dests, distances, carriers[0], cabin, subchart)
 
-        elif ffpname in ['BA', 'QR', 'TK', 'EK']:
+        elif ffpname in ['BA', 'IB', 'QR', 'TK', 'EK']:
             # Use partner chart, per segment pricing
             result = self._persegPricing(origs, dests, distances, carriers, cabin, ffpname, subchart)
             result = self._handlePersegPricingReturn(result)
