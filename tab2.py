@@ -1064,7 +1064,7 @@ class Tab2Frame(ttk.Frame):
                 ffp_self_carriers = ffpcontent['carriers']
                 ffp_redeempartners = ffpcontent.get('redeem_partner', [])
 
-                # ===== SPECIAL CASES: QF and AC =====
+                # ===== SPECIAL CASES: QF, AC and AA =====
                 if ffpname == 'QF':
                     chart = dict(ffp=ffpname, ffp_disp_name=subchart[ffpname]['name'])
 
@@ -1104,6 +1104,21 @@ class Tab2Frame(ttk.Frame):
 
                     dynpart = self.award_chart_dict['AC_DynPart']['specific_partners']
                     dynpart = dynpart + ['AC']
+
+                    if all(item in dynpart for item in unique_carriers):
+                        chart['chart_name'] = 'N/A'
+                        chart['award_miles'] = 'Dynamic.'
+                    else:
+                        carrier_eff = next(item for item in unique_carriers if item not in dynpart)
+                        chart = self._cumulativePricing(ffpname, origs, dests, distances, carrier_eff, cabin, subchart)
+
+                    result_list.append(chart)
+                
+                elif ffpname == 'AA':
+                    chart = dict(ffp=ffpname, ffp_disp_name=subchart[ffpname]['name'])
+
+                    dynpart = self.award_chart_dict['AA_DynPart']['specific_partners']
+                    dynpart = dynpart + self.ffp_dict_redeem['AA']['carriers']
 
                     if all(item in dynpart for item in unique_carriers):
                         chart['chart_name'] = 'N/A'

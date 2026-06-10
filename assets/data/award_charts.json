@@ -162,7 +162,18 @@
         "first": [{}]
           }
     }, 
-
+    "AA_DynPart": {
+      "ffp_code": "AA",
+      "applies_to": "specific",
+      "specific_partners": ["TN"],
+      "type": "dynamic",
+      "cabins": {
+        "economy": [{}],
+        "premium_economy": [{}],
+        "business": [{}],
+        "first": [{}]
+          }
+    },
     "AA_part_special":{
     "ffp_code": "AA",
     "applies_to": "all_partners",

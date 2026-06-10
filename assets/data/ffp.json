@@ -9,7 +9,7 @@
     },
     "AA": {
       "name": "AAdvantage",
-      "carriers": ["AA"],
+      "carriers": ["AA","JA","FJ"],
       "seperate_Segment_pricing": false,
       "family_pooling":  "Not allowed",
       "expiration": "Extend by activity"
