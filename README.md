@@ -1,13 +1,8 @@
 详见 https://www.uscardforum.com/t/topic/451800
 
 ## Version History
-v0.2.4 Regular data update.
-1. Jetblue (B6) establishes partnership with China Airlines (CI). [source](https://www.jetblue.com/airline-partners).
-2. Emirates (EK) drops Condor (DE) as earning partner. Redeem is not affected. [source](https://www.emirates.com/us/english/skywards/partners/condor/), [ref](https://awardwallet.com/news/airlines/emirates-drops-condor-earning-partner/).
-3. Spirit (NK) is DEAD. RIP. [source](https://www.spiritrestructuring.com/).
-4. Qatar (QR) establishes partnership with Philippine Airlines (PR). [source](https://www.qatarairways.com/en/Privilege-Club/our-partners.html#), [ref](https://awardwallet.com/news/airlines/qatar-philippine-partnership/).
-5. Etihad (EY) establishes partnership with Bangkok Airways (PG). [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/bangkok-airways), [ref](https://awardwallet.com/news/airlines/etihad-bangkok-partnership/).
-6. Air Canada (AC) devalues (mostly) partner redemption. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/redeem/air-canada.html#/).
+v0.2.5 Regular data update.
+1. American Airlines Is Now Pricing Air Tahiti Nui Awards Dynamically. [ref](https://awardwallet.com/news/american-aadvantage/dynamic-pricing-air-tahiti-nui/)
 
 ## Install
 
@@ -70,6 +65,14 @@ Purpose: Find which FFP can be used to collect miles when taking cash price tick
 <details>
     <summary>Previous version histories</summary>
 
+    v0.2.4 Regular data update.
+    1. Jetblue (B6) establishes partnership with China Airlines (CI). [source](https://www.jetblue.com/airline-partners).
+    2. Emirates (EK) drops Condor (DE) as earning partner. Redeem is not affected. [source](https://www.emirates.com/us/english/skywards/partners/condor/), [ref](https://awardwallet.com/news/airlines/emirates-drops-condor-earning-partner/).
+    3. Spirit (NK) is DEAD. RIP. [source](https://www.spiritrestructuring.com/).
+    4. Qatar (QR) establishes partnership with Philippine Airlines (PR). [source](https://www.qatarairways.com/en/Privilege-Club/our-partners.html#), [ref](https://awardwallet.com/news/airlines/qatar-philippine-partnership/).
+    5. Etihad (EY) establishes partnership with Bangkok Airways (PG). [source](https://www.etihad.com/en/etihadguest/our-partners/airlines/bangkok-airways), [ref](https://awardwallet.com/news/airlines/etihad-bangkok-partnership/).
+    6. Air Canada (AC) devalues (mostly) partner redemption. [source](https://www.aircanada.com/ca/en/aco/home/aeroplan/redeem/air-canada.html#/).
+    
     v0.2.3 Regular data update.
 
     1. ITA(AZ) is officially part of Star Alliance. Alliance partners SHOULD be able to earn and redeem on it. [source](https://www.staralliance.com/en/ita-joins-star-alliance)

@@ -378,6 +378,15 @@
         "iata_code":"LYT"
     },
     {
+        "name":"Gruyere Airport",
+        "latitude_deg":-28.034548,
+        "longitude_deg":123.81506,
+        "continent":"OC",
+        "iso_country":"AU",
+        "iso_region":"AU-WA",
+        "iata_code":"GYZ"
+    },
+    {
         "name":"Kimberley Downs Airport",
         "latitude_deg":-17.398577,
         "longitude_deg":124.355565,
@@ -9090,15 +9099,6 @@
         "iata_code":"BHX"
     },
     {
-        "name":"Coventry Airport",
-        "latitude_deg":52.369701,
-        "longitude_deg":-1.47972,
-        "continent":"EU",
-        "iso_country":"GB",
-        "iso_region":"GB-ENG",
-        "iata_code":"CVT"
-    },
-    {
         "name":"Gloucestershire Airport",
         "latitude_deg":51.894199,
         "longitude_deg":-2.16722,
@@ -9207,6 +9207,15 @@
         "iata_code":"SKL"
     },
     {
+        "name":"Coll Airport",
+        "latitude_deg":56.601898,
+        "longitude_deg":-6.61778,
+        "continent":"EU",
+        "iso_country":"GB",
+        "iso_region":"GB-SCT",
+        "iata_code":"COL"
+    },
+    {
         "name":"North Ronaldsay Airport",
         "latitude_deg":59.3675003052,
         "longitude_deg":-2.4344398975,
@@ -9268,6 +9277,15 @@
         "iso_country":"GB",
         "iso_region":"GB-SCT",
         "iata_code":"WRY"
+    },
+    {
+        "name":"Colonsay Airstrip",
+        "latitude_deg":56.057499,
+        "longitude_deg":-6.24306,
+        "continent":"EU",
+        "iso_country":"GB",
+        "iso_region":"GB-SCT",
+        "iata_code":"CSA"
     },
     {
         "name":"Haverfordwest Airport",
@@ -11016,6 +11034,15 @@
         "iata_code":"NYO"
     },
     {
+        "name":"Scandinavian Mountains Airport",
+        "latitude_deg":61.16508,
+        "longitude_deg":12.83352,
+        "continent":"EU",
+        "iso_country":"SE",
+        "iso_region":"SE-W",
+        "iata_code":"SCR"
+    },
+    {
         "name":"Kristianstad Airport",
         "latitude_deg":55.9217,
         "longitude_deg":14.0855,
@@ -11374,6 +11401,15 @@
         "iso_country":"SE",
         "iso_region":"SE-AC",
         "iata_code":"HMV"
+    },
+    {
+        "name":"Shire Inda Selassie Airport",
+        "latitude_deg":14.075699,
+        "longitude_deg":38.273592,
+        "continent":"AF",
+        "iso_country":"ET",
+        "iso_region":"ET-TI",
+        "iata_code":"SHC"
     },
     {
         "name":"Spangdahlem Air Base",
@@ -12187,8 +12223,8 @@
     },
     {
         "name":"Vryburg Airport",
-        "latitude_deg":-26.9824008942,
-        "longitude_deg":24.7287998199,
+        "latitude_deg":-26.982401,
+        "longitude_deg":24.7288,
         "continent":"AF",
         "iso_country":"ZA",
         "iso_region":"ZA-NW",
@@ -12787,6 +12823,15 @@
         "iso_country":"CF",
         "iso_region":"CF-OP",
         "iata_code":"BOZ"
+    },
+    {
+        "name":"Annob\u00f3n Airport",
+        "latitude_deg":-1.408615,
+        "longitude_deg":5.624163,
+        "continent":"AF",
+        "iso_country":"GQ",
+        "iso_region":"GQ-AN",
+        "iata_code":"NBN"
     },
     {
         "name":"Bata International Airport",
@@ -14760,6 +14805,15 @@
         "iata_code":"VFA"
     },
     {
+        "name":"Robert Gabriel Mugabe International Airport",
+        "latitude_deg":-17.931801,
+        "longitude_deg":31.0928,
+        "continent":"AF",
+        "iso_country":"ZW",
+        "iso_region":"ZW-HA",
+        "iata_code":"HRE"
+    },
+    {
         "name":"Kariba Airport",
         "latitude_deg":-16.5198,
         "longitude_deg":28.885,
@@ -15939,15 +15993,6 @@
         "iata_code":"NIX"
     },
     {
-        "name":"Sikasso Airport",
-        "latitude_deg":11.328611,
-        "longitude_deg":-5.684722,
-        "continent":"AF",
-        "iso_country":"ML",
-        "iso_region":"ML-3",
-        "iata_code":"KSS"
-    },
-    {
         "name":"Tombouktou Airport",
         "latitude_deg":16.730499,
         "longitude_deg":-3.00758,
@@ -16414,6 +16459,15 @@
         "iso_country":"MA",
         "iso_region":"MA-07",
         "iata_code":"RAK"
+    },
+    {
+        "name":"Kenitra Air Base",
+        "latitude_deg":34.298901,
+        "longitude_deg":-6.59588,
+        "continent":"AF",
+        "iso_country":"MA",
+        "iso_region":"MA-04",
+        "iata_code":"NNA"
     },
     {
         "name":"Ouarzazate International Airport",
@@ -17505,6 +17559,15 @@
         "iata_code":"BUO"
     },
     {
+        "name":"Garowe Airport",
+        "latitude_deg":8.458474,
+        "longitude_deg":48.568136,
+        "continent":"AF",
+        "iso_country":"SO",
+        "iso_region":"SO-NU",
+        "iata_code":"GGR"
+    },
+    {
         "name":"Djibouti-Ambouli Airport",
         "latitude_deg":11.5473,
         "longitude_deg":43.1595,
@@ -17703,7 +17766,7 @@
         "iata_code":"SKV"
     },
     {
-        "name":"Sohag International Airport",
+        "name":"Suhaj International Airport",
         "latitude_deg":26.342515,
         "longitude_deg":31.743017,
         "continent":"AF",
@@ -18189,6 +18252,15 @@
         "iata_code":"LTD"
     },
     {
+        "name":"Tobruk International Airport",
+        "latitude_deg":31.861,
+        "longitude_deg":23.907,
+        "continent":"AF",
+        "iso_country":"LY",
+        "iso_region":"LY-BU",
+        "iata_code":"TOB"
+    },
+    {
         "name":"Ubari Airport",
         "latitude_deg":26.567499,
         "longitude_deg":12.8231,
@@ -18439,6 +18511,15 @@
         "iso_country":"SD",
         "iso_region":"SD-01",
         "iata_code":"WHF"
+    },
+    {
+        "name":"Wau Airport",
+        "latitude_deg":7.72583,
+        "longitude_deg":27.975,
+        "continent":"AF",
+        "iso_country":"SS",
+        "iso_region":"SS-BW",
+        "iata_code":"WUU"
     },
     {
         "name":"Zalingei Airport",
@@ -24525,9 +24606,9 @@
         "iata_code":"HEE"
     },
     {
-        "name":"Manassas Regional Airport\/Harry P. Davis Field",
-        "latitude_deg":38.721401,
-        "longitude_deg":-77.515404,
+        "name":"Washington Manassas Harry P. Davis Field",
+        "latitude_deg":38.723021,
+        "longitude_deg":-77.515422,
         "continent":"NA",
         "iso_country":"US",
         "iso_region":"US-VA",
@@ -26047,8 +26128,8 @@
     },
     {
         "name":"Laguna Army Airfield",
-        "latitude_deg":32.86000061,
-        "longitude_deg":-114.3970032,
+        "latitude_deg":32.860794,
+        "longitude_deg":-114.39615,
         "continent":"NA",
         "iso_country":"US",
         "iso_region":"US-AZ",
@@ -28134,7 +28215,7 @@
         "iata_code":"OAJ"
     },
     {
-        "name":"San Francisco Bay Oakland International Airport",
+        "name":"Oakland San Francisco Bay Airport",
         "latitude_deg":37.720085,
         "longitude_deg":-122.221184,
         "continent":"NA",
@@ -30610,8 +30691,8 @@
     },
     {
         "name":"Shreveport Regional Airport",
-        "latitude_deg":32.446602,
-        "longitude_deg":-93.8256,
+        "latitude_deg":32.444747,
+        "longitude_deg":-93.826741,
         "continent":"NA",
         "iso_country":"US",
         "iso_region":"US-LA",
@@ -31444,6 +31525,15 @@
         "iso_country":"US",
         "iso_region":"US-FL",
         "iata_code":"TIX"
+    },
+    {
+        "name":"McKinney National Airport",
+        "latitude_deg":33.177898,
+        "longitude_deg":-96.5905,
+        "continent":"NA",
+        "iso_country":"US",
+        "iso_region":"US-TX",
+        "iata_code":"DTX"
     },
     {
         "name":"Kennett Memorial Airport",
@@ -37287,6 +37377,15 @@
         "iata_code":"CZM"
     },
     {
+        "name":"Ciudad Constituci\u00f3n National Airport",
+        "latitude_deg":25.053801,
+        "longitude_deg":-111.614998,
+        "continent":"NA",
+        "iso_country":"MX",
+        "iso_region":"MX-BCS",
+        "iata_code":"CUA"
+    },
+    {
         "name":"Ciudad Mante Los Huastecas National Airport",
         "latitude_deg":22.738957,
         "longitude_deg":-99.018516,
@@ -41227,6 +41326,15 @@
         "iso_country":"BH",
         "iso_region":"BH-15",
         "iata_code":"BAH"
+    },
+    {
+        "name":"Corisco International Airport",
+        "latitude_deg":0.910937,
+        "longitude_deg":9.33027,
+        "continent":"AF",
+        "iso_country":"GQ",
+        "iso_region":"GQ-LI",
+        "iata_code":"OCS"
     },
     {
         "name":"Abha International Airport",
@@ -52363,8 +52471,8 @@
     },
     {
         "name":"Eduard Alexander Gummels Airport",
-        "latitude_deg":5.8604,
-        "longitude_deg":-55.192,
+        "latitude_deg":5.863807,
+        "longitude_deg":-55.189504,
         "continent":"SA",
         "iso_country":"SR",
         "iso_region":"SR-PM",
@@ -54972,6 +55080,15 @@
         "iata_code":"ZIX"
     },
     {
+        "name":"Kisoro Airport",
+        "latitude_deg":-1.2837,
+        "longitude_deg":29.7197,
+        "continent":"AF",
+        "iso_country":"UG",
+        "iso_region":"UG-W",
+        "iata_code":"KXO"
+    },
+    {
         "name":"David the Builder Kutaisi International Airport",
         "latitude_deg":42.177448,
         "longitude_deg":42.485353,
@@ -55456,15 +55573,6 @@
         "iso_country":"UA",
         "iso_region":"UA-35",
         "iata_code":"KGO"
-    },
-    {
-        "name":"Ihor Sikorsky Kyiv International Airport (Zhuliany)",
-        "latitude_deg":50.40194,
-        "longitude_deg":30.45194,
-        "continent":"EU",
-        "iso_country":"UA",
-        "iso_region":"UA-30",
-        "iata_code":"IEV"
     },
     {
         "name":"Zhytomyr Airport",
@@ -56062,8 +56170,8 @@
     },
     {
         "name":"Elista Airport",
-        "latitude_deg":46.3739013672,
-        "longitude_deg":44.3308982849,
+        "latitude_deg":46.373901,
+        "longitude_deg":44.330898,
         "continent":"EU",
         "iso_country":"RU",
         "iso_region":"RU-KL",
@@ -57952,8 +58060,8 @@
     },
     {
         "name":"Osmany International Airport",
-        "latitude_deg":24.963071,
-        "longitude_deg":91.866903,
+        "latitude_deg":24.963993,
+        "longitude_deg":91.864749,
         "continent":"AS",
         "iso_country":"BD",
         "iso_region":"BD-6",
